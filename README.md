@@ -1,7 +1,5 @@
 <div align="center">
-  <img src="assets/logo.png" alt="Grails of War" width="420" />
-
-  # Grails of War
+  <img src="assets/logocut.png" alt="Grails of War" width="640" />
 
   **A tactical lane-battle card game of hidden plays and best-of-three conquest.**
 
