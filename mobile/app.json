@@ -1,0 +1,23 @@
+{
+  "expo": {
+    "name": "Grails of War",
+    "slug": "grails-of-war",
+    "version": "0.1.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "dark",
+    "backgroundColor": "#050507",
+    "android": {
+      "package": "com.grailsofwar.app",
+      "edgeToEdgeEnabled": true
+    },
+    "androidNavigationBar": {
+      "visible": "sticky-immersive",
+      "barStyle": "light-content",
+      "backgroundColor": "#050507",
+      "behavior": "overlay-swipe"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}

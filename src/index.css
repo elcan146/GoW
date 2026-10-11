@@ -1,0 +1,1013 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  overscroll-behavior: none;
+  background: #050507;
+  font-family: 'Rajdhani', system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ============================================================ TABLE / BOARD */
+
+/* Black-iron deck — cathedral floor of a machine cult */
+.void-deck {
+  background:
+    radial-gradient(ellipse at 50% 0%, rgba(193, 18, 31, 0.12) 0%, transparent 55%),
+    radial-gradient(ellipse at 50% 110%, rgba(0, 0, 0, 0.8) 0%, transparent 60%),
+    repeating-linear-gradient(0deg, rgba(255, 42, 60, 0.018) 0 1px, transparent 1px 4px),
+    repeating-linear-gradient(90deg, rgba(154, 163, 173, 0.018) 0 1px, transparent 1px 4px),
+    linear-gradient(160deg, #0d0a0f 0%, #050507 45%, #0a0709 100%);
+}
+
+/* Brushed dark-iron panel — gothic-tech slab */
+.iron-panel {
+  background:
+    radial-gradient(ellipse at 30% 20%, rgba(154, 163, 173, 0.08) 0%, transparent 60%),
+    radial-gradient(ellipse at 75% 85%, rgba(193, 18, 31, 0.07) 0%, transparent 55%),
+    linear-gradient(150deg, #16141a 0%, #0b0a0e 55%, #100d12 100%);
+  border: 1px solid #3a2e33;
+  box-shadow:
+    inset 0 1px 0 rgba(232, 236, 241, 0.08),
+    inset 0 -2px 6px rgba(0, 0, 0, 0.6),
+    0 4px 14px rgba(0, 0, 0, 0.65);
+}
+
+/* Riveted steel frame for location zones */
+.zone-frame {
+  border: 2px solid #2e2830;
+  background:
+    linear-gradient(180deg, rgba(58, 46, 51, 0.3) 0%, rgba(8, 6, 10, 0.6) 100%);
+  box-shadow:
+    inset 0 1px 0 rgba(232, 236, 241, 0.1),
+    inset 0 0 22px rgba(0, 0, 0, 0.7),
+    0 6px 18px rgba(0, 0, 0, 0.7);
+}
+
+/* Neon-crimson edge for playable location */
+.neon-glow {
+  border-color: #c1121f !important;
+  box-shadow:
+    inset 0 0 18px rgba(255, 42, 60, 0.16),
+    0 0 26px rgba(255, 42, 60, 0.4),
+    0 6px 18px rgba(0, 0, 0, 0.7) !important;
+}
+
+.slot-empty {
+  border: 1.5px dashed rgba(154, 163, 173, 0.22);
+  background: rgba(5, 5, 7, 0.5);
+  box-shadow: inset 0 2px 6px rgba(0, 0, 0, 0.65);
+}
+
+/* ============================================================ CARD FRAMES */
+/* Neon-etched rarity frames — bare steel → consecrated gold */
+
+.card-frame {
+  position: relative;
+  border-radius: 6px;
+  transform-style: preserve-3d;
+  will-change: transform;
+  transition: transform 0.22s cubic-bezier(0.34, 1.4, 0.64, 1), box-shadow 0.22s ease;
+}
+.card-frame::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 6px;
+  pointer-events: none;
+  z-index: 2;
+}
+
+/* Rarity = aura, not outline: a radial tint fills transparent art and a
+   colored bloom spills out from under the card. Thin neutral bezel only. */
+.frame-mortal {
+  border: 1px solid #2e2830;
+  background: radial-gradient(ellipse at 50% 62%, rgba(86, 94, 104, 0.5) 0%, rgba(10, 8, 12, 0.92) 78%);
+  box-shadow: inset 0 0 0 1px #1a1c20, 0 0 10px rgba(86, 94, 104, 0.35), 0 3px 8px rgba(0,0,0,0.7);
+}
+.frame-mortal::before {
+  border: 1px solid rgba(154, 163, 173, 0.22);
+  box-shadow: inset 0 1px 0 rgba(232, 236, 241, 0.12);
+}
+.frame-cursed {
+  border: 1px solid #1e4a2c;
+  background: radial-gradient(ellipse at 50% 62%, rgba(46, 159, 77, 0.5) 0%, rgba(10, 8, 12, 0.92) 78%);
+  box-shadow: inset 0 0 0 1px #0e2816, 0 0 14px rgba(60, 220, 120, 0.45), 0 0 30px rgba(60, 220, 120, 0.18), 0 3px 8px rgba(0,0,0,0.7);
+}
+.frame-arcane {
+  border: 1px solid #1e4a5e;
+  background: radial-gradient(ellipse at 50% 62%, rgba(46, 168, 207, 0.5) 0%, rgba(10, 8, 12, 0.92) 78%);
+  box-shadow: inset 0 0 0 1px #0e2836, 0 0 14px rgba(60, 200, 255, 0.5), 0 0 30px rgba(60, 200, 255, 0.2), 0 3px 8px rgba(0,0,0,0.7);
+}
+.frame-forbidden {
+  border: 1px solid #3a1e5e;
+  background: radial-gradient(ellipse at 50% 62%, rgba(139, 92, 246, 0.5) 0%, rgba(10, 8, 12, 0.92) 78%);
+  box-shadow: inset 0 0 0 1px #1c0e38, 0 0 16px rgba(160, 90, 255, 0.55), 0 0 34px rgba(160, 90, 255, 0.22), 0 3px 8px rgba(0,0,0,0.7);
+}
+.frame-mythic {
+  border: 1px solid #5e1e26;
+  background: radial-gradient(ellipse at 50% 62%, rgba(193, 18, 31, 0.55) 0%, rgba(10, 8, 12, 0.92) 78%);
+  box-shadow: inset 0 0 0 1px #3a0810, 0 0 16px rgba(255, 42, 60, 0.6), 0 0 36px rgba(255, 42, 60, 0.25), 0 3px 8px rgba(0,0,0,0.7);
+}
+.frame-relic {
+  border: 1px solid #1e4a44;
+  background: radial-gradient(ellipse at 50% 62%, rgba(46, 175, 164, 0.5) 0%, rgba(10, 8, 12, 0.92) 78%);
+  box-shadow: inset 0 0 0 1px #0e2e2a, 0 0 16px rgba(60, 230, 210, 0.55), 0 0 34px rgba(60, 230, 210, 0.22), 0 3px 8px rgba(0,0,0,0.7);
+}
+.frame-divine {
+  border: 1px solid #5a4510;
+  background: radial-gradient(ellipse at 50% 62%, rgba(217, 184, 76, 0.55) 0%, rgba(10, 8, 12, 0.92) 78%);
+  box-shadow:
+    inset 0 0 0 1px #5a4510,
+    0 0 20px rgba(255, 215, 110, 0.65),
+    0 0 48px rgba(255, 200, 80, 0.3),
+    0 3px 8px rgba(0,0,0,0.7);
+  animation: divine-shimmer 2.6s ease-in-out infinite;
+}
+@keyframes divine-shimmer {
+  0%, 100% { box-shadow: inset 0 0 0 1px #5a4510, 0 0 20px rgba(255,215,110,0.65), 0 0 48px rgba(255,200,80,0.3), 0 3px 8px rgba(0,0,0,0.7); }
+  50% { box-shadow: inset 0 0 0 1px #7a5c18, 0 0 30px rgba(255,225,140,0.9), 0 0 68px rgba(255,210,100,0.45), 0 3px 8px rgba(0,0,0,0.7); }
+}
+
+/* Chrome power chip */
+.power-coin {
+  font-family: 'Share Tech Mono', monospace;
+  background:
+    radial-gradient(circle at 32% 28%, #ffffff 0%, #c8cdd4 40%, #8a919c 75%, #4a5058 100%);
+  border: 2px solid #101216;
+  color: #0a0c10;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.6);
+  box-shadow:
+    inset 0 -2px 4px rgba(0, 0, 0, 0.55),
+    inset 0 2px 3px rgba(255, 255, 255, 0.5),
+    0 2px 6px rgba(0, 0, 0, 0.8);
+}
+.power-coin.buffed {
+  background: radial-gradient(circle at 32% 28%, #d0f5d8 0%, #4fae62 38%, #1f6b34 72%, #0a3a18 100%);
+  color: #04180a;
+  text-shadow: 0 1px 0 rgba(200, 245, 210, 0.7);
+}
+.power-coin.debuffed {
+  background: radial-gradient(circle at 32% 28%, #ffb0a8 0%, #c1121f 38%, #7a0e16 72%, #3a0508 100%);
+  color: #1a0203;
+  text-shadow: 0 1px 0 rgba(255, 180, 175, 0.6);
+}
+
+/* Black-glass name plate with neon hairline */
+.name-plate {
+  background:
+    linear-gradient(180deg, rgba(16, 14, 20, 0.94) 0%, rgba(6, 5, 8, 0.96) 100%);
+  border-top: 1px solid rgba(255, 42, 60, 0.4);
+  box-shadow: inset 0 1px 0 rgba(0,0,0,0.6);
+}
+
+/* Tech-etched ability strip — distinguishes ability cards from vanilla */
+.ability-strip {
+  background:
+    linear-gradient(180deg, rgba(30, 26, 34, 0.95) 0%, rgba(16, 13, 20, 0.95) 100%);
+  color: #ff8a95;
+  border: 1px solid rgba(193, 18, 31, 0.5);
+  box-shadow: inset 0 1px 0 rgba(255, 42, 60, 0.15), 0 0 10px rgba(193, 18, 31, 0.2);
+}
+.vanilla-notch {
+  background: linear-gradient(180deg, rgba(40, 42, 48, 0.6), rgba(18, 19, 24, 0.6));
+  color: rgba(154, 163, 173, 0.55);
+  border: 1px solid rgba(154, 163, 173, 0.15);
+}
+
+/* ============================================================ ANIMATIONS */
+
+/* Deployment slam — anticipation drop, impact squash, elastic settle */
+@keyframes card-slam {
+  0% { transform: translateY(-70px) scale(1.3) rotate(-5deg); opacity: 0; }
+  45% { transform: translateY(4px) scale(0.96) rotate(1.5deg); opacity: 1; }
+  65% { transform: translateY(-3px) scale(1.02) rotate(-0.5deg); }
+  82% { transform: translateY(1px) scale(0.995); }
+  100% { transform: translateY(0) scale(1) rotate(0); }
+}
+.anim-slam {
+  animation: card-slam 0.5s cubic-bezier(0.22, 1.2, 0.36, 1) both;
+}
+
+/* Dust ring kicked up by the slam */
+@keyframes dust-ring {
+  0% { transform: translate(-50%, -50%) scale(0.3); opacity: 0.7; }
+  100% { transform: translate(-50%, -50%) scale(2.2); opacity: 0; }
+}
+.dust-ring {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 20;
+  border: 3px solid rgba(255, 42, 60, 0.55);
+  box-shadow: 0 0 20px rgba(193, 18, 31, 0.5), inset 0 0 20px rgba(193, 18, 31, 0.35);
+  animation: dust-ring 0.55s cubic-bezier(0.1, 0.6, 0.3, 1) forwards;
+}
+
+/* Board camera shake — applied via WAAPI, class kept as fallback */
+@keyframes board-shake {
+  0%, 100% { transform: translate(0, 0); }
+  15% { transform: translate(-5px, 2px); }
+  30% { transform: translate(5px, -2px); }
+  45% { transform: translate(-3px, -1px); }
+  60% { transform: translate(3px, 1px); }
+  75% { transform: translate(-1px, 1px); }
+}
+.anim-shake {
+  animation: board-shake 0.4s cubic-bezier(0.36, 0.07, 0.19, 0.97);
+}
+
+/* Chaos burn — violent flame burst then ash (transform+opacity only) */
+@keyframes burn-burst {
+  0% { opacity: 0; transform: scale(0.35); }
+  15% { opacity: 1; transform: scale(1.2); }
+  45% { opacity: 0.95; transform: scale(1.05) translateY(-8px); }
+  100% { opacity: 0; transform: scale(1.5) translateY(-34px); }
+}
+.burn-burst {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 30;
+  will-change: transform, opacity;
+  background:
+    radial-gradient(circle at 50% 65%, rgba(255, 130, 140, 0.95) 0%, rgba(255, 42, 60, 0.85) 28%, rgba(140, 10, 20, 0.55) 55%, transparent 75%);
+  animation: burn-burst 1s cubic-bezier(0.15, 0.6, 0.35, 1) forwards;
+}
+@keyframes ash-crumble {
+  0% { opacity: 0.85; transform: translateY(0) scale(1); }
+  100% { opacity: 0; transform: translateY(18px) scale(0.65); }
+}
+.ash-crumble {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 29;
+  will-change: transform, opacity;
+  background: radial-gradient(circle at 50% 60%, rgba(90, 80, 70, 0.7) 0%, transparent 60%);
+  animation: ash-crumble 1.2s cubic-bezier(0.3, 0.5, 0.6, 1) forwards;
+}
+
+/* Spy — dagger flip through the air, snaps into place */
+@keyframes spy-flip {
+  0% { transform: translateY(-80px) rotateX(0deg) rotateZ(-35deg) scale(0.65); opacity: 0; }
+  35% { transform: translateY(-22px) rotateX(540deg) rotateZ(-14deg) scale(1.08); opacity: 1; }
+  65% { transform: translateY(3px) rotateX(680deg) rotateZ(4deg) scale(0.97); }
+  100% { transform: translateY(0) rotateX(720deg) rotateZ(0) scale(1); }
+}
+.anim-spy {
+  animation: spy-flip 0.65s cubic-bezier(0.3, 0.9, 0.35, 1.05) both;
+}
+
+/* Move — lift, hover glide, decisive snap */
+@keyframes card-move {
+  0% { transform: translateY(0) scale(1); }
+  30% { transform: translateY(-30px) scale(1.14); }
+  65% { transform: translateY(-24px) scale(1.12); }
+  100% { transform: translateY(0) scale(1); }
+}
+.anim-move {
+  animation: card-move 0.6s cubic-bezier(0.3, 0.8, 0.4, 1) both;
+}
+
+/* Hand deal-in — staggered entrance */
+@keyframes deal-in {
+  0% { transform: translateY(60px) rotate(6deg) scale(0.85); opacity: 0; }
+  60% { transform: translateY(-6px) rotate(-1deg) scale(1.02); opacity: 1; }
+  100% { transform: translateY(0) rotate(0) scale(1); opacity: 1; }
+}
+.anim-deal {
+  animation: deal-in 0.5s cubic-bezier(0.25, 1.1, 0.4, 1) both;
+}
+
+/* Deck-builder grid — cards cascade in on search/filter/sort change */
+@keyframes db-card-in {
+  0% { transform: translateY(14px) scale(0.92); opacity: 0; }
+  100% { transform: translateY(0) scale(1); opacity: 1; }
+}
+.anim-db-card {
+  animation: db-card-in 0.32s cubic-bezier(0.25, 1.1, 0.4, 1) both;
+}
+
+/* Power coin pop on value change */
+@keyframes coin-pop {
+  0% { transform: scale(1); }
+  40% { transform: scale(1.45); }
+  100% { transform: scale(1); }
+}
+.anim-coin-pop {
+  animation: coin-pop 0.35s cubic-bezier(0.3, 1.5, 0.5, 1) both;
+}
+
+/* Location art entrance — slow cinematic fade+settle */
+@keyframes art-fade {
+  0% { opacity: 0; transform: scale(1.08); }
+  100% { opacity: 0.32; transform: scale(1); }
+}
+.anim-art {
+  animation: art-fade 1.1s cubic-bezier(0.2, 0.6, 0.3, 1) both;
+}
+
+/* Inspector panel — slides in from the right edge with a slight overshoot */
+@keyframes inspector-in {
+  0% { transform: translateX(110%); opacity: 0; }
+  60% { transform: translateX(-2.5%); opacity: 1; }
+  100% { transform: translateX(0); opacity: 1; }
+}
+@keyframes inspector-out {
+  0% { transform: translateX(0); opacity: 1; }
+  100% { transform: translateX(110%); opacity: 0; }
+}
+.anim-inspector-in {
+  animation: inspector-in 0.38s cubic-bezier(0.25, 1.1, 0.4, 1) both;
+}
+.anim-inspector-out {
+  animation: inspector-out 0.24s cubic-bezier(0.5, 0, 0.75, 0) both;
+}
+
+/* Card art inside the inspector — 3D flip + settle */
+@keyframes inspector-card-in {
+  0% { transform: perspective(900px) rotateY(-70deg) scale(0.8); opacity: 0; }
+  60% { transform: perspective(900px) rotateY(12deg) scale(1.04); opacity: 1; }
+  100% { transform: perspective(900px) rotateY(0) scale(1); opacity: 1; }
+}
+.anim-inspector-card {
+  animation: inspector-card-in 0.5s cubic-bezier(0.3, 1.2, 0.4, 1) 0.08s both;
+}
+
+/* Detail blocks — gentle delayed rise */
+@keyframes inspector-rise {
+  0% { transform: translateY(14px); opacity: 0; }
+  100% { transform: translateY(0); opacity: 1; }
+}
+.anim-inspector-rise {
+  animation: inspector-rise 0.35s cubic-bezier(0.25, 0.9, 0.4, 1) both;
+}
+
+/* Music player panel — slides in from the left edge, mirrors the inspector */
+@keyframes player-in {
+  0% { transform: translateX(-110%); opacity: 0; }
+  60% { transform: translateX(2.5%); opacity: 1; }
+  100% { transform: translateX(0); opacity: 1; }
+}
+.anim-player-in {
+  animation: player-in 0.38s cubic-bezier(0.25, 1.1, 0.4, 1) both;
+}
+
+/* Equalizer bars for the currently-playing track */
+@keyframes eq-bounce {
+  0%, 100% { transform: scaleY(0.25); }
+  50% { transform: scaleY(1); }
+}
+.eq-bar {
+  transform-origin: bottom;
+  animation: eq-bounce 0.9s ease-in-out infinite;
+}
+
+/* Album-art vinyl disc — one rotation per 10s, pauses with playback */
+@keyframes art-spin {
+  to { transform: rotate(360deg); }
+}
+.art-disc {
+  position: relative;
+  width: 12rem;
+  height: 12rem;
+  border-radius: 9999px;
+  overflow: hidden;
+  border: 3px solid #2e2830;
+  box-shadow:
+    0 0 0 2px rgba(0, 0, 0, 0.6),
+    0 0 24px rgba(255, 42, 60, 0.22),
+    inset 0 0 18px rgba(0, 0, 0, 0.7);
+  animation: art-spin 25s linear infinite;
+}
+.art-disc-paused {
+  animation-play-state: paused;
+}
+.art-disc-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.art-disc-empty {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(circle at 35% 30%, #3a2f3a, #141014 70%);
+  color: #7a828e;
+  font-size: 2rem;
+}
+.art-disc-hole {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 1.1rem;
+  height: 1.1rem;
+  transform: translate(-50%, -50%);
+  border-radius: 9999px;
+  background: #050507;
+  border: 2px solid #2e2830;
+  box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.45);
+}
+
+/* Seek + volume sliders */
+input[type='range'].seek-bar {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 4px;
+  border-radius: 9999px;
+  background: linear-gradient(90deg, #7a0e16, #2e2830);
+  outline: none;
+  cursor: pointer;
+}
+input[type='range'].seek-bar:disabled {
+  opacity: 0.35;
+  cursor: default;
+}
+input[type='range'].seek-bar::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 12px;
+  height: 12px;
+  border-radius: 9999px;
+  background: #e8ecf1;
+  border: 2px solid #c1121f;
+  box-shadow: 0 0 6px rgba(255, 42, 60, 0.6);
+}
+input[type='range'].seek-bar::-moz-range-thumb {
+  width: 12px;
+  height: 12px;
+  border-radius: 9999px;
+  background: #e8ecf1;
+  border: 2px solid #c1121f;
+  box-shadow: 0 0 6px rgba(255, 42, 60, 0.6);
+}
+input[type='range'].seek-bar::-moz-range-track {
+  height: 4px;
+  border-radius: 9999px;
+  background: #2e2830;
+}
+
+/* ---- Music player controls — modern circular transport ---- */
+.tp-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.25rem;
+  height: 2.25rem;
+  border-radius: 9999px;
+  color: #9aa3ad;
+  background: rgba(154, 163, 173, 0.06);
+  border: 1px solid rgba(154, 163, 173, 0.18);
+  transition: all 0.15s ease;
+}
+.tp-btn:hover:not(:disabled) {
+  color: #e8ecf1;
+  background: rgba(154, 163, 173, 0.14);
+  border-color: rgba(154, 163, 173, 0.4);
+  box-shadow: 0 0 12px rgba(154, 163, 173, 0.25);
+}
+.tp-btn:active:not(:disabled) {
+  transform: scale(0.92);
+}
+.tp-btn:disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+}
+
+/* Toggled-on state for mode buttons (shuffle) */
+.tp-btn-on {
+  color: #ff2a3c;
+  background: rgba(193, 18, 31, 0.18);
+  border-color: rgba(255, 42, 60, 0.55);
+  box-shadow: 0 0 10px rgba(255, 42, 60, 0.3);
+}
+
+/* Main play/pause — larger, blood-red glow */
+.tp-btn-main {
+  width: 2.75rem;
+  height: 2.75rem;
+  color: #fff;
+  background: radial-gradient(circle at 35% 30%, #ff2a3c, #c1121f 60%, #7a0e16);
+  border-color: rgba(255, 42, 60, 0.6);
+  box-shadow:
+    0 0 16px rgba(193, 18, 31, 0.45),
+    inset 0 1px 0 rgba(255, 255, 255, 0.25);
+}
+.tp-btn-main:hover:not(:disabled) {
+  color: #fff;
+  background: radial-gradient(circle at 35% 30%, #ff4d5e, #d41a29 60%, #8a1420);
+  border-color: rgba(255, 42, 60, 0.9);
+  box-shadow:
+    0 0 26px rgba(255, 42, 60, 0.65),
+    inset 0 1px 0 rgba(255, 255, 255, 0.3);
+  transform: scale(1.06);
+}
+.tp-btn-main:active:not(:disabled) {
+  transform: scale(0.96);
+}
+
+/* Small ghost icon button — volume, collapse */
+.util-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.75rem;
+  height: 1.75rem;
+  border-radius: 9999px;
+  color: #7a828e;
+  background: transparent;
+  border: 1px solid transparent;
+  transition: all 0.15s ease;
+}
+.util-btn:hover:not(:disabled) {
+  color: #e8ecf1;
+  background: rgba(154, 163, 173, 0.12);
+  border-color: rgba(154, 163, 173, 0.25);
+}
+.util-btn:active:not(:disabled) {
+  transform: scale(0.9);
+}
+
+/* Track list rows — softer, rounded, red accent on hover/active */
+.track-row {
+  border-radius: 6px;
+  border-left: 2px solid transparent;
+}
+.track-row:hover {
+  border-left-color: rgba(193, 18, 31, 0.6);
+  background: linear-gradient(180deg, rgba(20, 16, 22, 0.9), rgba(28, 22, 30, 0.9));
+}
+.track-row-active {
+  border-left-color: #ff2a3c;
+  box-shadow: inset 0 0 12px rgba(193, 18, 31, 0.15);
+}
+
+/* Location total pulse on change */
+@keyframes total-pulse {
+  0% { transform: scale(1); }
+  35% { transform: scale(1.3); }
+  100% { transform: scale(1); }
+}
+.anim-total {
+  animation: total-pulse 0.4s cubic-bezier(0.3, 1.4, 0.5, 1) both;
+}
+
+/* Ongoing aura — slow magical pulse */
+@keyframes ongoing-pulse {
+  0%, 100% { box-shadow: 0 0 6px rgba(120, 200, 255, 0.25), inset 0 0 8px rgba(120, 200, 255, 0.12); }
+  50% { box-shadow: 0 0 16px rgba(140, 220, 255, 0.55), inset 0 0 14px rgba(140, 220, 255, 0.28); }
+}
+.aura-ongoing {
+  animation: ongoing-pulse 2.4s ease-in-out infinite;
+}
+
+/* Chaos slot aura */
+@keyframes chaos-pulse {
+  0%, 100% { box-shadow: 0 0 8px rgba(168, 85, 247, 0.35); }
+  50% { box-shadow: 0 0 20px rgba(168, 85, 247, 0.7); }
+}
+.aura-chaos {
+  animation: chaos-pulse 1.8s ease-in-out infinite;
+}
+
+/* Cracked-stone decal left by a slam */
+@keyframes crack-fade {
+  0% { opacity: 0.85; }
+  100% { opacity: 0; }
+}
+.crack-decal {
+  position: absolute;
+  pointer-events: none;
+  z-index: 1;
+  width: 64px;
+  height: 64px;
+  background:
+    linear-gradient(35deg, transparent 46%, rgba(255, 42, 60, 0.5) 47% 49%, transparent 50%),
+    linear-gradient(-55deg, transparent 44%, rgba(255, 42, 60, 0.45) 45% 48%, transparent 49%),
+    linear-gradient(100deg, transparent 46%, rgba(193, 18, 31, 0.45) 47% 49%, transparent 50%),
+    radial-gradient(circle, rgba(0,0,0,0.4) 0%, transparent 62%);
+  animation: crack-fade 1.6s ease-out forwards;
+}
+
+/* ============================================================ AMBIENT FX */
+
+@keyframes fog-drift {
+  0% { transform: translateX(-18%); opacity: 0.5; }
+  50% { opacity: 0.85; }
+  100% { transform: translateX(18%); opacity: 0.5; }
+}
+.amb-fog {
+  position: absolute;
+  inset: -20%;
+  pointer-events: none;
+  z-index: 5;
+  background:
+    radial-gradient(ellipse 60% 35% at 30% 40%, rgba(154, 163, 173, 0.2) 0%, transparent 70%),
+    radial-gradient(ellipse 55% 30% at 70% 65%, rgba(120, 128, 138, 0.18) 0%, transparent 70%);
+  animation: fog-drift 9s ease-in-out infinite alternate;
+}
+
+/* Embers — a 3x-tall particle layer translated upward (GPU-composited) */
+@keyframes embers-rise {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-66.6%); }
+}
+.amb-embers {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 300%;
+  pointer-events: none;
+  z-index: 5;
+  will-change: transform;
+  background-image:
+    radial-gradient(circle 2px at 20% 12%, rgba(255, 42, 60, 0.9) 0%, transparent 100%),
+    radial-gradient(circle 1.5px at 55% 22%, rgba(255, 110, 90, 0.85) 0%, transparent 100%),
+    radial-gradient(circle 2px at 80% 8%, rgba(193, 18, 31, 0.85) 0%, transparent 100%),
+    radial-gradient(circle 1.5px at 40% 18%, rgba(255, 80, 95, 0.9) 0%, transparent 100%),
+    radial-gradient(circle 2px at 20% 45%, rgba(255, 42, 60, 0.9) 0%, transparent 100%),
+    radial-gradient(circle 1.5px at 55% 55%, rgba(255, 110, 90, 0.85) 0%, transparent 100%),
+    radial-gradient(circle 2px at 80% 41%, rgba(193, 18, 31, 0.85) 0%, transparent 100%),
+    radial-gradient(circle 1.5px at 40% 51%, rgba(255, 80, 95, 0.9) 0%, transparent 100%),
+    radial-gradient(circle 2px at 20% 78%, rgba(255, 42, 60, 0.9) 0%, transparent 100%),
+    radial-gradient(circle 1.5px at 55% 88%, rgba(255, 110, 90, 0.85) 0%, transparent 100%),
+    radial-gradient(circle 2px at 80% 74%, rgba(193, 18, 31, 0.85) 0%, transparent 100%),
+    radial-gradient(circle 1.5px at 40% 84%, rgba(255, 80, 95, 0.9) 0%, transparent 100%);
+  animation: embers-rise 4.5s linear infinite;
+}
+
+@keyframes holy-shine {
+  0%, 100% { opacity: 0.35; }
+  50% { opacity: 0.7; }
+}
+.amb-holy {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 5;
+  background:
+    linear-gradient(180deg, rgba(232, 236, 241, 0.18) 0%, transparent 55%),
+    radial-gradient(ellipse at 50% 0%, rgba(255, 42, 60, 0.14) 0%, transparent 60%);
+  animation: holy-shine 4s ease-in-out infinite;
+}
+
+/* Snow — 3x-tall flake layer drifting down (GPU-composited) */
+@keyframes snow-fall {
+  0% { transform: translateY(-66.6%); }
+  100% { transform: translateY(0); }
+}
+.amb-snow {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 300%;
+  pointer-events: none;
+  z-index: 5;
+  will-change: transform;
+  background-image:
+    radial-gradient(circle 1.5px at 25% 10%, rgba(240, 248, 255, 0.9) 0%, transparent 100%),
+    radial-gradient(circle 1px at 60% 20%, rgba(240, 248, 255, 0.8) 0%, transparent 100%),
+    radial-gradient(circle 1.5px at 85% 5%, rgba(240, 248, 255, 0.85) 0%, transparent 100%),
+    radial-gradient(circle 1px at 45% 28%, rgba(240, 248, 255, 0.75) 0%, transparent 100%),
+    radial-gradient(circle 1.5px at 25% 43%, rgba(240, 248, 255, 0.9) 0%, transparent 100%),
+    radial-gradient(circle 1px at 60% 53%, rgba(240, 248, 255, 0.8) 0%, transparent 100%),
+    radial-gradient(circle 1.5px at 85% 38%, rgba(240, 248, 255, 0.85) 0%, transparent 100%),
+    radial-gradient(circle 1px at 45% 61%, rgba(240, 248, 255, 0.75) 0%, transparent 100%),
+    radial-gradient(circle 1.5px at 25% 76%, rgba(240, 248, 255, 0.9) 0%, transparent 100%),
+    radial-gradient(circle 1px at 60% 86%, rgba(240, 248, 255, 0.8) 0%, transparent 100%),
+    radial-gradient(circle 1.5px at 85% 71%, rgba(240, 248, 255, 0.85) 0%, transparent 100%),
+    radial-gradient(circle 1px at 45% 94%, rgba(240, 248, 255, 0.75) 0%, transparent 100%);
+  animation: snow-fall 7s linear infinite;
+}
+
+@keyframes murk-bubble {
+  0%, 100% { opacity: 0.4; transform: translateY(0); }
+  50% { opacity: 0.75; transform: translateY(-4px); }
+}
+.amb-murk {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 5;
+  background:
+    radial-gradient(ellipse at 30% 80%, rgba(80, 120, 50, 0.3) 0%, transparent 55%),
+    radial-gradient(ellipse at 70% 70%, rgba(60, 100, 45, 0.28) 0%, transparent 50%);
+  animation: murk-bubble 5s ease-in-out infinite;
+}
+
+@keyframes void-pulse {
+  0%, 100% { opacity: 0.55; }
+  50% { opacity: 0.9; }
+}
+.amb-void {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 5;
+  background: radial-gradient(ellipse at 50% 55%, rgba(20, 8, 40, 0.55) 0%, rgba(5, 2, 12, 0.75) 80%);
+  animation: void-pulse 6s ease-in-out infinite;
+}
+
+/* ============================================================ GOTHIC-TECH UI */
+
+/* Dark-glass button — rounded, soft inner light, chrome-ring hover */
+.btn-chrome {
+  background: linear-gradient(180deg, rgba(58, 63, 71, 0.55) 0%, rgba(20, 22, 27, 0.75) 100%);
+  border: 1px solid rgba(154, 163, 173, 0.28);
+  border-radius: 8px;
+  box-shadow:
+    inset 0 1px 0 rgba(232, 236, 241, 0.12),
+    0 2px 8px rgba(0, 0, 0, 0.4);
+  color: #e8ecf1;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.85);
+  backdrop-filter: blur(4px);
+  transition: all 0.15s ease;
+}
+.btn-chrome:hover:not(:disabled) {
+  background: linear-gradient(180deg, rgba(74, 80, 88, 0.65) 0%, rgba(30, 33, 40, 0.8) 100%);
+  border-color: rgba(232, 236, 241, 0.45);
+  box-shadow:
+    inset 0 1px 0 rgba(232, 236, 241, 0.2),
+    0 2px 8px rgba(0, 0, 0, 0.4),
+    0 0 14px rgba(154, 163, 173, 0.3);
+  transform: translateY(-1px);
+}
+.btn-chrome:active:not(:disabled) {
+  transform: translateY(0) scale(0.97);
+  box-shadow: inset 0 2px 6px rgba(0, 0, 0, 0.5);
+}
+.btn-chrome:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+/* Neon-crimson primary action — glowing red pill */
+.btn-neon {
+  background: linear-gradient(180deg, #ff2a3c 0%, #c1121f 55%, #8f0f1a 100%);
+  border: 1px solid rgba(255, 90, 104, 0.7);
+  border-radius: 8px;
+  color: #fff;
+  text-shadow: 0 0 8px rgba(255, 42, 60, 0.6), 0 1px 2px rgba(0, 0, 0, 0.6);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.25),
+    0 2px 10px rgba(0, 0, 0, 0.45),
+    0 0 14px rgba(255, 42, 60, 0.3);
+  transition: all 0.15s ease;
+}
+.btn-neon:hover:not(:disabled) {
+  background: linear-gradient(180deg, #ff4d5e 0%, #d41a29 55%, #a81220 100%);
+  border-color: rgba(255, 130, 140, 0.9);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.35),
+    0 2px 10px rgba(0, 0, 0, 0.45),
+    0 0 24px rgba(255, 42, 60, 0.6);
+  transform: translateY(-1px);
+}
+.btn-neon:active:not(:disabled) {
+  transform: translateY(0) scale(0.97);
+  box-shadow:
+    inset 0 2px 6px rgba(40, 2, 6, 0.5),
+    0 0 10px rgba(255, 42, 60, 0.35);
+}
+.btn-neon:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+/* Deep-blood secondary/danger action — dark red glass */
+.btn-blood {
+  background: linear-gradient(180deg, rgba(110, 16, 24, 0.55) 0%, rgba(42, 5, 10, 0.75) 100%);
+  border: 1px solid rgba(193, 18, 31, 0.45);
+  border-radius: 8px;
+  color: #f5c8ce;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.85);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 120, 130, 0.15),
+    0 2px 8px rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(4px);
+  transition: all 0.15s ease;
+}
+.btn-blood:hover:not(:disabled) {
+  background: linear-gradient(180deg, rgba(138, 20, 32, 0.65) 0%, rgba(58, 6, 12, 0.8) 100%);
+  border-color: rgba(255, 42, 60, 0.7);
+  color: #ffe8ea;
+  box-shadow:
+    inset 0 1px 0 rgba(255, 140, 150, 0.25),
+    0 2px 8px rgba(0, 0, 0, 0.4),
+    0 0 16px rgba(193, 18, 31, 0.45);
+  transform: translateY(-1px);
+}
+.btn-blood:active:not(:disabled) {
+  transform: translateY(0) scale(0.97);
+  box-shadow: inset 0 2px 6px rgba(15, 1, 3, 0.6);
+}
+.btn-blood:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+/* Chrome gradient text */
+.metal-text {
+  font-family: 'Cinzel', Georgia, serif;
+  background: linear-gradient(180deg, #f4f7fa 0%, #9aa3ad 55%, #565e68 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-shadow: none;
+  filter: drop-shadow(0 1px 1px rgba(0, 0, 0, 0.9));
+}
+
+/* Neon-red glowing text */
+.neon-text {
+  color: #ff2a3c;
+  text-shadow:
+    0 0 6px rgba(255, 42, 60, 0.55),
+    0 1px 2px rgba(0, 0, 0, 0.9);
+}
+
+/* Inset black-glass panel */
+.panel-inset {
+  background: linear-gradient(180deg, rgba(6, 5, 8, 0.88), rgba(14, 12, 17, 0.88));
+  border: 1px solid #2e2830;
+  box-shadow:
+    inset 0 2px 8px rgba(0, 0, 0, 0.75),
+    inset 0 -1px 0 rgba(255, 42, 60, 0.08);
+}
+
+/* Card back pattern fallback — dark circuit etch */
+.card-back-pattern {
+  background:
+    radial-gradient(circle at 50% 35%, rgba(255, 42, 60, 0.22) 0%, transparent 45%),
+    repeating-linear-gradient(45deg, #0c0a0e 0 6px, #16141a 6px 12px);
+  border: 1px solid #3a3f47;
+  box-shadow: inset 0 0 0 3px #050507, inset 0 0 12px rgba(0, 0, 0, 0.8);
+}
+
+/* Soft vignette overlay */
+.scanlines {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 100;
+  background:
+    radial-gradient(ellipse 105% 90% at 50% 50%, transparent 70%, rgba(0, 0, 0, 0.28) 100%);
+}
+
+/* Real ordered dithering — SVG filter applied to the app root */
+body.dithered .void-deck {
+  filter: url(#retro-dither);
+}
+
+/* Corner toggle for the dither overlay */
+.dither-toggle {
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  z-index: 102;
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 10px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #7a828e;
+  background: rgba(11, 10, 14, 0.8);
+  border: 1px solid #2e2830;
+  border-radius: 4px;
+  padding: 3px 8px;
+  cursor: pointer;
+}
+.dither-toggle:hover {
+  color: #e8ecf1;
+  border-color: #7a0e16;
+}
+
+/* Native dropdown options — keep them dark so text stays readable */
+select option {
+  background: #0b0a0e;
+  color: #c8cdd4;
+}
+
+/* Scrollbar — black iron + blood */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #08070a;
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #3a2e33, #1a1216);
+  border: 1px solid #7a0e16;
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #4a2e35;
+}
+
+/* ============================================================
+   Approach 2 — Fluid layout (?layout=fluid)
+   Pure CSS grid + viewport units; no JS scaling.
+   ============================================================ */
+
+/* Three zones: left rail / board / right panel.
+   Left is a viewport-relative rail (~15vw), center flexes to fill, and the
+   right track is `auto` so it collapses to zero when the inspector is
+   closed — no dead space is ever reserved on the right edge.
+   The single row is capped at the container height (minmax(0,1fr)) so
+   content can never stretch the grid past the viewport. */
+.layout-fluid {
+  display: grid;
+  grid-template-columns: minmax(0, 15vw) minmax(0, 1fr) auto;
+  grid-template-rows: minmax(0, 1fr);
+  align-items: stretch;
+}
+
+/* Grid items must be allowed to shrink below their content height so the
+   row stays at viewport height and inner scroll regions work. */
+.layout-fluid > * {
+  min-height: 0;
+  min-width: 0;
+}
+
+/* Left zone — fill the grid track instead of fixed w-64 */
+.layout-fluid .music-panel {
+  width: 100%;
+}
+
+/* Center zone — uncap the 1500px limit so the board uses the whole track */
+.layout-fluid .center-zone {
+  max-width: none;
+}
+
+/* Right zone — fluid width, anchored to the right edge of its track */
+.layout-fluid .inspector-panel {
+  width: clamp(16rem, 20vw, 24rem);
+  justify-self: end;
+}
+
+/* DeckBuilder side panel */
+.layout-fluid .deck-panel {
+  width: clamp(12rem, 15vw, 16rem);
+}
+
+/* DeckBuilder card pool — fluid minimum column width */
+.layout-fluid .deck-grid {
+  grid-template-columns: repeat(auto-fill, minmax(clamp(6rem, 10vmin, 9rem), 1fr));
+}
+
+/* Fluid card sizes — width scales with the viewport, height is locked
+   by aspect-ratio so cards stay perfectly rectangular at any size.
+   Card art ratio is 35:48 (140x192). */
+.layout-fluid .card-frame[data-size='hand'] {
+  width: clamp(5.5rem, 7.3vw, 8.75rem);
+  height: auto;
+  aspect-ratio: 35 / 48;
+}
+.layout-fluid .card-frame[data-size='board'] {
+  width: clamp(3.5rem, 4.7vw, 4.5rem);
+  height: auto;
+  aspect-ratio: 35 / 48;
+}
+.layout-fluid .card-frame[data-size='mini'] {
+  width: clamp(2.25rem, 2.9vw, 2.75rem);
+  height: auto;
+  aspect-ratio: 35 / 48;
+}
+
+/* Inspector's large card (224x320 = 7:10) */
+.layout-fluid .inspector-panel .anim-inspector-card {
+  width: clamp(10rem, 14vw, 14rem);
+  height: auto;
+  aspect-ratio: 7 / 10;
+}
+
+/* Overlapping hand fan — DOM reference pattern.
+   The overlap is derived from the card-width variable, so it scales with
+   the viewport instead of using fixed pixel margins. Each card after the
+   first shifts left by 35% of the card width.
+   NOTE: the in-game hand is rendered by Phaser (HandArea.ts), which already
+   adapts its spacing to the canvas width — this pattern is for DOM hands. */
+.hand-fan {
+  --fan-card-w: clamp(5.5rem, 7.3vw, 8.75rem);
+  display: flex;
+  justify-content: center;
+}
+.hand-fan > * {
+  width: var(--fan-card-w);
+  aspect-ratio: 35 / 48;
+  flex-shrink: 0;
+}
+.hand-fan > * + * {
+  margin-left: calc(var(--fan-card-w) * -0.35);
+}

@@ -1,0 +1,18 @@
+node_modules/
+.expo/
+dist/
+*.apk
+*.aab
+*.keystore
+!debug.keystore
+.DS_Store
+
+# Expo web build output
+web-build/
+
+# Credentials / provisioning files
+*.pem
+*.p12
+*.key
+*.mobileprovision
+*.orig.*

@@ -1,0 +1,143 @@
+Abyss
+
+Mechanic: All card abilities are disabled (silenced). The Power of every card at this location is divided by 2 (halved).
+
+Battlefield
+
+Mechanic: Continuous buff. Every card at this location gains bonus Power equal to the total number of cards currently placed at this location (combining the card counts of both players).
+
+Coliseum
+
+Trigger: End of round.
+
+Mechanic: Evaluate the winner of this location. The winning player's single highest-Power card at this location permanently doubles its current Power and doubles the numerical effects of its abilities.
+
+Cursed Lands
+
+Trigger: End of each turn.
+
+Mechanic: Every card at this location receives -1 Power.
+
+Dense Forest
+
+Mechanic: Vision restriction. Each player can only see exactly 50% of the opponent's cards placed at this location. The remaining cards are hidden from the opponent's UI.
+
+Desert
+
+Mechanic: Capacity restriction. A maximum of 4 cards can be played at this location per player (standard board slot limit).
+
+Dragons
+
+Trigger: When a card is played here.
+
+Mechanic: The card undergoes an RNG check. There is a 30% probability the card is immediately destroyed ("burned").
+
+Elaria
+
+Mechanic: Faction buff. Any card possessing the "Elarian" faction tag has its Power multiplied by 2.
+
+Elderlands
+
+Mechanic: Faction buff. Any card possessing the "Elderveld" faction tag has its Power multiplied by 2.
+
+Future
+
+Trigger: Scoring phase / Start of next round.
+
+Mechanic: Cards placed here contribute 0 Power to the current round's score. At the start of the next round, all cards at this location automatically move to the new active location.
+
+Hochreich
+
+Mechanic: Faction buff. Any card possessing the "Hochreich" faction tag has its Power multiplied by 2.
+
+HotC Camp
+
+Mechanic: Faction buff. Any card possessing the "Horde of the Carrion" faction tag has its Power multiplied by 2.
+
+Kal
+
+Mechanic: Faction debuff. Any card that does not possess the "Kalthrone" faction tag has its Power divided by 2 (halved).
+
+Mirror
+
+Trigger: When a card is played here.
+
+Mechanic: The card undergoes an RNG check. There is a 50% probability that the card changes ownership and is placed on the opponent's side of the location instead.
+
+Hell
+
+Mechanic: Play restriction. Only cards possessing the "Morthal", "Cursed", or "Arcane" tags can be played at this location. All other cards are blocked.
+
+Intestines
+
+Mechanic: Stat override. The Power of every card at this location is strictly set to 1, overriding all base stats, buffs, or debuffs.
+
+Labyrinth
+
+Trigger: When a card is played here.
+
+Mechanic: The card undergoes an RNG check. There is a 50% probability the card is permanently transformed into the card "Blobeye" (Card ID: 0214).
+
+Lava
+
+Trigger: State check (Continuous).
+
+Mechanic: If the total combined Power of all cards at this location (summing both players' scores) exceeds exactly 20, the single highest-Power card at this location is immediately destroyed.
+
+Plague
+
+Trigger: End of each turn.
+
+Mechanic: Every card at this location receives -1 Power. If any card's Power reaches exactly 0, it is immediately removed from the board.
+
+Heaven
+
+Mechanic: Protection aura. Cards at this location are immune to destruction effects and immune to debuffs caused by opponent abilities.
+
+Plains
+
+Mechanic: Neutral zone. This location has no special rules, buffs, nerfs, or environmental hazards.
+
+Ravaria
+
+Mechanic: Faction buff. Any card possessing the "Ravarian" faction tag has its Power multiplied by 2.
+
+Random
+
+Trigger: Start of the round.
+
+Mechanic: 8 random cards from each player's deck are automatically extracted and played at this location at no energy/turn cost to the players.
+
+Shadowland
+
+Mechanic: Vision restriction. The card identities, abilities, and Power values of all opponent cards at this location are completely hidden (face-down) until the round resolves.
+
+Stakes
+
+Trigger: End of round.
+
+Mechanic: The player who wins this location receives one "Divine Dragon" card, which is added to their hand for use in the next round.
+
+Valhalla
+
+Mechanic: Resurrection. Cards at this location cannot be permanently destroyed or "burned." If a destruction effect triggers on a card here, the card immediately resurrects and returns to its slot on the board.
+
+Varkaz
+
+Mechanic: Play restriction. Cards that possess text abilities cannot be played here. Only "Vanilla" (no-ability) cards are permitted.
+
+Snowy
+
+Mechanic: Neutral zone. This location has no special rules, buffs, nerfs, or environmental hazards.
+
+Soulland
+
+Mechanic 1: Ability buff. Cards that possess text abilities gain +3 Power.
+
+Mechanic 2: RNG Transformation. Cards with no abilities have a 10% probability to permanently transform into a "Monster" card upon being played.
+
+Swamps
+
+Trigger: End of round.
+
+Mechanic: The player with the lower score at this location (the loser) automatically receives three "Werewolf" cards. Randomly selected these cards (0046, 0064, 0072, 0076, 0087, 0112)

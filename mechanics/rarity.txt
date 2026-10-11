@@ -1,0 +1,666 @@
+Mortal → Cursed → Arcane → Forbidden → Mythic → Relic → Divine
+Based on the backgrounds and descriptions provided, here is a logical rarity classification for the first 100 cards.
+
+To ensure consistency, the rarities were assigned using the following criteria based on the lore:
+
+ Mortal: Standard human soldiers, mercenaries, rangers, rogues, and non-magical royals.
+
+
+ Cursed: Undead troops, ghouls, lycanthropes, trolls, and lesser corrupted beasts.
+
+
+ Arcane: Spellcasters, paladins channeling celestial energy, dryads, and magical spirits.
+
+
+ Forbidden: Dark cultists, vampire lords, death-knight warlords, and nightmarish entities.
+
+
+ Mythic: Colossal dragons, elemental titans, frost giants, and ethereal leviathans.
+
+
+ Relic: Ancient, sentient artifacts of immense power.
+
+
+ Divine: Primordial terrors and god-like entities capable of shattering seals or reality.
+
+
+
+ 0001 - Maneater: Forbidden
+
+
+ 0002 - Velvetblood: Mortal
+
+
+ 0003 - Calystria: Arcane
+
+
+ 0004 - Pothead: Mortal
+
+
+ 0005 - Ancient Chitterswarm: Mythic
+
+
+ 0006 - Vaelthar: Mythic
+
+
+ 0007 - Anastasia: Arcane
+
+
+ 0008 - Thaldrak: Arcane
+
+
+ 0009 - Elowyn: Arcane
+
+
+ 0010 - Malveris: Mythic
+
+
+ 0011 - Thalindra: Arcane
+
+
+ 0012 - Vyrnoth: Forbidden
+
+
+ 0013 - Odran Dreadmoor: Cursed
+
+
+ 0014 - Zevrak: Forbidden
+
+
+ 0015 - Drusilla: Mythic
+
+
+ 0016 - Skull of Xyveron: Relic
+
+
+ 0017 - Rhazakar: Divine
+
+
+ 0018 - An unseen ranger: Mortal
+
+
+ 0019 - Nightfang: Cursed
+
+
+ 0020 - Carcasses of Hell: Forbidden
+
+
+ 0021 - Rhaedric Ironmourne: Mortal
+
+
+ 0022 - Mage Morgana: Arcane
+
+
+ 0023 - Mage Lyssandra: Arcane
+
+
+ 0024 - Ysolde Blackshield: Mortal
+
+
+ 0025 - Orvax the Troll: Cursed
+
+
+ 0026 - Hochreich Frontline: Mortal
+
+
+ 0027 - Ravaria Frontline: Mortal
+
+
+ 0028 - Tavric: Mortal
+
+
+ 0029 - Nythrak: Forbidden
+
+
+ 0030 - Xaltheron: Cursed
+
+
+ 0031 - Ash Ghouls: Cursed
+
+
+ 0032 - Maldrith: Forbidden
+
+
+ 0033 - Mosskin: Arcane
+
+
+ 0034 - Bloatspider: Cursed
+
+
+ 0035 - Vulkas the Lion: Mythic
+
+
+ 0036 - Icemaw the Giant: Mythic
+
+
+ 0037 - Undead Kalthrone Soldier: Cursed
+
+
+ 0038 - Vorthak: Mythic
+
+
+ 0039 - Lizard Drok: Mortal
+
+
+ 0040 - Kalthrone Horde: Cursed
+
+
+ 0041 - Thessa: Mortal
+
+
+ 0042 - Ash Ghouls: Cursed
+
+
+ 0043 - Katerina: Arcane
+
+
+ 0044 - Zorgrim: Mythic
+
+
+ 0045 - Cheapy: Mortal
+
+
+ 0046 - Werewolf: Cursed
+
+
+ 0047 - Bear: Mortal
+
+
+ 0048 - Sergeant Drustan Nightscar: Mortal
+
+
+ 0049 - General Eldran: Mortal
+
+
+ 0050 - Soul Whale: Mythic
+
+
+ 0051 - Tharic: Arcane
+
+
+ 0052 - Princess Corvella: Mortal
+
+
+ 0053 - Ser Mstislav Volkhvich: Mortal
+
+
+ 0054 - Magma Titan: Mythic
+
+
+ 0055 - Undead Kalthrone Soldier: Cursed
+
+
+ 0056 - Cinderteeth: Mortal
+
+
+ 0057 - Ulyana: Arcane
+
+
+ 0058 - Varyena: Arcane
+
+
+ 0059 - Sweetboy the Giant: Mythic
+
+
+ 0060 - Soulroot: Cursed
+
+
+ 0061 - Travtin the Blades: Mortal
+
+
+ 0062 - Foresterian Female: Arcane
+
+
+ 0063 - Gormuth: Forbidden
+
+
+ 0064 - Werewolf: Cursed
+
+
+ 0065 - Drakhar: Mythic
+
+
+ 0066 - Prince Radomir: Mortal
+
+
+ 0067 - Swamp Vampire: Cursed
+
+
+ 0068 - Thief Marro: Mortal
+
+
+ 0069 - Queen Elvira: Arcane
+
+
+ 0070 - Rampage: Cursed
+
+
+ 0071 - Gravebound Wolves: Cursed
+
+
+ 0072 - Werewolf: Cursed
+
+
+ 0073 - Savage: Mortal
+
+
+ 0074 - Mother Lunara: Forbidden
+
+
+ 0075 - Panthera: Forbidden
+
+
+ 0076 - Werewolf: Cursed
+
+
+ 0077 - Eryc Darkwarden: Mortal
+
+
+ 0078 - Elderveld Archers: Mortal
+
+
+ 0079 - Knight Jughead: Mortal
+
+
+ 0080 - Bounty Hunter: Mortal
+
+
+ 0081 - Swamp Ghoul: Cursed
+
+
+ 0082 - Footsoldiers: Mortal
+
+
+ 0083 - Michellsky: Arcane
+
+
+ 0084 - Poctalion: Mortal
+
+
+ 0085 - Azrakor: Mythic
+
+
+ 0086 - Baby Dragon: Arcane
+
+
+ 0087 - Werewolf: Cursed
+
+
+ 0088 - World Coalition: Mortal
+
+
+ 0089 - Red Crows: Cursed
+
+
+ 0090 - Zyrathor: Forbidden
+
+
+ 0091 - Draelon: Forbidden
+
+
+ 0092 - Runica: Arcane
+
+
+ 0093 - Ravarian: Mortal
+
+
+ 0094 - Foresterian Female: Arcane
+
+
+ 0095 - King Carrion: Mortal
+
+
+ 0096 - Crownheir: Mortal
+
+
+ 0097 - Ashtun: Arcane
+
+
+ 0098 - Sir Roman Volkov: Mortal
+
+
+ 0099 - Lonely Vampire: Cursed
+
+
+ 0100 - General Oren: Mortal
+
+
+ 0101 - Foresterian Female (Luminous Spirit): Arcane
+
+
+ 0102 - Foresterian Female (Dryad): Arcane
+
+
+ 0103 - Clown of the Elderveld: Mortal
+
+
+ 0104 - Sir Pyotr Gromov: Mortal
+
+
+ 0105 - Howler: Mortal
+
+
+ 0106 - Burner: Mortal
+
+
+ 0107 - Wordkeeper: Mortal
+
+
+ 0108 - Daar: Arcane
+
+
+ 0109 - Nightfang: Forbidden
+
+
+ 0110 - Chernyava: Mortal
+
+
+ 0111 - Wordkeeper (Archivist): Mortal
+
+
+ 0112 - Werewolf: Cursed
+
+
+ 0113 - Greywanderer: Cursed
+
+
+ 0114 - Sir Konstantin: Mortal
+
+
+ 0115 - Nightwish: Forbidden
+
+
+ 0116 - Captain Vasily: Mortal
+
+
+ 0117 - Captain Arkady: Mortal
+
+
+ 0118 - Hunder the Kid: Mortal
+
+
+ 0119 - Butcher: Mortal
+
+
+ 0120 - Ranger Roman: Mortal
+
+
+ 0121 - Grigori the Blood Boiler: Forbidden
+
+
+ 0122 - Captain Vercel: Mortal
+
+
+ 0123 - Red Thug: Arcane
+
+
+ 0124 - Hollow Wraith: Cursed
+
+
+ 0125 - Xalvorn: Mythic
+
+
+ 0126 - Messager: Mortal
+
+
+ 0127 - Lych Crow: Cursed
+
+
+ 0128 - Zoromira: Mortal
+
+
+ 0129 - Sergeant Irolski: Mortal
+
+
+ 0130 - Moon Witch: Forbidden
+
+
+ 0131 - Elephant Cart: Mortal
+
+
+ 0132 - Vale: Mortal
+
+
+ 0133 - Ravarian Horde: Mortal
+
+
+ 0134 - Prince Muhammed: Mortal
+
+
+ 0135 - Vaziyr: Mortal
+
+
+ 0136 - Meat Ripper: Cursed
+
+
+ 0137 - Great Owl: Arcane
+
+
+ 0138 - Hochreich Soldier: Mortal
+
+
+ 0139 - Lord Eisenwald: Mortal
+
+
+ 0140 - Freak the Exelor: Forbidden
+
+
+ 0141 - King Ludwig: Mortal
+
+
+ 0142 - Ice King: Forbidden
+
+
+ 0143 - Ghost Of King Rurik: Forbidden
+
+
+ 0144 - Torturer, Kalthrone: Forbidden
+
+
+ 0145 - Lord Siegfried: Mortal
+
+
+ 0146 - Rot Disease: Cursed
+
+
+ 0147 - Mind Prisoners: Forbidden
+
+
+ 0148 - Scouts of Elderveld: Mortal
+
+
+ 0149 - Bruce the Bat: Cursed
+
+
+ 0150 - Steam Killer: Mortal
+
+
+ 0151 - Hendra: Mortal
+
+
+ 0152 - Sage the Ripper: Cursed
+
+
+ 0153 - Mytica: Arcane
+
+
+ 0154 - Synerva: Forbidden
+
+
+ 0155 - Captain Ophelia: Mortal
+
+
+ 0156 - Ranger Svetta: Mortal
+
+
+ 0157 - Champion, Elarion Empire: Mortal
+
+
+ 0158 - Horseman, Kalthrone: Forbidden
+
+
+ 0159 - Champions of the Holdrich: Mortal
+
+
+ 0160 - Kurzfristig: Mortal
+
+
+ 0161 - World Eater: Mythic
+
+
+ 0162 - God of Thunder: Divine
+
+
+ 0163 - Astral Tentacles of Kalthrone: Divine
+
+
+ 0164 - Warmongrel: Forbidden
+
+
+ 0165 - John the Wolf: Mortal
+
+
+ 0166 - The Weeping Kelp: Cursed
+
+
+ 0167 - Ruk, the Bone-Breaker: Forbidden
+
+
+ 0168 - Mantis: Cursed
+
+
+ 0169 - Marrow-Gnaw: Cursed
+
+
+ 0170 - Conjurer: Arcane
+
+
+ 0171 - Unknown Slayer: Cursed
+
+
+ 0172 - Vulture: Cursed
+
+
+ 0173 - Cagehead: Mortal
+
+
+ 0174 - Cernunnos' Shadow: Forbidden
+
+
+ 0175 - Vespera of the Pyre: Mythic
+
+
+ 0176 - Snakehead: Cursed
+
+
+ 0177 - Gisela: Mortal
+
+
+ 0178 - Master of Arcana: Forbidden
+
+
+ 0179 - Arc Warrior: Cursed
+
+
+ 0180 - Dragon Father: Forbidden
+
+
+ 0181 - Bjorn Iron-Hide: Mortal
+
+
+ 0182 - Lord Malakor: Forbidden
+
+
+ 0183 - Lord Zealot: Forbidden
+
+
+ 0184 - Paladin the Kingslayer: Mortal
+
+
+ 0185 - Gorgaroth: Cursed
+
+
+ 0186 - Split-Jaw: Cursed
+
+
+ 0187 - Amalgam of Torment: Forbidden
+
+
+ 0188 - Starbound: Arcane
+
+
+ 0189 - Demon God: Divine
+
+
+ 0190 - Paladin Cassian: Arcane
+
+
+ 0191 - Sunk Crypt: Cursed
+
+
+ 0192 - Ghost of Pharaoh: Forbidden
+
+
+ 0193 - Void-Knight: Forbidden
+
+
+ 0194 - Obsidian: Mythic
+
+
+ 0195 - Cerberus: Mythic
+
+
+ 0196 - Agony of Death: Cursed
+
+
+ 0197 - Lilith the Devil: Forbidden
+
+
+ 0198 - Nebula: Divine
+
+
+ 0199 - Sylverra the Eternal: Divine
+
+
+ 0200 - Varnok: Forbidden
+
+
+ 0201 - Fire Serpent: Mythic
+
+
+ 0202 - Goldenfur: Mortal
+
+
+ 0203 - Lady Cassia: Mortal
+
+
+ 0204 - Behemoth: Mythic
+
+
+ 0205 - Devil: Cursed
+
+
+ 0206 - Winged Herald: Arcane
+
+
+ 0207 - Stalker: Cursed
+
+
+ 0208 - Vanguard of Hochreich: Arcane
+
+
+ 0209 - Kaiden: Cursed
+
+
+ 0210 - Clockwork: Relic
+
+
+ 0211 - Warten the Vampire Lord: Forbidden
+
+
+ 0212 - Leviathan: Mythic
+
+
+ 0213 - Terror of Worlds: Mythic
+
+

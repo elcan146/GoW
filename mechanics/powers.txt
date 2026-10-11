@@ -1,0 +1,216 @@
+| ID | Card Name | Pwr | Mechanic & Effect |
+| --- | --- | --- | --- |
+| 0001 | Maneater | 5 | Chaos (2 turns): Burn chance = (5 / Side Total) * 100. |
+| 0002 | Velvetblood | 2 | Spy: Play on enemy side. Draw 1 card, steal 1 from their deck. |
+| 0003 | Calystria | 3 | On Reveal: Destroy the highest enemy card here if their total is > 10. |
+| 0004 | Pothead | 1 | Medic: Resurrect a destroyed or discarded non-Hero card to this location. |
+| 0005 | Ancient Chitterswarm | 8 | No Ability. |
+| 0006 | Vaelthar | 12 | Chaos (1 turn): Burn chance = (12 / Side Total) * 100. |
+| 0007 | Anastasia | 4 | On Reveal: Give all enemy cards at this location -1 Power. |
+| 0008 | Thaldrak | 3 | Move: Move one of your cards from another location to this one. |
+| 0009 | Elowyn | 5 | Ongoing: Adjacent locations have +1 Power. |
+| 0010 | Malveris | 9 | No Ability. |
+| 0011 | Thalindra | 4 | Ongoing: Elarion Empire cards at this location get +2 Power. |
+| 0012 | Vyrnoth | 6 | Chaos (3 turns): Burn chance = (6 / Side Total) * 100. |
+| 0013 | Odran Dreadmoor | 2 | Muster: Play all "Odran Dreadmoor" cards from your deck here instantly. |
+| 0014 | Zevrak | 3 | On Reveal: Remove abilities from all Ongoing cards at this location. |
+| 0015 | Drusilla | 2 | Ongoing: Cards played here are not revealed until the game ends. |
+| 0016 | Skull of Xyveron | 1 | Ongoing: Your other Ongoing abilities at this location trigger twice. |
+| 0017 | Rhazakar | 10 | Chaos (2 turns): Burn chance = (10 / Side Total) * 100. |
+| 0018 | An unseen ranger | 7 | No Ability. |
+| 0019 | Nightfang | 3 | Muster: Play all "Nightfang" cards from your deck here instantly. |
+| 0020 | Carcasses of Hell | 4 | Chaos (4 turns): Burn chance = (4 / Side Total) * 100. |
+| 0021 | Rhaedric Ironmourne | 9 | No Ability. |
+| 0022 | Mage Morgana | 4 | On Reveal: Repeat the On Reveal abilities of your other cards here. |
+| 0023 | Mage Lyssandra | 3 | Ongoing: Protects your cards at this location from being destroyed. |
+| 0024 | Ysolde Blackshield | 8 | No Ability. |
+| 0025 | Orvax the Troll | 10 | No Ability. |
+| 0026 | Hochreich Frontline | 4 | Faction Bond: Power doubles if another Hochreich card is here. |
+| 0027 | Ravaria Frontline | 4 | Faction Bond: Power doubles if another Ravaria card is here. |
+| 0028 | Tavric | 7 | No Ability. |
+| 0029 | Nythrak | 5 | On Reveal: Destroy the lowest-power enemy card here. |
+| 0030 | Xaltheron | 8 | No Ability. |
+| 0031 | Ash Ghouls | 2 | Muster: Play all "Ash Ghouls" cards from your deck here instantly. |
+| 0032 | Maldrith | 2 | Medic: Resurrect a destroyed non-Hero card to this location. |
+| 0033 | Mosskin | 1 | Ongoing: +1 Power to all other cards in this location. |
+| 0034 | Bloatspider | 6 | No Ability. |
+| 0035 | Vulkas the Lion | 7 | Chaos (3 turns): Burn chance = (7 / Side Total) * 100. |
+| 0036 | Icemaw the Giant | 11 | No Ability. |
+| 0037 | Undead Kalth. Soldier | 3 | Muster: Play all "Undead Kalthrone Soldier" cards from your deck. |
+| 0038 | Vorthak | 9 | Chaos (1 turn): Burn chance = (9 / Side Total) * 100. |
+| 0039 | Lizard Drok | 6 | No Ability. |
+| 0040 | Kalthrone Horde | 4 | Faction Bond: Power doubles if another Kalthrone card is here. |
+| 0041 | Thessa | 7 | No Ability. |
+| 0042 | Ash Ghouls | 2 | Muster: Play all "Ash Ghouls" cards from your deck here instantly. |
+| 0043 | Katerina | 3 | Ongoing: Steal the text from a random enemy Ongoing card here. |
+| 0044 | Zorgrim | 12 | Chaos (1 turn): Burn chance = (12 / Side Total) * 100. |
+| 0045 | Cheapy | 1 | Spy: Play on enemy side. Copy the last card they played into your hand. |
+| 0046 | Werewolf | 3 | Muster: Play all "Werewolf" cards from your deck here instantly. |
+| 0047 | Bear | 8 | No Ability. |
+| 0048 | Sgt. Drustan Nightscar | 6 | Ongoing: Your cards with No Ability at this location have +2 Power. |
+| 0049 | General Eldran | 5 | Ongoing: Your other Ongoing cards at this location have +2 Power. |
+| 0050 | Soul Whale | 4 | Move: Can move to an adjacent location once per game. |
+| 0051 | Tharic | 4 | On Reveal: Destroy a random enemy card at this location. |
+| 0052 | Princess Corvella | 2 | Medic: Resurrect a non-Hero card to this location. |
+| 0053 | Ser Mstislav Volkhvich | 8 | No Ability. |
+| 0054 | Magma Titan | 10 | No Ability. |
+| 0055 | Undead Kalth. Soldier | 3 | Muster: Play all "Undead Kalthrone Soldier" cards from your deck. |
+| 0056 | Cinderteeth | 7 | No Ability. |
+| 0057 | Ulyana | 3 | On Reveal: Draw a card from your deck. |
+| 0058 | Varyena | 2 | Ongoing: Enemy cards played here lose 1 Power. |
+| 0059 | Sweetboy the Giant | 11 | No Ability. |
+| 0060 | Soulroot | 5 | Chaos (4 turns): Burn chance = (5 / Side Total) * 100. |
+| 0061 | Travtin the Blades | 3 | Spy: Play on enemy side. Draw 2 cards. |
+| 0062 | Foresterian Female | 4 | Ongoing: +1 Power for each card currently in your hand. |
+| 0063 | Gormuth | 5 | Medic: Resurrect an enemy's destroyed card to your side. |
+| 0064 | Werewolf | 3 | Muster: Play all "Werewolf" cards from your deck here instantly. |
+| 0065 | Drakhar | 11 | Chaos (2 turns): Burn chance = (11 / Side Total) * 100. |
+| 0066 | Prince Radomir | 6 | Faction Bond: Power doubles if another Ravaria card is here. |
+| 0067 | Swamp Vampire | 4 | Move: Move a random enemy card to another location. |
+| 0068 | Thief Marro | 2 | Spy: Play on enemy side. Draw 1 card, steal 1 from their deck. |
+| 0069 | Queen Elvira | 4 | Ongoing: All Elarion Empire cards gain +1 Power globally. |
+| 0070 | Rampage | 8 | No Ability. |
+| 0071 | Gravebound Wolves | 3 | Muster: Play all "Gravebound Wolves" cards from your deck. |
+| 0072 | Werewolf | 3 | Muster: Play all "Werewolf" cards from your deck here instantly. |
+| 0073 | Savage | 7 | No Ability. |
+| 0074 | Mother Lunara | 4 | On Reveal: Remove the ability of the next card the opponent plays. |
+| 0075 | Panthera | 6 | Chaos (3 turns): Burn chance = (6 / Side Total) * 100. |
+| 0076 | Werewolf | 3 | Muster: Play all "Werewolf" cards from your deck here instantly. |
+| 0077 | Eryc Darkwarden | 7 | Faction Bond: Power doubles if another Elderveld card is here. |
+| 0078 | Elderveld Archers | 4 | On Reveal: Destroy the enemy's strongest unit here if their total > 15. |
+| 0079 | Knight Jughead | 6 | No Ability. |
+| 0080 | Bounty Hunter | 5 | On Reveal: If the opponent played here this turn, copy their card to your hand. |
+| 0081 | Swamp Ghoul | 4 | Chaos (4 turns): Burn chance = (4 / Side Total) * 100. |
+| 0082 | Footsoldiers | 4 | Faction Bond: Power doubles if another Horde of the Carrion card is here. |
+| 0083 | Michellsky | 5 | Move: If an enemy card moves here, destroy it. |
+| 0084 | Poctalion | 7 | No Ability. |
+| 0085 | Azrakor | 12 | Chaos (1 turn): Burn chance = (12 / Side Total) * 100. |
+| 0086 | Baby Dragon | 3 | Ongoing: Gains +1 Power at the end of each turn. |
+| 0087 | Werewolf | 3 | Muster: Play all "Werewolf" cards from your deck here instantly. |
+| 0088 | World Coalition | 5 | Ongoing: +1 Power for each different Faction represented at this location. |
+| 0089 | Red Crows | 2 | Spy: Play on enemy side. Reveal all cards in the opponent's hand. |
+| 0090 | Zyrathor | 8 | No Ability. |
+| 0091 | Draelon | 4 | On Reveal: Resurrect all destroyed 1-Power cards to this location. |
+| 0092 | Runica | 4 | On Reveal: Add a 5-Power Elemental to a random adjacent location. |
+| 0093 | Ravarian | 4 | Faction Bond: Power doubles if another Ravaria card is here. |
+| 0094 | Foresterian Female | 4 | Ongoing: +1 Power for each card currently in your hand. |
+| 0095 | King Carrion | 6 | Ongoing: Your Horde of the Carrion cards have +2 Power. |
+| 0096 | Crownheir | 7 | Faction Bond: Power doubles if another Elderveld card is here. |
+| 0097 | Ashtun | 3 | On Reveal: Give your Ongoing cards +2 Power. |
+| 0098 | Sir Roman Volkov | 7 | No Ability. |
+| 0099 | Lonely Vampire | 5 | Medic: Destroy one of your cards here to resurrect a higher-power card. |
+| 0100 | General Oren | 6 | Ongoing: Your cards with No Ability have +3 Power globally. |
+| 0101 | Foresterian Female (Luminous) | 3 | Ongoing: +1 Power to all other cards at this location. |
+| 0102 | Foresterian Female (Dryad) | 4 | Ongoing: +1 Power for each card in your hand. |
+| 0103 | Clown of the Elderveld | 1 | Spy: Play on enemy side. Draw 1 card, steal 1 from their deck. |
+| 0104 | Sir Pyotr Gromov | 7 | Faction Bond: Power doubles if another Ravaria card is here. |
+| 0105 | Howler | 4 | On Reveal: Destroy an enemy unit with 3 or less Power here. |
+| 0106 | Burner | 6 | On Reveal: Give all enemy cards at this location -1 Power. |
+| 0107 | Wordkeeper | 2 | On Reveal: Draw 1 card from your deck. |
+| 0108 | Daar | 3 | On Reveal: Add two 1-Power Beetles to this location. |
+| 0109 | Nightfang | 5 | Chaos (3 turns): Burn chance = (5 / Side Total) * 100. |
+| 0110 | Chernyava | 5 | Faction Bond: Power doubles if another Ravaria card is here. |
+| 0111 | Wordkeeper (Archivist) | 2 | Ongoing: Cards you draw gain +1 Power. |
+| 0112 | Werewolf | 3 | Muster: Play all "Werewolf" cards from your deck here. |
+| 0113 | Greywanderer | 6 | No Ability. |
+| 0114 | Sir Konstantin | 8 | Faction Bond: Power doubles if another Ravaria card is here. |
+| 0115 | Nightwish | 6 | Chaos (2 turns): Burn chance = (6 / Side Total) * 100. |
+| 0116 | Captain Vasily | 7 | Faction Bond: Power doubles if another Ravaria card is here. |
+| 0117 | Captain Arkady | 7 | No Ability. |
+| 0118 | Hunder the Kid | 6 | No Ability. |
+| 0119 | Butcher | 5 | On Reveal: Destroy your lowest-power card here to draw 2 cards. |
+| 0120 | Ranger Roman | 5 | Faction Bond: Power doubles if another Ravaria card is here. |
+| 0121 | Grigori the Blood Boiler | 4 | On Reveal: Destroy an enemy card here with 4 or less Power. |
+| 0122 | Captain Vercel | 7 | No Ability. |
+| 0123 | Red Thug | 3 | Move: Can move to an adjacent location once per game. |
+| 0124 | Hollow Wraith | 4 | Medic: Resurrect a non-Hero card from your discard pile here. |
+| 0125 | Xalvorn | 11 | Chaos (1 turn): Burn chance = (11 / Side Total) * 100. |
+| 0126 | Messager | 2 | Spy: Play on enemy side. Draw 2 cards from your deck. |
+| 0127 | Lych Crow | 5 | Chaos (3 turns): Burn chance = (5 / Side Total) * 100. |
+| 0128 | Zoromira | 6 | Faction Bond: Power doubles if another Ravaria card is here. |
+| 0129 | Sergeant Irolski | 6 | No Ability. |
+| 0130 | Moon Witch | 5 | Chaos (2 turns): Burn chance = (5 / Side Total) * 100. |
+| 0131 | Elephant Cart | 8 | Ongoing: Your other cards at this location have +1 Power. |
+| 0132 | Vale | 5 | On Reveal: Destroy the highest-power enemy card here if their total > 12. |
+| 0133 | Ravarian Horde | 4 | Faction Bond: Power doubles if another Ravaria card is here. |
+| 0134 | Prince Muhammed | 5 | Ongoing: Varkhazan cards at this location gain +2 Power. |
+| 0135 | Vaziyr | 6 | No Ability. |
+| 0136 | Meat Ripper | 4 | Chaos (4 turns): Burn chance = (4 / Side Total) * 100. |
+| 0137 | Great Owl | 6 | On Reveal: Move a random enemy card from here to an adjacent location. |
+| 0138 | Hochreich Soldier | 4 | Faction Bond: Power doubles if another Hochreich card is here. |
+| 0139 | Lord Eisenwald | 7 | Faction Bond: Power doubles if another Hochreich card is here. |
+| 0140 | Freak the Exelor | 3 | On Reveal: Afflict all enemy cards at this location with -2 Power. |
+| 0141 | King Ludwig | 8 | Faction Bond: Power doubles if another Elderveld card is here. |
+| 0142 | Ice King | 7 | Chaos (2 turns): Burn chance = (7 / Side Total) * 100. |
+| 0143 | Ghost Of King Rurik | 6 | Medic: Resurrect a destroyed Ravaria card to this location. |
+| 0144 | Torturer, Kalthrone | 4 | Ongoing: Enemy cards played at this location lose 1 Power. |
+| 0145 | Lord Siegfried | 7 | Faction Bond: Power doubles if another Hochreich card is here. |
+| 0146 | Rot Disease | 3 | Chaos (4 turns): Burn chance = (3 / Side Total) * 100. |
+| 0147 | Mind Prisoners | 4 | Chaos (3 turns): Burn chance = (4 / Side Total) * 100. |
+| 0148 | Scouts of Elderveld | 5 | Faction Bond: Power doubles if another Elderveld card is here. |
+| 0149 | Bruce the Bat | 4 | Move: Moves to a random location at the end of each turn. |
+| 0150 | Steam Killer | 8 | No Ability. |
+| 0151 | Hendra | 6 | Faction Bond: Power doubles if another Elarion card is here. |
+| 0152 | Sage the Ripper | 5 | On Reveal: Destroy the lowest-power enemy unit here. |
+| 0153 | Mytica | 7 | Hero: Immune to all special effects, abilities, and destroys. |
+| 0154 | Synerva | 4 | On Reveal: Remove abilities from all enemy cards at this location. |
+| 0155 | Captain Ophelia | 7 | Faction Bond: Power doubles if another Elarion card is here. |
+| 0156 | Ranger Svetta | 5 | Faction Bond: Power doubles if another Ravaria card is here. |
+| 0157 | Champion, Elarion | 8 | No Ability. |
+| 0158 | Horseman, Kalthrone | 6 | Faction Bond: Power doubles if another Kalthrone card is here. |
+| 0159 | Champions of Holdrich | 8 | Faction Bond: Power doubles if another Hochreich card is here. |
+| 0160 | Kurzfristig | 5 | Faction Bond: Power doubles if another Hochreich card is here. |
+| 0161 | World Eater | 12 | Chaos (1 turn): Burn chance = (12 / Side Total) * 100. |
+| 0162 | God of Thunder | 10 | Chaos (1 turn): Burn chance = (10 / Side Total) * 100. |
+| 0163 | Astral Tentacles | 6 | Chaos (3 turns): Burn chance = (6 / Side Total) * 100. |
+| 0164 | Warmongrel | 7 | Faction Bond: Power doubles if another Ravaria card is here. |
+| 0165 | John the Wolf | 8 | Faction Bond: Power doubles if another Elderveld card is here. |
+| 0166 | The Weeping Kelp | 4 | Chaos (4 turns): Burn chance = (4 / Side Total) * 100. |
+| 0167 | Ruk, the Bone-Breaker | 6 | Chaos (2 turns): Burn chance = (6 / Side Total) * 100. |
+| 0168 | Mantis | 4 | Ongoing: Opponent's On Reveal abilities do not trigger here. |
+| 0169 | Marrow-Gnaw | 5 | Chaos (3 turns): Burn chance = (5 / Side Total) * 100. |
+| 0170 | Conjurer | 3 | Medic: Resurrect a random non-Hero card to your hand. |
+| 0171 | Unknown Slayer | 9 | No Ability. |
+| 0172 | Vulture | 4 | On Reveal: Copy the text of an enemy Ongoing card here. |
+| 0173 | Cagehead | 7 | No Ability. |
+| 0174 | Cernunnos' Shadow | 5 | Chaos (3 turns): Burn chance = (5 / Side Total) * 100. |
+| 0175 | Vespera of the Pyre | 11 | Chaos (1 turn): Burn chance = (11 / Side Total) * 100. |
+| 0176 | Snakehead | 6 | No Ability. |
+| 0177 | Gisela | 6 | Faction Bond: Power doubles if another Hochreich card is here. |
+| 0178 | Master of Arcana | 3 | Ongoing: Your On Reveal abilities at this location trigger twice. |
+| 0179 | Arc Warrior | 6 | Ongoing: Shields all your cards at this location from destruction. |
+| 0180 | Dragon Father | 9 | Chaos (2 turns): Burn chance = (9 / Side Total) * 100. |
+| 0181 | Bjorn Iron-Hide | 8 | No Ability. |
+| 0182 | Lord Malakor | 7 | Chaos (2 turns): Burn chance = (7 / Side Total) * 100. |
+| 0183 | Lord Zealot | 6 | On Reveal: Destroy all enemy units here with 2 or less Power. |
+| 0184 | Paladin the Kingslayer | 8 | Hero: Immune to all special effects, abilities, and destroys. |
+| 0185 | Gorgaroth | 7 | Chaos (2 turns): Burn chance = (7 / Side Total) * 100. |
+| 0186 | Split-Jaw | 5 | Chaos (3 turns): Burn chance = (5 / Side Total) * 100. |
+| 0187 | Amalgam of Torment | 6 | Chaos (3 turns): Burn chance = (6 / Side Total) * 100. |
+| 0188 | Starbound | 4 | Ongoing: Adjacent locations gain +2 Power. |
+| 0189 | Demon God | 12 | Chaos (1 turn): Burn chance = (12 / Side Total) * 100. |
+| 0190 | Paladin Cassian | 8 | Hero: Immune to all special effects, abilities, and destroys. |
+| 0191 | Sunk Crypt | 4 | Medic: Resurrect a destroyed card to this location with +2 Power. |
+| 0192 | Ghost of Pharaoh | 6 | Faction Bond: Power doubles if another Hochreich card is here. |
+| 0193 | Void-Knight | 7 | On Reveal: Destroy the highest enemy card here if their total > 10. |
+| 0194 | Obsidian | 10 | Chaos (1 turn): Burn chance = (10 / Side Total) * 100. |
+| 0195 | Cerberus | 9 | Chaos (2 turns): Burn chance = (9 / Side Total) * 100. |
+| 0196 | Agony of Death | 5 | Chaos (4 turns): Burn chance = (5 / Side Total) * 100. |
+| 0197 | Lilith the Devil | 6 | On Reveal: Steal 2 Power from every enemy card at this location. |
+| 0198 | Nebula | 11 | Chaos (1 turn): Burn chance = (11 / Side Total) * 100. |
+| 0199 | Sylverra the Eternal | 4 | Ongoing: Gives all cards in your hand +1 Power. |
+| 0200 | Varnok | 5 | On Reveal: Summon two 2-Power Flame Demons to this location. |
+| 0201 | Fire Serpent | 10 | Chaos (1 turn): Burn chance = (10 / Side Total) * 100. |
+| 0202 | Goldenfur | 7 | No Ability. |
+| 0203 | Lady Cassia | 4 | Faction Bond: Power doubles if another Elarion card is here. |
+| 0204 | Behemoth | 11 | Chaos (1 turn): Burn chance = (11 / Side Total) * 100. |
+| 0205 | Devil | 4 | Move: Can move to an adjacent location once per game. |
+| 0206 | Winged Herald | 6 | Ongoing: Cards played here gain +1 Power upon reveal. |
+| 0207 | Stalker | 4 | On Reveal: Destroy the enemy's weakest card at this location. |
+| 0208 | Vanguard of Hochreich | 7 | Faction Bond: Power doubles if another Hochreich card is here. |
+| 0209 | Kaiden | 6 | No Ability. |
+| 0210 | Clockwork | 3 | Relic: Ongoing - Gives all your mechanical and construct cards +2 Power. |
+| 0211 | Warten the Vampire Lord | 7 | On Reveal: Destroy a friendly card here to gain its Power. |
+| 0212 | Leviathan | 12 | Chaos (1 turn): Burn chance = (12 / Side Total) * 100. |
+| 0213 | Terror of Worlds | 13 | Chaos (1 turn): Burn chance = (13 / Side Total) * 100. |
+| 0214 | Blobeye| 2 | No Ability. |

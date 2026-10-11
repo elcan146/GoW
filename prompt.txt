@@ -1,0 +1,32 @@
+Build a web-based digital card game prototype using React, TypeScript, and Tailwind CSS. The game combines the mechanics of Gwent and Marvel Snap.
+
+CORE GAMEPLAY LOOP:
+- The game is played over a maximum of 3 Rounds (Best 2 out of 3 wins).
+- Each Round consists of multiple simultaneous turns.
+- Players start the game with a hand of 10 cards and draw NO additional cards for the rest of the game (card advantage is the main resource).
+- No mana system. Players can play exactly 1 card per turn, or choose to "Pass".
+
+BOARD LAYOUT & LOCATIONS:
+- The board consists of 3 distinct "Locations" (Left, Middle, Right).
+- Each Location has a unique modifier (e.g., "Cards here get +2 Power", "Only 1 card can be played here").
+- A maximum of 4 cards can be played on each side of a Location.
+- The UI should display the current Power total for each player at each Location.
+
+TURN RESOLUTION (SIMULTANEOUS PLAY):
+- Both players secretly choose 1 card from their hand and a target Location.
+- Once both are locked in, the cards are revealed simultaneously.
+- "On Reveal" effects trigger immediately.
+- If a player chooses to "Pass", they cannot play any more cards for the rest of that Round.
+- The Round ends when BOTH players have Passed, or both players run out of board space/cards.
+
+ROUND RESOLUTION:
+- At the end of a Round, whoever has higher Power at 2 out of 3 Locations wins that Round (earns 1 Crown token).
+- The board is then CLEARED of all cards, returning to empty Locations.
+- Players keep their remaining hands for the next Round.
+
+TECHNICAL REQUIREMENTS:
+1. Create a responsive, centered game board UI simulating a desktop digital card game layout.
+2. Implement a mock state management system (Zustand or React Context) handling: Player Hand, AI Hand, Location States, Turn Phase, and Round Score.
+3. Build a basic opponent AI that randomly plays a card to a random valid location until it has 3 or fewer cards, then passes.
+4. Include a mock deck of 15 unique cards with distinct Power values and simple text effects (e.g., "On Reveal: Give adjacent cards +1 Power").
+5. Create distinct visual states for "Selecting Card", "Selecting Location", "Waiting for Opponent", and "Round End".

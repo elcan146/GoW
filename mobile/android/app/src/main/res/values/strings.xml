@@ -1,0 +1,4 @@
+<resources>
+  <string name="app_name">Grails of War</string>
+  <string name="expo_navigation_bar_legacy_visible" translatable="false">sticky-immersive</string>
+</resources>

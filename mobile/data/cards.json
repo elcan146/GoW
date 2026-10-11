@@ -1,0 +1,3211 @@
+{
+  "cards": [
+    {
+      "id": "0001",
+      "name": "Maneater",
+      "power": 5,
+      "faction": "monster",
+      "rarity": "forbidden",
+      "kind": "chaos",
+      "text": "Chaos (2 turns): Burn chance = (5 / Side Total) * 100.",
+      "art": "/cards/0001.png",
+      "effect": {
+        "type": "chaos",
+        "turns": 2
+      },
+      "background": "A terrifying entity draped in tattered, shadow-woven shrouds, the Maneater is a parasitic nightmare that consumes both the flesh and the identities of its prey. It wraps its numerous hands around a broken man, absorbing his final, despairing thoughts as it pulls him entirely into the dark void of its cloak."
+    },
+    {
+      "id": "0002",
+      "name": "Velvetblood",
+      "power": 2,
+      "faction": "unknown",
+      "rarity": "mortal",
+      "kind": "spy",
+      "text": "Spy: Play on enemy side. Draw 1 card, steal 1 from their deck.",
+      "art": "/cards/0002.png",
+      "effect": {
+        "type": "spyDrawSteal",
+        "count": 1
+      },
+      "background": "A lethal scout and tracker for the Horde of the Carrion, Velvetblood moves silently through the damp, moss-grown forests. Clad in dark, weathered leathers with a hood pulled low, she draws her bow with practiced precision, accompanied by her ominous raven familiars that scout the paths ahead for fresh plunder."
+    },
+    {
+      "id": "0003",
+      "name": "Calystria",
+      "power": 3,
+      "faction": "elarion",
+      "rarity": "arcane",
+      "kind": "onReveal",
+      "text": "On Reveal: Destroy the highest enemy card here if their total is > 10.",
+      "art": "/cards/0003.png",
+      "effect": {
+        "type": "destroyHighestIfTotal",
+        "threshold": 10
+      },
+      "background": "A high-ranking arbiter and mystic of the Elarion Empire, Calystria wears gleaming steel plate armor and a royal crown. Blindfolded to symbolize impartial, divine justice, she wields the scales of judgment in one hand while summoning pure, radiant cosmic energy in the other to pass absolute judgment upon her foes."
+    },
+    {
+      "id": "0004",
+      "name": "Pothead",
+      "power": 1,
+      "faction": "unknown",
+      "rarity": "mortal",
+      "kind": "medic",
+      "text": "Medic: Resurrect a destroyed or discarded non-Hero card to this location.",
+      "art": "/cards/0004.png",
+      "effect": {
+        "type": "resurrect"
+      },
+      "background": "An aged, ragged alchemist and herbalist serving the Horde, Pothead is known across the war camps for brewing foul concoctions and volatile potions. Surrounded by glowing-eyed ravens under the moonlight, he carries vials of strange liquids strapped to his frame, extracting dark secrets from the ruins."
+    },
+    {
+      "id": "0005",
+      "name": "Ancient Chitterswarm",
+      "power": 8,
+      "faction": "monster",
+      "rarity": "mythic",
+      "kind": "none",
+      "text": "No Ability.",
+      "art": "/cards/0005.png",
+      "effect": {
+        "type": "none"
+      },
+      "background": "A colossal, bat-like monstrosity of ancient lineage, the Chitterswarm descends from the high clouds on tattered, blood-red wings. Exhibiting rows of jagged, dripping fangs and rabid yellow eyes, it hunts solitary travelers and vanguard scouts, plunging dark forests into terror."
+    },
+    {
+      "id": "0006",
+      "name": "Vaelthar",
+      "power": 12,
+      "faction": "monster",
+      "rarity": "mythic",
+      "kind": "chaos",
+      "text": "Chaos (1 turn): Burn chance = (12 / Side Total) * 100.",
+      "art": "/cards/0006.png",
+      "effect": {
+        "type": "chaos",
+        "turns": 1
+      },
+      "background": "An apocalyptic dragon of pure, scorching magma, Vaelthar represents total devastation. Its scales burn with internal fire, and its colossal weight shatters ancient barriers as it unleashes torrents of flame upon armies foolish enough to stand in its path."
+    },
+    {
+      "id": "0007",
+      "name": "Anastasia",
+      "power": 4,
+      "faction": "unknown",
+      "rarity": "arcane",
+      "kind": "onReveal",
+      "text": "On Reveal: Give all enemy cards at this location -1 Power.",
+      "art": "/cards/0007.png",
+      "effect": {
+        "type": "debuffAllEnemies",
+        "amount": 1
+      },
+      "background": "A battle-scarred and fiercely powerful tempest-mage within the Horde, Anastasia bears the physical trauma of past magical blowback, with jagged scars running across her face. Leaping through shattered earth, she channels wild, crackling yellow lightning from both hands, turning battlefields into electric craters."
+    },
+    {
+      "id": "0008",
+      "name": "Thaldrak",
+      "power": 3,
+      "faction": "unknown",
+      "rarity": "arcane",
+      "kind": "move",
+      "text": "Move: Move one of your cards from another location to this one.",
+      "art": "/cards/0008.png",
+      "effect": {
+        "type": "pullFriendly"
+      },
+      "background": "A wandering mystic of mysterious origin, Thaldrak hides his face beneath a heavy traveling hood while carrying an ornate staff topped with a glowing sphere. He moves through dimensional gateways woven from fire and autumn leaves, pursuing a solitary goal known only to himself."
+    },
+    {
+      "id": "0009",
+      "name": "Elowyn",
+      "power": 5,
+      "faction": "unknown",
+      "rarity": "arcane",
+      "kind": "ongoing",
+      "text": "Ongoing: Adjacent locations have +1 Power.",
+      "art": "/cards/0009.png",
+      "effect": {
+        "type": "auraAdjacent",
+        "amount": 1
+      },
+      "background": "A formidable warrior-mage caught in the middle of a violent thunderstorm, Elowyn harnesses raw atmospheric energy. Clad in combat gear adorned with runes, she sprints across hostile terrain, shielding herself with concentrated plasma arcs while lightning splits the sky behind her."
+    },
+    {
+      "id": "0010",
+      "name": "Malveris",
+      "power": 9,
+      "faction": "monster",
+      "rarity": "mythic",
+      "kind": "none",
+      "text": "No Ability.",
+      "art": "/cards/0010.png",
+      "effect": {
+        "type": "none"
+      },
+      "background": "A majestic yet fearsome green-scaled dragon with membranous red wings, Malveris patrols the open skies above vast river valleys. Unlike ground-dwelling beasts, this territorial flyer surveys the lands below with a sharp predator's gaze, guarding its aerial dominion from all intruders."
+    },
+    {
+      "id": "0011",
+      "name": "Thalindra",
+      "power": 4,
+      "faction": "elarion",
+      "rarity": "arcane",
+      "kind": "ongoing",
+      "text": "Ongoing: Elarion Empire cards at this location get +2 Power.",
+      "art": "/cards/0011.png",
+      "effect": {
+        "type": "auraFactionHere",
+        "faction": "elarion",
+        "amount": 2
+      },
+      "background": "A beacon of radiant light and unwavering faith, Thalindra is a high paladin of the Elarion Empire. Clad in ancient, sanctified gold armor, she clutches her greatsword and looks upward in a moment of divine communion, channeling the celestial energy that bursts forth around her as she prepares to smite the enemies of the empire."
+    },
+    {
+      "id": "0012",
+      "name": "Vyrnoth",
+      "power": 6,
+      "faction": "monster",
+      "rarity": "forbidden",
+      "kind": "chaos",
+      "text": "Chaos (3 turns): Burn chance = (6 / Side Total) * 100.",
+      "art": "/cards/0012.png",
+      "effect": {
+        "type": "chaos",
+        "turns": 3
+      },
+      "background": "An ancient, skeletal dragon, Vyrnoth is a haunting silhouette against a storm-ridden sky. Perched upon a desolate, rocky peak, it stands watch over a landscape of scorched, jagged trees and dying fires. Its empty eye sockets burn with a cold, malevolent intelligence, and its tattered wings crackle with residual necrotic energy."
+    },
+    {
+      "id": "0013",
+      "name": "Odran Dreadmoor",
+      "power": 2,
+      "faction": "hotc",
+      "rarity": "cursed",
+      "kind": "muster",
+      "text": "Muster: Play all \"Odran Dreadmoor\" cards from your deck here instantly.",
+      "art": "/cards/0013.png",
+      "effect": {
+        "type": "muster"
+      },
+      "background": "A sinister cultist and master of hounds for the Horde, Odran Dreadmoor maintains order through fear. Shirtless and covered in complex, dark sigils, he stands in a dilapidated barn, smiling cruelly as he holds back three snarling, muscular pitbulls on a thick leather leash. He controls his beasts through a twisted magical connection."
+    },
+    {
+      "id": "0014",
+      "name": "Zevrak",
+      "power": 3,
+      "faction": "unknown",
+      "rarity": "forbidden",
+      "kind": "onReveal",
+      "text": "On Reveal: Remove abilities from all Ongoing cards at this location.",
+      "art": "/cards/0014.png",
+      "effect": {
+        "type": "silenceOngoingHere"
+      },
+      "background": "An enigmatic and powerful archmage, Zevrak commands both the forces of destruction and submission. Clad in ornate black and gold robes and a protective mask, he stands on a stone platform within an icy cave. He holds a burning staff, looking down upon two kneeling, hulking demon thralls whose backs are cracked with molten lava fissures."
+    },
+    {
+      "id": "0015",
+      "name": "Drusilla",
+      "power": 2,
+      "faction": "unknown",
+      "rarity": "mythic",
+      "kind": "ongoing",
+      "text": "Ongoing: Cards played here are not revealed until the game ends.",
+      "art": "/cards/0015.png",
+      "effect": {
+        "type": "hideCards"
+      },
+      "background": "A spectral sorceress of profound sorrow and dark power, Drusilla drifts ethereally between realms. Appearing as a pale woman in an ornate, tattered black lace gown and a crown of dark flora, she clutches a single, dying purple rose. She is surrounded by a violent vortex of disintegrating black and purple petals that shatter reality as she passes."
+    },
+    {
+      "id": "0016",
+      "name": "Skull of Xyveron",
+      "power": 1,
+      "faction": "monster",
+      "rarity": "relic",
+      "kind": "ongoing",
+      "text": "Ongoing: Your other Ongoing abilities at this location trigger twice.",
+      "art": "/cards/0016.png",
+      "effect": {
+        "type": "doubleAuras"
+      },
+      "background": "An ancient, sentient artifact of necromancy, the Skull of Xyveron floats in a dark, rain-soaked ruin. It possesses a malevolent consciousness, glowing with an intense blue-green spectral flame and crackling with runic magic. It hovers just above the ground, illuminating the wet cobblestones with its eerie light as it seeks to enthrall the living."
+    },
+    {
+      "id": "0017",
+      "name": "Rhazakar",
+      "power": 10,
+      "faction": "monster",
+      "rarity": "divine",
+      "kind": "chaos",
+      "text": "Chaos (2 turns): Burn chance = (10 / Side Total) * 100.",
+      "art": "/cards/0017.png",
+      "effect": {
+        "type": "chaos",
+        "turns": 2
+      },
+      "background": "The Eye of Rhazakar is a gateway to an ancient, primordial terror. A colossal, scaled reptilian eye with a slitted golden pupil sits imprisoned behind jagged stone slabs etched with glowing red runes. The runes pulse with volatile volcanic energy, hinting at the immense, fiery entity trapped within that is slowly breaking its seal."
+    },
+    {
+      "id": "0018",
+      "name": "An unseen ranger",
+      "power": 7,
+      "faction": "unknown",
+      "rarity": "mortal",
+      "kind": "none",
+      "text": "No Ability.",
+      "art": "/cards/0018.png",
+      "effect": {
+        "type": "none"
+      },
+      "background": "A weary, pragmatic scout for a human kingdom, this unnamed ranger serves as a frontline guide in the cursed forests. Clad in a green tunic, leather brigandine, and a steel kettle helmet, he draws his bow, scanning the misty, twisted trees while a flock of ravens takes flight above, signaling unseen movement in the woods."
+    },
+    {
+      "id": "0019",
+      "name": "Nightfang",
+      "power": 3,
+      "faction": "monster",
+      "rarity": "cursed",
+      "kind": "muster",
+      "text": "Muster: Play all \"Nightfang\" cards from your deck here instantly.",
+      "art": "/cards/0019.png",
+      "effect": {
+        "type": "muster"
+      },
+      "background": "Nightfang is an apex predator of the frozen north, a monstrous, black-furred wolf driven by a primal rage. His eyes glow with a haunting yellow light, and drool freezes in his open, fanged maw as he charges through a blizzard. The three arrows deeply embedded in his shoulder only fuel his relentless, furious assault."
+    },
+    {
+      "id": "0020",
+      "name": "Carcasses of Hell",
+      "power": 4,
+      "faction": "monster",
+      "rarity": "forbidden",
+      "kind": "chaos",
+      "text": "Chaos (4 turns): Burn chance = (4 / Side Total) * 100.",
+      "art": "/cards/0020.png",
+      "effect": {
+        "type": "chaos",
+        "turns": 4
+      },
+      "background": "An eternal, writhing congregation of charred skeletal remains trapped within the blistering heart of a hellish inferno. These damned, reanimated bones claw desperately at the air and smoke, cursed to burn endlessly while dragging any unfortunate soul who wanders too close into the roaring flames with them."
+    },
+    {
+      "id": "0021",
+      "name": "Rhaedric Ironmourne",
+      "power": 9,
+      "faction": "elderveld",
+      "rarity": "mortal",
+      "kind": "none",
+      "text": "No Ability.",
+      "art": "/cards/0021.png",
+      "effect": {
+        "type": "none"
+      },
+      "background": "A commanding, fierce veteran lord of Elderveld, Rhaedric leads his heavy cavalry charges from the front lines. With his bald head, scarred visage, and broadsword held high, he rides a heavily armored warhorse past the stone ramparts of the realm's bastions, rallying his knights to defend their ancestral lands."
+    },
+    {
+      "id": "0022",
+      "name": "Mage Morgana",
+      "power": 4,
+      "faction": "unknown",
+      "rarity": "arcane",
+      "kind": "onReveal",
+      "text": "On Reveal: Repeat the On Reveal abilities of your other cards here.",
+      "art": "/cards/0022.png",
+      "effect": {
+        "type": "repeatOnReveal"
+      },
+      "background": "A volatile and tempestuous spellcaster, Morgana stands atop a jagged mountain precipice amid a gathering thunderstorm. Her hands crackle with high-voltage lightning while she simultaneously conjures and commands a swirling, luminous vortex of spirit-butterflies, channeling raw atmospheric chaos."
+    },
+    {
+      "id": "0023",
+      "name": "Mage Lyssandra",
+      "power": 3,
+      "faction": "unknown",
+      "rarity": "arcane",
+      "kind": "ongoing",
+      "text": "Ongoing: Protects your cards at this location from being destroyed.",
+      "art": "/cards/0023.png",
+      "effect": {
+        "type": "protect"
+      },
+      "background": "A master defensive battle-mage caught in the middle of a brutal military siege. Clad in elegant blue-and-white robes adorned with a crimson sash, Lyssandra projects a powerful kinetic force-shield from her palm, violently repelling charging enemy soldiers and sending them flying backward through the debris."
+    },
+    {
+      "id": "0024",
+      "name": "Ysolde Blackshield",
+      "power": 8,
+      "faction": "elderveld",
+      "rarity": "mortal",
+      "kind": "none",
+      "text": "No Ability.",
+      "art": "/cards/0024.png",
+      "effect": {
+        "type": "none"
+      },
+      "background": "A hardened, blood-splattered infantry officer of Elderveld fighting in the muddy trenches of a relentless war. Wearing studded leather armor over mail and bearing the physical scars of fierce skirmishes, she drives her shortsword downward with grim, absolute finality to finish a fallen adversary."
+    },
+    {
+      "id": "0025",
+      "name": "Orvax the Troll",
+      "power": 10,
+      "faction": "monster",
+      "rarity": "cursed",
+      "kind": "none",
+      "text": "No Ability.",
+      "art": "/cards/0025.png",
+      "effect": {
+        "type": "none"
+      },
+      "background": "A colossal, moss-grown mountain troll who terrorizes the wooded borders of Elderveld. Encased in natural stone plating and dragging a mutilated imperial soldier behind him like a broken toy, Orvax stalks through the autumn leaves past shattered supply carts and discarded shields."
+    },
+    {
+      "id": "0026",
+      "name": "Hochreich Frontline",
+      "power": 4,
+      "faction": "hochreich",
+      "rarity": "mortal",
+      "kind": "factionBond",
+      "text": "Faction Bond: Power doubles if another Hochreich card is here.",
+      "art": "/cards/0026.png",
+      "effect": {
+        "type": "factionBond"
+      },
+      "background": "A disciplined and battle-hardened frontline regiment of the Hochreich military. Led by a fiercely shouting veteran captain sporting a plumed helmet and distinctive orange-and-silver tabards, these infantrymen advance through muddy terrain with leveled spears and drawn swords to hold the line against invading forces."
+    },
+    {
+      "id": "0027",
+      "name": "Ravaria Frontline",
+      "power": 4,
+      "faction": "ravaria",
+      "rarity": "mortal",
+      "kind": "factionBond",
+      "text": "Faction Bond: Power doubles if another Ravaria card is here.",
+      "art": "/cards/0027.png",
+      "effect": {
+        "type": "factionBond"
+      },
+      "background": "The elite heavy cavalry vanguard of Ravaria, renowned for their thunderous charges across contested plains. Clad in gleaming full plate armor and bearing red-and-white shields emblazoned with the realm's iconic eagle crests, these mounted knights surge forward past distant stone keeps to shatter enemy formations."
+    },
+    {
+      "id": "0028",
+      "name": "Tavric",
+      "power": 7,
+      "faction": "hotc",
+      "rarity": "mortal",
+      "kind": "none",
+      "text": "No Ability.",
+      "art": "/cards/0028.png",
+      "effect": {
+        "type": "none"
+      },
+      "background": "A scarred, no-nonsense mercenary fighter serving within the ranks of the Horde of the Carrion. With a blood-streaked brow and a shaved head, Tavric stands his ground amid the smoke and ruin of a chaotic battlefield, gripping a two-handed sword with cold, lethal focus as skirmishes rage around him."
+    },
+    {
+      "id": "0029",
+      "name": "Nythrak",
+      "power": 5,
+      "faction": "kalthrone",
+      "rarity": "forbidden",
+      "kind": "onReveal",
+      "text": "On Reveal: Destroy the lowest-power enemy card here.",
+      "art": "/cards/0029.png",
+      "effect": {
+        "type": "destroyLowest"
+      },
+      "background": "An apocalyptic death-knight warlord of Kalthrone, Nythrak rides a skeletal nightmare stallion through a freezing, moonlit forest. Clad in jagged, dark iron armor and crowned with spikes, he wields a frost-rimed runeblade while glowing crimson eyes pierce the winter darkness, heralding an unstoppable wave of doom."
+    },
+    {
+      "id": "0030",
+      "name": "Xaltheron",
+      "power": 8,
+      "faction": "kalthrone",
+      "rarity": "cursed",
+      "kind": "none",
+      "text": "No Ability.",
+      "art": "/cards/0030.png",
+      "effect": {
+        "type": "none"
+      },
+      "background": "A terrifying vanguard champion of Kalthrone, Xaltheron wears heavy, battle-scarred dark steel armor etched with a skeletal ribcage design. Amidst the chaos of a burning siege, he raises a heavy, blood-stained executioner's axe high above his head to ruthlessly crush a cornered enemy defender."
+    },
+    {
+      "id": "0031",
+      "name": "Ash Ghouls",
+      "power": 2,
+      "faction": "monster",
+      "rarity": "cursed",
+      "kind": "muster",
+      "text": "Muster: Play all \"Ash Ghouls\" cards from your deck here instantly.",
+      "art": "/cards/0031.png",
+      "effect": {
+        "type": "muster"
+      },
+      "background": "A pack of volatile shadow-fiends born from the ashes of torched woodlands. These humanoid entities are composed of swirling dark smoke and smoldering embers, rushing relentlessly on four limbs through twisted winter trees with burning orange cores and razor-sharp claws."
+    },
+    {
+      "id": "0032",
+      "name": "Maldrith",
+      "power": 2,
+      "faction": "kalthrone",
+      "rarity": "forbidden",
+      "kind": "medic",
+      "text": "Medic: Resurrect a destroyed non-Hero card to this location.",
+      "art": "/cards/0032.png",
+      "effect": {
+        "type": "resurrect"
+      },
+      "background": "A necromancer warlord of chilling power within Kalthrone, Maldrith strides across a snowy battlefield littered with fallen soldiers. Clad in ornate, spike-adorned dark steel armor and crowned with a spiked iron halo, he wields a staff topped with a blazing orb of yellow fire, commanding the frozen wastes with glowing blue eyes."
+    },
+    {
+      "id": "0033",
+      "name": "Mosskin",
+      "power": 1,
+      "faction": "unknown",
+      "rarity": "arcane",
+      "kind": "ongoing",
+      "text": "Ongoing: +1 Power to all other cards in this location.",
+      "art": "/cards/0033.png",
+      "effect": {
+        "type": "auraAllHere",
+        "amount": 1
+      },
+      "background": "A peaceful nature spirit found deep within an enchanted autumnal forest. A faun maiden with delicate horns and rustic lower legs sits gracefully on a mossy log, playing a tranquil melody on a wooden flute while a tattooed human companion rests his head against her lap, finding brief solace far away from the wars of the realm."
+    },
+    {
+      "id": "0034",
+      "name": "Bloatspider",
+      "power": 6,
+      "faction": "monster",
+      "rarity": "cursed",
+      "kind": "none",
+      "text": "No Ability.",
+      "art": "/cards/0034.png",
+      "effect": {
+        "type": "none"
+      },
+      "background": "A grotesque insectoid monstrosity native to overgrown forest trails, the Bloatspider guards its territory with violent malice. Armed with spiked chitinous armor, multiple eyes, and a gaping maw filled with dripping fangs, it bursts from the ferns, having just upended an unsuspecting traveler's mushroom basket."
+    },
+    {
+      "id": "0035",
+      "name": "Vulkas the Lion",
+      "power": 7,
+      "faction": "monster",
+      "rarity": "mythic",
+      "kind": "chaos",
+      "text": "Chaos (3 turns): Burn chance = (7 / Side Total) * 100.",
+      "art": "/cards/0035.png",
+      "effect": {
+        "type": "chaos",
+        "turns": 3
+      },
+      "background": "A ferocious hybrid predator soaring across a twilight sky, Vulkas combines the features of a majestic lion with draconic scales, horns, and tattered membranous wings. It breathes a torrent of searing orange flame down onto the dark pine forests below, turning the evening air into a furnace."
+    },
+    {
+      "id": "0036",
+      "name": "Icemaw the Giant",
+      "power": 11,
+      "faction": "monster",
+      "rarity": "mythic",
+      "kind": "none",
+      "text": "No Ability.",
+      "art": "/cards/0036.png",
+      "effect": {
+        "type": "none"
+      },
+      "background": "A massive, blue-skinned frost giant roaming the high, blizzard-swept mountain peaks. Adorned with bone necklaces and heavy pelts, he roars in primal fury while gripping a massive club fashioned from a beast's femur, relentlessly chasing fleeing scouts through deep snowdrifts."
+    },
+    {
+      "id": "0037",
+      "name": "Undead Kalth. Soldier",
+      "power": 3,
+      "faction": "kalthrone",
+      "rarity": "cursed",
+      "kind": "muster",
+      "text": "Muster: Play all \"Undead Kalthrone Soldier\" cards from your deck.",
+      "art": "/cards/0037.png",
+      "effect": {
+        "type": "muster"
+      },
+      "background": "An agile undead warrior of Kalthrone bursting out from a magical barrier of shattering blue ice. Clad in spiked iron armor with glowing cyan oculars, this frozen executioner leaps through a subterranean crypt, brandishing a wicked, double-bitted poleaxe to ambush any intruders."
+    },
+    {
+      "id": "0038",
+      "name": "Vorthak",
+      "power": 9,
+      "faction": "monster",
+      "rarity": "mythic",
+      "kind": "chaos",
+      "text": "Chaos (1 turn): Burn chance = (9 / Side Total) * 100.",
+      "art": "/cards/0038.png",
+      "effect": {
+        "type": "chaos",
+        "turns": 1
+      },
+      "background": "A fierce, agile dragon with charcoal-black scales and glowing underbellies that reflect the sunset. Swooping low over a dense evergreen canopy, Vorthak prepares to unleash a wave of intense fire from its jaws, scanning the earth below for any moving target."
+    },
+    {
+      "id": "0039",
+      "name": "Lizard Drok",
+      "power": 6,
+      "faction": "unknown",
+      "rarity": "mortal",
+      "kind": "none",
+      "text": "No Ability.",
+      "art": "/cards/0039.png",
+      "effect": {
+        "type": "none"
+      },
+      "background": "A reptilian humanoid warrior native to the high, snow-dusted mountain ridges. Clad in a leather harness, shoulder guard, and iron bracers, this cold-resistant predator stands poised on a snowy precipice, its yellow-scaled maw open wide in a sharp, menacing hiss against the stormy mountain backdrop."
+    },
+    {
+      "id": "0040",
+      "name": "Kalthrone Horde",
+      "power": 4,
+      "faction": "kalthrone",
+      "rarity": "cursed",
+      "kind": "factionBond",
+      "text": "Faction Bond: Power doubles if another Kalthrone card is here.",
+      "art": "/cards/0040.png",
+      "effect": {
+        "type": "factionBond"
+      },
+      "background": "An apocalyptic vanguard legion of the Kalthrone Horde marching through a desolate, freezing winter landscape. Led by a towering, horned dread-knight clad in rusted, skeletal plate armor and bearing a ragged banner of bones, this unstoppable undead army advances past burning ruins to claim the realm."
+    },
+    {
+      "id": "0041",
+      "name": "Thessa",
+      "power": 7,
+      "faction": "elderveld",
+      "rarity": "mortal",
+      "kind": "none",
+      "text": "No Ability.",
+      "art": "/cards/0041.png",
+      "effect": {
+        "type": "none"
+      },
+      "background": "A fierce and battle-hardened warrior woman of Elderveld, Thessa fights on the muddy frontline of a violent siege. Wearing a steel helmet with a flowing black crest and plate-reinforced armor, she grips a blood-stained battleaxe and a shield, holding her ground against opposing infantry."
+    },
+    {
+      "id": "0042",
+      "name": "Ash Ghouls",
+      "power": 2,
+      "faction": "monster",
+      "rarity": "cursed",
+      "kind": "muster",
+      "text": "Muster: Play all \"Ash Ghouls\" cards from your deck here instantly.",
+      "art": "/cards/0042.png",
+      "effect": {
+        "type": "muster"
+      },
+      "background": "A pack of volatile shadow-fiends born from the ashes of torched woodlands. These humanoid entities are composed of swirling dark smoke and smoldering embers, rushing relentlessly on four limbs through twisted winter trees with burning orange cores and razor-sharp claws."
+    },
+    {
+      "id": "0043",
+      "name": "Katerina",
+      "power": 3,
+      "faction": "ravaria",
+      "rarity": "arcane",
+      "kind": "ongoing",
+      "text": "Ongoing: Steal the text from a random enemy Ongoing card here.",
+      "art": "/cards/0043.png",
+      "effect": {
+        "type": "stealOngoing"
+      },
+      "background": "A powerful and calculating noble sorceress of Ravaria, Katerina stands amidst the ancient, ivy-covered ruins of a stone fortress. Wearing an opulent crimson dress and a golden crown, she calmly commands a swarm of glowing green spirit-snakes that coil protectively around her."
+    },
+    {
+      "id": "0044",
+      "name": "Zorgrim",
+      "power": 12,
+      "faction": "monster",
+      "rarity": "mythic",
+      "kind": "chaos",
+      "text": "Chaos (1 turn): Burn chance = (12 / Side Total) * 100.",
+      "art": "/cards/0044.png",
+      "effect": {
+        "type": "chaos",
+        "turns": 1
+      },
+      "background": "A colossal, white-scaled ancient dragon known as a fortress-breaker, Zorgrim lays waste to mountain strongholds. Rearing up against a sunset sky, the massive beast casually shatters a stone watchtower with its crushing claws, roaring triumphantly as debris and defenders scatter."
+    },
+    {
+      "id": "0045",
+      "name": "Cheapy",
+      "power": 1,
+      "faction": "unknown",
+      "rarity": "mortal",
+      "kind": "spy",
+      "text": "Spy: Play on enemy side. Copy the last card they played into your hand.",
+      "art": "/cards/0045.png",
+      "effect": {
+        "type": "spyCopyLast"
+      },
+      "background": "A nimble and cunning rogue operating out of a shadowy forest encampment. Crouched alertly atop a stack of wooden supply crates near a glowing campfire, she looks back over her shoulder with a playful smirk while casually spinning a throwing dagger in her hand."
+    },
+    {
+      "id": "0046",
+      "name": "Werewolf",
+      "power": 3,
+      "faction": "monster",
+      "rarity": "cursed",
+      "kind": "muster",
+      "text": "Muster: Play all \"Werewolf\" cards from your deck here instantly.",
+      "art": "/cards/0046.png",
+      "effect": {
+        "type": "muster"
+      },
+      "background": "An apex lycanthropic predator of the deep, misty pinewoods. The massive, muscular beast presses its clawed hand against a thick, mossy tree trunk, baring its razor-sharp teeth and glaring with fierce, amber eyes as it stalks unseen travelers through the fog."
+    },
+    {
+      "id": "0047",
+      "name": "Bear",
+      "power": 8,
+      "faction": "hotc",
+      "rarity": "mortal",
+      "kind": "none",
+      "text": "No Ability.",
+      "art": "/cards/0047.png",
+      "effect": {
+        "type": "none"
+      },
+      "background": "A savage berserker champion fighting within the Horde of the Carrion. Wearing the skull and pelt of a dire bear over his scarred, tattooed body, he wades waist-deep into a muddy forest skirmish, swinging a battleaxe and brandishing a round shield while fending off snapping goblins."
+    },
+    {
+      "id": "0048",
+      "name": "Sgt. Drustan Nightscar",
+      "power": 6,
+      "faction": "elderveld",
+      "rarity": "mortal",
+      "kind": "ongoing",
+      "text": "Ongoing: Your cards with No Ability at this location have +2 Power.",
+      "art": "/cards/0048.png",
+      "effect": {
+        "type": "auraKindHere",
+        "kind": "none",
+        "amount": 2
+      },
+      "background": "A weathered and indomitable frontline sergeant of Elderveld, Drustan leads his men through a brutal, rain-soaked melee in the shadow of mountain peaks. Clad in dented steel armor and bearing a lion-crested shield, he screams a battle cry while raising a bloodied hand axe to strike down an enemy combatant."
+    },
+    {
+      "id": "0049",
+      "name": "General Eldran",
+      "power": 5,
+      "faction": "elarion",
+      "rarity": "mortal",
+      "kind": "ongoing",
+      "text": "Ongoing: Your other Ongoing cards at this location have +2 Power.",
+      "art": "/cards/0049.png",
+      "effect": {
+        "type": "auraKindHere",
+        "kind": "ongoing",
+        "amount": 2
+      },
+      "background": "A legendary, high-ranking general of the Elarion Empire, Eldran stands proudly upon a snowy mountain precipice overlooking distant imperial spires. Clad in ornate, gold-engraved plate armor adorned with majestic stag antlers and holding a massive, finely-crafted broadsword, he embodies the unyielding majesty and strength of his empire."
+    },
+    {
+      "id": "0050",
+      "name": "Soul Whale",
+      "power": 4,
+      "faction": "monster",
+      "rarity": "mythic",
+      "kind": "move",
+      "text": "Move: Can move to an adjacent location once per game.",
+      "art": "/cards/0050.png",
+      "effect": {
+        "type": "moveOnceAdjacent"
+      },
+      "background": "A majestic, ethereal leviathan drifting through the subterranean abyss of deep crystal caverns. Glowing with a soft celestial light and surrounded by floating stardust, this mystical entity glides silently over dark chasms and stalagmites as a lone traveler looks on in awe."
+    },
+    {
+      "id": "0051",
+      "name": "Tharic",
+      "power": 4,
+      "faction": "hotc",
+      "rarity": "arcane",
+      "kind": "onReveal",
+      "text": "On Reveal: Destroy a random enemy card at this location.",
+      "art": "/cards/0051.png",
+      "effect": {
+        "type": "destroyRandom"
+      },
+      "background": "A sadistic pyromancer and torturer within the Horde of the Carrion. With long dark hair and a cruel, scarred smirk, Tharic uses his blazing touch to immolate an enemy knight in full armor outside a burning fortress, taking sadistic pleasure in the chaos."
+    },
+    {
+      "id": "0052",
+      "name": "Princess Corvella",
+      "power": 2,
+      "faction": "elderveld",
+      "rarity": "mortal",
+      "kind": "medic",
+      "text": "Medic: Resurrect a non-Hero card to this location.",
+      "art": "/cards/0052.png",
+      "effect": {
+        "type": "resurrect"
+      },
+      "background": "The poised and elegant royal heir of Elderveld, resting within her castle hall. Adorned in a rich blue and white velvet gown, an ermine-trimmed crimson cloak, and a golden crown, she holds a jeweled scepter while an advisor's hand rests reassuringly upon her shoulder."
+    },
+    {
+      "id": "0053",
+      "name": "Ser Mstislav Volkhvich",
+      "power": 8,
+      "faction": "ravaria",
+      "rarity": "mortal",
+      "kind": "none",
+      "text": "No Ability.",
+      "art": "/cards/0053.png",
+      "effect": {
+        "type": "none"
+      },
+      "background": "A high knight-commander of Ravaria on a solemn patrol through a gloomy, twisted forest. Clad in dark, ornate plate armor with winged helm and a flowing crimson cape, he bears the realm's banner on horseback while keeping his broadsword ready for unseen threats."
+    },
+    {
+      "id": "0054",
+      "name": "Magma Titan",
+      "power": 10,
+      "faction": "monster",
+      "rarity": "mythic",
+      "kind": "none",
+      "text": "No Ability.",
+      "art": "/cards/0054.png",
+      "effect": {
+        "type": "none"
+      },
+      "background": "A colossal elemental terror forged from molten rock and living fire. Towering over a volcanic wasteland of lava rivers and erupting peaks, the Titan's body is split by glowing fissures of intense heat as it flexes its heavy, destructive stone claws."
+    },
+    {
+      "id": "0055",
+      "name": "Undead Kalth. Soldier",
+      "power": 3,
+      "faction": "kalthrone",
+      "rarity": "cursed",
+      "kind": "muster",
+      "text": "Muster: Play all \"Undead Kalthrone Soldier\" cards from your deck.",
+      "art": "/cards/0055.png",
+      "effect": {
+        "type": "muster"
+      },
+      "background": "A reanimated foot soldier of Kalthrone stepping through a shimmering dimensional portal within a ruined fortress. Clad in spiked iron armor and a helm over its skull, this spectral-touched warrior wields a spiked mace and shield, backed by phantom hands reaching from the void."
+    },
+    {
+      "id": "0056",
+      "name": "Cinderteeth",
+      "power": 7,
+      "faction": "hotc",
+      "rarity": "mortal",
+      "kind": "none",
+      "text": "No Ability.",
+      "art": "/cards/0056.png",
+      "effect": {
+        "type": "none"
+      },
+      "background": "A ferocious berserker champion of the Horde, known for his unbridled rage on the battlefield. Bare-chested with tribal tattoos, braided red hair, and a bear-fur pelt, Cinderteeth leaps through the smoke and fire of a destroyed settlement, swinging a massive, rune-etched battleaxe."
+    },
+    {
+      "id": "0057",
+      "name": "Ulyana",
+      "power": 3,
+      "faction": "unknown",
+      "rarity": "arcane",
+      "kind": "onReveal",
+      "text": "On Reveal: Draw a card from your deck.",
+      "art": "/cards/0057.png",
+      "effect": {
+        "type": "draw",
+        "count": 1
+      },
+      "background": "A studious young scholar and aspiring spellcaster relaxing in a cozy, book-lined library. Seated comfortably in a red armchair with a warm fireplace nearby, she watches as an intricate ribbon of glowing blue magic gracefully rises from the pages of her open tome."
+    },
+    {
+      "id": "0058",
+      "name": "Varyena",
+      "power": 2,
+      "faction": "unknown",
+      "rarity": "arcane",
+      "kind": "ongoing",
+      "text": "Ongoing: Enemy cards played here lose 1 Power.",
+      "art": "/cards/0058.png",
+      "effect": {
+        "type": "debuffOnEnemyPlay",
+        "amount": 1
+      },
+      "background": "An enigmatic, mystical fae entity drifting through the foggy ruins of an ancient courtyard. With translucent, golden-glowing butterfly wings and a blindfold over her eyes, she weaves streams of magical stardust and light through the air with elegant gestures."
+    },
+    {
+      "id": "0059",
+      "name": "Sweetboy the Giant",
+      "power": 11,
+      "faction": "monster",
+      "rarity": "mythic",
+      "kind": "none",
+      "text": "No Ability.",
+      "art": "/cards/0059.png",
+      "effect": {
+        "type": "none"
+      },
+      "background": "Despite his ironic moniker, Sweetboy is a towering, brutal brute of the wilderness. Gripping a massive spiked club, he looms menacingly over a fully-armored knight in a mountain pass, casting a giant shadow across the landscape as a ruined castle crumbles in the background."
+    },
+    {
+      "id": "0060",
+      "name": "Soulroot",
+      "power": 5,
+      "faction": "monster",
+      "rarity": "cursed",
+      "kind": "chaos",
+      "text": "Chaos (4 turns): Burn chance = (5 / Side Total) * 100.",
+      "art": "/cards/0060.png",
+      "effect": {
+        "type": "chaos",
+        "turns": 4
+      },
+      "background": "A monstrous, carnivorous plant entity rooted in a dark, blighted valley. The Soulroot features a massive, gaping crimson maw dripping with digestive slime and a winding stem studded with glowing yellow pods that lure unsuspecting wanderers into its trap."
+    },
+    {
+      "id": "0061",
+      "name": "Travtin the Blades",
+      "power": 3,
+      "faction": "unknown",
+      "rarity": "mortal",
+      "kind": "spy",
+      "text": "Spy: Play on enemy side. Draw 2 cards.",
+      "art": "/cards/0061.png",
+      "effect": {
+        "type": "spyDraw",
+        "count": 2
+      },
+      "background": "An elite woodland scout and dual-wielding warrior. With intricate facial markings and braided hair, Travtin stands atop a moss-covered log in a misty forest, gripping a curved shortsword and a rune-carved shield while an ancient ruin looms in the background."
+    },
+    {
+      "id": "0062",
+      "name": "Foresterian Female",
+      "power": 4,
+      "faction": "unknown",
+      "rarity": "arcane",
+      "kind": "ongoing",
+      "text": "Ongoing: +1 Power for each card currently in your hand.",
+      "art": "/cards/0062.png",
+      "effect": {
+        "type": "selfPerHand",
+        "amount": 1
+      },
+      "background": "A lethal dryad archer blending seamlessly into the autumnal woodlands. Her body and hair are woven entirely from vines, leaves, and moss. Drawing a rustic wooden bow strung with living branches, she guards the forest canopy as golden and red leaves drift through the air."
+    },
+    {
+      "id": "0063",
+      "name": "Gormuth",
+      "power": 5,
+      "faction": "unknown",
+      "rarity": "forbidden",
+      "kind": "medic",
+      "text": "Medic: Resurrect an enemy's destroyed card to your side.",
+      "art": "/cards/0063.png",
+      "effect": {
+        "type": "resurrectEnemy"
+      },
+      "background": "A powerful vampire lord resting within his cavernous subterranean domain. Bald and pale with crimson-stained lips, Gormuth stands open-armed on a rocky ledge beneath a swarm of circling bats, wearing an ornate golden collar and a deep red crimson skirt."
+    },
+    {
+      "id": "0064",
+      "name": "Werewolf",
+      "power": 3,
+      "faction": "monster",
+      "rarity": "cursed",
+      "kind": "muster",
+      "text": "Muster: Play all \"Werewolf\" cards from your deck here instantly.",
+      "art": "/cards/0064.png",
+      "effect": {
+        "type": "muster"
+      },
+      "background": "A terrifying lycanthropic terror perched atop a high church spire under the glow of a crescent moon. Baring its fangs and glowing red eyes, this massive, smoky beast looms over a medieval village nestled in the mountain valley, casting fear into the hearts of the townsfolk."
+    },
+    {
+      "id": "0065",
+      "name": "Drakhar",
+      "power": 11,
+      "faction": "monster",
+      "rarity": "mythic",
+      "kind": "chaos",
+      "text": "Chaos (2 turns): Burn chance = (11 / Side Total) * 100.",
+      "art": "/cards/0065.png",
+      "effect": {
+        "type": "chaos",
+        "turns": 2
+      },
+      "background": "A fearsome black-scaled dragon of apocalyptic fury. Standing atop a scorched volcanic peak amidst a raging forest fire, Drakhar arches its spiked neck and tattered wings toward the smoke-filled sky, surveying the devastation left in its wake."
+    },
+    {
+      "id": "0066",
+      "name": "Prince Radomir",
+      "power": 6,
+      "faction": "ravaria",
+      "rarity": "mortal",
+      "kind": "factionBond",
+      "text": "Faction Bond: Power doubles if another Ravaria card is here.",
+      "art": "/cards/0066.png",
+      "effect": {
+        "type": "factionBond"
+      },
+      "background": "A resolute royal commander of Ravaria fighting on the front lines during a mystical event. Clad in durable chainmail, leather armor, and a flowing crimson cloak, Prince Radomir grips a broadsword defensively on a rocky cliffside beneath a dramatic solar eclipse and a sky choked with ominous ravens."
+    },
+    {
+      "id": "0067",
+      "name": "Swamp Vampire",
+      "power": 4,
+      "faction": "monster",
+      "rarity": "cursed",
+      "kind": "move",
+      "text": "Move: Move a random enemy card to another location.",
+      "art": "/cards/0067.png",
+      "effect": {
+        "type": "moveRandomEnemy"
+      },
+      "background": "A grotesque, feral vampire variant adapted to the decaying swamplands. Crouched menacingly on a mossy stone outcropping amid stagnant waters and gnarled trees, this muscular, bat-winged creature bares its razor-sharp teeth with glowing yellow eyes, hunting prey in the eternal fog."
+    },
+    {
+      "id": "0068",
+      "name": "Thief Marro",
+      "power": 2,
+      "faction": "unknown",
+      "rarity": "mortal",
+      "kind": "spy",
+      "text": "Spy: Play on enemy side. Draw 1 card, steal 1 from their deck.",
+      "art": "/cards/0068.png",
+      "effect": {
+        "type": "spyDrawSteal",
+        "count": 1
+      },
+      "background": "A cunning and elusive rogue caught mid-heist in a damp stone dungeon. Clad in dark leather armor and a hooded cloak, Marro wields a longsword and a dagger while a cascade of magical golden coins floats and spins around her in the dim light."
+    },
+    {
+      "id": "0069",
+      "name": "Queen Elvira",
+      "power": 4,
+      "faction": "elderveld",
+      "rarity": "arcane",
+      "kind": "ongoing",
+      "text": "Ongoing: All Elarion Empire cards gain +1 Power globally.",
+      "art": "/cards/0069.png",
+      "effect": {
+        "type": "auraFactionGlobal",
+        "faction": "elarion",
+        "scope": "all",
+        "amount": 1
+      },
+      "background": "The regal and magically gifted elven queen of Elderveld, presiding over her court. Draped in an opulent, flowing blue-and-silver gown with braided platinum hair, Queen Elvira holds a luminous crystal staff inside a grand hall illuminated by magical chandeliers and surrounded by her loyal subjects."
+    },
+    {
+      "id": "0070",
+      "name": "Rampage",
+      "power": 8,
+      "faction": "unknown",
+      "rarity": "cursed",
+      "kind": "none",
+      "text": "No Ability.",
+      "art": "/cards/0070.png",
+      "effect": {
+        "type": "none"
+      },
+      "background": "A feral, blood-soaked monstrosity roaming the foggy, root-choked swamplands. With wild red hair, glowing yellow eyes, and razor-sharp claws, Rampage stalks across fallen timber, driven by an insatiable hunger and primal fury."
+    },
+    {
+      "id": "0071",
+      "name": "Gravebound Wolves",
+      "power": 3,
+      "faction": "monster",
+      "rarity": "cursed",
+      "kind": "muster",
+      "text": "Muster: Play all \"Gravebound Wolves\" cards from your deck.",
+      "art": "/cards/0071.png",
+      "effect": {
+        "type": "muster"
+      },
+      "background": "A pack of ghostly, reanimated hounds haunting a jagged mountain ridge under a night sky lit by a green aurora. Dripping with toxic, luminous green ectoplasm from their glowing jaws, these spectral beasts howl curses at the living."
+    },
+    {
+      "id": "0072",
+      "name": "Werewolf",
+      "power": 3,
+      "faction": "monster",
+      "rarity": "cursed",
+      "kind": "muster",
+      "text": "Muster: Play all \"Werewolf\" cards from your deck here instantly.",
+      "art": "/cards/0072.png",
+      "effect": {
+        "type": "muster"
+      },
+      "background": "A massive, terrifying lycanthropes ambushing a lone traveler on a dark forest path. Shattering a wooden cargo cart with its claws, the beast glares down with ferocious yellow eyes at the trapped, armored knight below."
+    },
+    {
+      "id": "0073",
+      "name": "Savage",
+      "power": 7,
+      "faction": "unknown",
+      "rarity": "mortal",
+      "kind": "none",
+      "text": "No Ability.",
+      "art": "/cards/0073.png",
+      "effect": {
+        "type": "none"
+      },
+      "background": "A feral, bloodthirsty warrior breaking violently through a barred window. Covered in fresh scars, grime, and battle blood, she lunges forward with glowing red eyes and bared fangs, bringing absolute terror to whoever lies within."
+    },
+    {
+      "id": "0074",
+      "name": "Mother Lunara",
+      "power": 4,
+      "faction": "unknown",
+      "rarity": "forbidden",
+      "kind": "onReveal",
+      "text": "On Reveal: Remove the ability of the next card the opponent plays.",
+      "art": "/cards/0074.png",
+      "effect": {
+        "type": "silenceNext"
+      },
+      "background": "An ancient, skeletal witch of the blighted woods. Perched hauntingly in the gnarled branches of a dead tree and crowned with a wreath of withered flowers, she watches over the wasteland wrapped in tattered, rotting shrouds."
+    },
+    {
+      "id": "0075",
+      "name": "Panthera",
+      "power": 6,
+      "faction": "monster",
+      "rarity": "forbidden",
+      "kind": "chaos",
+      "text": "Chaos (3 turns): Burn chance = (6 / Side Total) * 100.",
+      "art": "/cards/0075.png",
+      "effect": {
+        "type": "chaos",
+        "turns": 3
+      },
+      "background": "A chimeric shadow-predator stalking across a wooden fence under the cover of a crescent moon. Combining the agile body of a black panther with leathery bat wings, horns, and glowing green eyes, it hunts silently among the night-flying moths."
+    },
+    {
+      "id": "0076",
+      "name": "Werewolf",
+      "power": 3,
+      "faction": "monster",
+      "rarity": "cursed",
+      "kind": "muster",
+      "text": "Muster: Play all \"Werewolf\" cards from your deck here instantly.",
+      "art": "/cards/0076.png",
+      "effect": {
+        "type": "muster"
+      },
+      "background": "The alpha of a dense, misty pinewood forest, leading a pack of lurking shadows. Crouched low over the gnarled roots of a giant tree, the creature bares its fangs and flexes its lethal claws as a full moon pierces the dark canopy."
+    },
+    {
+      "id": "0077",
+      "name": "Eryc Darkwarden",
+      "power": 7,
+      "faction": "elderveld",
+      "rarity": "mortal",
+      "kind": "factionBond",
+      "text": "Faction Bond: Power doubles if another Elderveld card is here.",
+      "art": "/cards/0077.png",
+      "effect": {
+        "type": "factionBond"
+      },
+      "background": "A valiant knight-commander of Elderveld fighting on a stormy, wave-lashed coastal battlefield. Clad in gleaming steel armor and riding a warhorse, Eryc uses his runic broadsword to shatter the shell of a monstrous giant red crab while more of the crustacean horrors swarm from the surf."
+    },
+    {
+      "id": "0078",
+      "name": "Elderveld Archers",
+      "power": 4,
+      "faction": "elderveld",
+      "rarity": "mortal",
+      "kind": "onReveal",
+      "text": "On Reveal: Destroy the enemy's strongest unit here if their total > 15.",
+      "art": "/cards/0078.png",
+      "effect": {
+        "type": "destroyHighestIfTotal",
+        "threshold": 15
+      },
+      "background": "A disciplined unit of winter archers defending a snowy fortress town. Standing atop a wooden supply wagon amid falling snow and timber houses, an armored archer draws his bow taut, aiming into the cold fog while a fellow soldier keeps watch in the background."
+    },
+    {
+      "id": "0079",
+      "name": "Knight Jughead",
+      "power": 6,
+      "faction": "unknown",
+      "rarity": "mortal",
+      "kind": "none",
+      "text": "No Ability.",
+      "art": "/cards/0079.png",
+      "effect": {
+        "type": "none"
+      },
+      "background": "Despite his whimsical title, Knight Jughead is caught in a moment of sheer terror. Accompanied by a fellow soldier, he recoils in shock as a towering, heavily armored brute smashes violently through a wooden wall, brandishing a massive, blood-soaked spiked mace."
+    },
+    {
+      "id": "0080",
+      "name": "Bounty Hunter",
+      "power": 5,
+      "faction": "unknown",
+      "rarity": "mortal",
+      "kind": "onReveal",
+      "text": "On Reveal: If the opponent played here this turn, copy their card to your hand.",
+      "art": "/cards/0080.png",
+      "effect": {
+        "type": "copyEnemyPlayedHere"
+      },
+      "background": "A grizzled and battle-worn tracker operating in the rain-soaked pine forests. Clad in heavy leather armor, chainmail, and a wide-brimmed feathered hat, he rests a broadsword across his shoulder while scanning the wet trail for his quarry, accompanied by a cloaked partner."
+    },
+    {
+      "id": "0081",
+      "name": "Swamp Ghoul",
+      "power": 4,
+      "faction": "monster",
+      "rarity": "cursed",
+      "kind": "chaos",
+      "text": "Chaos (4 turns): Burn chance = (4 / Side Total) * 100.",
+      "art": "/cards/0081.png",
+      "effect": {
+        "type": "chaos",
+        "turns": 4
+      },
+      "background": "A terrifying undead abomination fused into the gnarled trunk of an ancient, moss-draped swamp tree. Featuring a decaying skull face with glowing yellow eyes, mossy tendrils, and bioluminescent mushrooms sprouting around its lair, it watches silently over the dark marsh."
+    },
+    {
+      "id": "0082",
+      "name": "Footsoldiers",
+      "power": 4,
+      "faction": "hotc",
+      "rarity": "mortal",
+      "kind": "factionBond",
+      "text": "Faction Bond: Power doubles if another Horde of the Carrion card is here.",
+      "art": "/cards/0082.png",
+      "effect": {
+        "type": "factionBond"
+      },
+      "background": "Vanguard infantry warriors of the Horde of the Carrion charging through a snowy mountain pass at sunset. Wearing fur-lined leather, chainmail, and carrying a dragon-crested shield, these hardened fighters press the attack as the peaks glow in the golden light."
+    },
+    {
+      "id": "0083",
+      "name": "Michellsky",
+      "power": 5,
+      "faction": "ravaria",
+      "rarity": "arcane",
+      "kind": "move",
+      "text": "Move: If an enemy card moves here, destroy it.",
+      "art": "/cards/0083.png",
+      "effect": {
+        "type": "trapOnEnemyMove"
+      },
+      "background": "A fierce and agile pyromancer knight of Ravaria, caught mid-leap over the smoldering rubble of a destroyed fortress. Clad in dented steel plate armor and wielding a broadsword wreathed in roaring flames, she strikes with unbridled fury."
+    },
+    {
+      "id": "0084",
+      "name": "Poctalion",
+      "power": 7,
+      "faction": "ravaria",
+      "rarity": "mortal",
+      "kind": "none",
+      "text": "No Ability.",
+      "art": "/cards/0084.png",
+      "effect": {
+        "type": "none"
+      },
+      "background": "A weary sentinel of Ravaria standing watch on a wooden rampart outside a fortified stronghold. With a scarred face and heavy leather armor, he holds a coil of rope while a dark raven takes flight across the overcast, stormy sky."
+    },
+    {
+      "id": "0085",
+      "name": "Azrakor",
+      "power": 12,
+      "faction": "monster",
+      "rarity": "mythic",
+      "kind": "chaos",
+      "text": "Chaos (1 turn): Burn chance = (12 / Side Total) * 100.",
+      "art": "/cards/0085.png",
+      "effect": {
+        "type": "chaos",
+        "turns": 1
+      },
+      "background": "A colossal, crimson-scaled ancient dragon dwelling deep within a snowy mountain ravine. Breathing frosty plumes into the cold air, the massive beast glares down with glowing orange eyes at a small group of travelers holding lanterns far below."
+    },
+    {
+      "id": "0086",
+      "name": "Baby Dragon",
+      "power": 3,
+      "faction": "monster",
+      "rarity": "arcane",
+      "kind": "ongoing",
+      "text": "Ongoing: Gains +1 Power at the end of each turn.",
+      "art": "/cards/0086.png",
+      "effect": {
+        "type": "growPerTurn",
+        "amount": 1
+      },
+      "background": "A feisty, medium-sized juvenile dragon captured on a rocky hillside. Snarling with jagged teeth and spread claws, it strains furiously against heavy ropes held by two struggling armor-clad handlers while an ally recovers on the ground."
+    },
+    {
+      "id": "0087",
+      "name": "Werewolf",
+      "power": 3,
+      "faction": "monster",
+      "rarity": "cursed",
+      "kind": "muster",
+      "text": "Muster: Play all \"Werewolf\" cards from your deck here instantly.",
+      "art": "/cards/0087.png",
+      "effect": {
+        "type": "muster"
+      },
+      "background": "A vicious lycanthropic beast howling toward a shaft of brilliant moonlight piercing through the ceiling of a damp, bone-littered subterranean cavern. Clad in tattered remains, it roars with primal hunger in its dark lair."
+    },
+    {
+      "id": "0088",
+      "name": "World Coalition",
+      "power": 5,
+      "faction": "unknown",
+      "rarity": "mortal",
+      "kind": "ongoing",
+      "text": "Ongoing: +1 Power for each different Faction represented at this location.",
+      "art": "/cards/0088.png",
+      "effect": {
+        "type": "selfPerFaction",
+        "amount": 1
+      },
+      "background": "A magnificent alliance cavalry force representing the diverse kingdoms of the realm. Led by standard-bearers carrying colorful banners bearing lions, stags, and griffins, the armored knights charge proudly across a rushing river at sunset toward a distant mountaintop castle."
+    },
+    {
+      "id": "0089",
+      "name": "Red Crows",
+      "power": 2,
+      "faction": "monster",
+      "rarity": "cursed",
+      "kind": "spy",
+      "text": "Spy: Play on enemy side. Reveal all cards in the opponent's hand.",
+      "art": "/cards/0089.png",
+      "effect": {
+        "type": "spyRevealHand"
+      },
+      "background": "A sinister, avian monstrosity perched atop a jagged rock amid a burning battlefield. The creature features pitch-black feathers and a glowing, fiery core visible through its skeletal ribcage, watching over the smoking ruins with glowing eyes."
+    },
+    {
+      "id": "0090",
+      "name": "Zyrathor",
+      "power": 8,
+      "faction": "kalthrone",
+      "rarity": "forbidden",
+      "kind": "none",
+      "text": "No Ability.",
+      "art": "/cards/0090.png",
+      "effect": {
+        "type": "none"
+      },
+      "background": "An elite death-knight commander of Kalthrone, charging across a desolate battlefield littered with broken lances and fallen banners. Clad in heavily weathered plate armor and a spiked helm, Zyrathor wields a broadsword while riding a fearsome, glowing-eyed undead warhorse."
+    },
+    {
+      "id": "0091",
+      "name": "Draelon",
+      "power": 4,
+      "faction": "unknown",
+      "rarity": "forbidden",
+      "kind": "onReveal",
+      "text": "On Reveal: Resurrect all destroyed 1-Power cards to this location.",
+      "art": "/cards/0091.png",
+      "effect": {
+        "type": "resurrectAll",
+        "maxPower": 1
+      },
+      "background": "A powerful and merciless dark sorceress presiding over a ruined stronghold. With flowing white hair and pale skin, she commands the forces of death, raising her hand to tear open a crackling, emerald-green dimensional rift above a field of bones."
+    },
+    {
+      "id": "0092",
+      "name": "Runica",
+      "power": 4,
+      "faction": "unknown",
+      "rarity": "arcane",
+      "kind": "onReveal",
+      "text": "On Reveal: Add a 5-Power Elemental to a random adjacent location.",
+      "art": "/cards/0092.png",
+      "effect": {
+        "type": "summon",
+        "token": "t-elemental",
+        "count": 1,
+        "target": "adjacent"
+      },
+      "background": "A formidable battle-mage leading troops through a volatile storm. Dressed in leather and green robes with a fur-lined cape, she grips a crystal-topped staff in one hand while summoning a barrage of blazing meteors and lightning strikes down from the darkened skies."
+    },
+    {
+      "id": "0093",
+      "name": "Ravarian",
+      "power": 4,
+      "faction": "ravaria",
+      "rarity": "mortal",
+      "kind": "factionBond",
+      "text": "Faction Bond: Power doubles if another Ravaria card is here.",
+      "art": "/cards/0093.png",
+      "effect": {
+        "type": "factionBond"
+      },
+      "background": "A brutal heavy infantryman of Ravaria executing a fallen enemy soldier on a muddy forest floor. Dressed in dented crimson plate armor, he kneels over his defeated foe, raising a blood-stained war hammer high to deliver a final, merciless blow."
+    },
+    {
+      "id": "0094",
+      "name": "Foresterian Female",
+      "power": 4,
+      "faction": "unknown",
+      "rarity": "arcane",
+      "kind": "ongoing",
+      "text": "Ongoing: +1 Power for each card currently in your hand.",
+      "art": "/cards/0094.png",
+      "effect": {
+        "type": "selfPerHand",
+        "amount": 1
+      },
+      "background": "A tranquil nature spirit of the deep, untouched woodlands. With hair intertwined with vines, leaves, and tiny glowing blossoms, she rests gracefully on a moss-covered branch arching over a crystal-clear forest stream, basking in the gentle sunlight."
+    },
+    {
+      "id": "0095",
+      "name": "King Carrion",
+      "power": 6,
+      "faction": "hotc",
+      "rarity": "mortal",
+      "kind": "ongoing",
+      "text": "Ongoing: Your Horde of the Carrion cards have +2 Power.",
+      "art": "/cards/0095.png",
+      "effect": {
+        "type": "auraFactionGlobal",
+        "faction": "hotc",
+        "scope": "mine",
+        "amount": 2
+      },
+      "background": "The ruthless ruler of the Horde of the Carrion, sitting upon a grim throne inside a fortress hall. Clad in heavy, battle-scarred iron plate armor and gripping a broadsword point-down between his boots, he is flanked and knelt before by devoted faun-like attendants."
+    },
+    {
+      "id": "0096",
+      "name": "Crownheir",
+      "power": 7,
+      "faction": "elderveld",
+      "rarity": "mortal",
+      "kind": "factionBond",
+      "text": "Faction Bond: Power doubles if another Elderveld card is here.",
+      "art": "/cards/0096.png",
+      "effect": {
+        "type": "factionBond"
+      },
+      "background": "A fierce royal champion and warlord of Elderveld standing triumphant amidst a snowy, corpse-strewn battlefield. Wearing thick furs, chainmail, and ritual face paint, he rests his weight on a massive, rune-etched two-handed battleaxe while holding a bloodied sword."
+    },
+    {
+      "id": "0097",
+      "name": "Ashtun",
+      "power": 3,
+      "faction": "varkazan",
+      "rarity": "arcane",
+      "kind": "onReveal",
+      "text": "On Reveal: Give your Ongoing cards +2 Power.",
+      "art": "/cards/0097.png",
+      "effect": {
+        "type": "buffKindHere",
+        "kind": "ongoing",
+        "amount": 2
+      },
+      "background": "A sinister sorcerer of the Varkazan Caliphate harnessing dark desert magic. With tribal tattoos, ritual scars, and a glowing eye, Ashtun stands amidst ancient desert ruins, using both hands to control a swirling swarm of glowing green scarabs."
+    },
+    {
+      "id": "0098",
+      "name": "Sir Roman Volkov",
+      "power": 7,
+      "faction": "ravaria",
+      "rarity": "mortal",
+      "kind": "none",
+      "text": "No Ability.",
+      "art": "/cards/0098.png",
+      "effect": {
+        "type": "none"
+      },
+      "background": "A distinguished and noble cavalry knight of Ravaria, leading his regiment through a shallow river crossing at sunset. Clad in gleaming steel plate armor, a blue-and-gold shield, and a striking red-and-blue plumed helm, he holds a high banner-lance aloft."
+    },
+    {
+      "id": "0099",
+      "name": "Lonely Vampire",
+      "power": 5,
+      "faction": "monster",
+      "rarity": "cursed",
+      "kind": "medic",
+      "text": "Medic: Destroy one of your cards here to resurrect a higher-power card.",
+      "art": "/cards/0099.png",
+      "effect": {
+        "type": "sacrificeResurrect"
+      },
+      "background": "A feral, isolated vampire scavenger haunting the deepest recesses of a subterranean cave system. Crouched on the rocky floor with razor-sharp claws, pointed ears, and glowing red eyes, a plume of eerie red mist billows from his back as he prowls the dark shadows."
+    },
+    {
+      "id": "0100",
+      "name": "General Oren",
+      "power": 6,
+      "faction": "elderveld",
+      "rarity": "mortal",
+      "kind": "ongoing",
+      "text": "Ongoing: Your cards with No Ability have +3 Power globally.",
+      "art": "/cards/0100.png",
+      "effect": {
+        "type": "auraKindGlobal",
+        "kind": "none",
+        "amount": 3
+      },
+      "background": "A legendary, battle-hardened veteran commander of the Elderveld Empire. Clad in dented steel plate armor bearing the realm's griffin crest and a dark blue cloak, General Oren dual-wields two blood-stained swords amidst a raging, fire-choked battlefield, roaring with fierce defiance."
+    },
+    {
+      "id": "0101",
+      "name": "Foresterian Female (Luminous)",
+      "power": 3,
+      "faction": "unknown",
+      "rarity": "arcane",
+      "kind": "ongoing",
+      "text": "Ongoing: +1 Power to all other cards at this location.",
+      "art": "/cards/0101.png",
+      "effect": {
+        "type": "auraAllHere",
+        "amount": 1
+      },
+      "background": "A luminous woodland spirit drifting through an enchanted, sunlit grove. Her body and hair are formed from vibrant green vines and foliage, adorned with delicate white flowers and translucent, glowing fairy wings that shimmer in the shafts of golden light."
+    },
+    {
+      "id": "0102",
+      "name": "Foresterian Female (Dryad)",
+      "power": 4,
+      "faction": "unknown",
+      "rarity": "arcane",
+      "kind": "ongoing",
+      "text": "Ongoing: +1 Power for each card in your hand.",
+      "art": "/cards/0102.png",
+      "effect": {
+        "type": "selfPerHand",
+        "amount": 1
+      },
+      "background": "A serene dryad resting upon a mossy, ancient log deep within the forest. With green-toned skin, flowing dark hair woven with white blossoms, and a delicate hummingbird hovering nearby, she cups a glowing blue magical flower safely within her hands."
+    },
+    {
+      "id": "0103",
+      "name": "Clown of the Elderveld",
+      "power": 1,
+      "faction": "unknown",
+      "rarity": "mortal",
+      "kind": "spy",
+      "text": "Spy: Play on enemy side. Draw 1 card, steal 1 from their deck.",
+      "art": "/cards/0103.png",
+      "effect": {
+        "type": "spyDrawSteal",
+        "count": 1
+      },
+      "background": "A deeply unsettling jester prowling the damp stone corridors of a subterranean dungeon. Clad in a tattered blue-and-black jester suit with chiming bells, he crawls menacingly across the cobblestones with blood-stained hands and a terrifying grin while pursued by torch-bearing guards."
+    },
+    {
+      "id": "0104",
+      "name": "Sir Pyotr Gromov",
+      "power": 7,
+      "faction": "hotc",
+      "rarity": "mortal",
+      "kind": "factionBond",
+      "text": "Faction Bond: Power doubles if another Ravaria card is here.",
+      "art": "/cards/0104.png",
+      "effect": {
+        "type": "factionBond"
+      },
+      "background": "A skilled tournament champion of Ravaria charging through a sunlit forest clearing. Clad in polished steel plate armor with striking red-and-white accents and a matching plumed helm, he rides a powerful white warhorse, having just shattered his wooden lance against an opponent's shield."
+    },
+    {
+      "id": "0105",
+      "name": "Howler",
+      "power": 4,
+      "faction": "hotc",
+      "rarity": "mortal",
+      "kind": "onReveal",
+      "text": "On Reveal: Destroy an enemy unit with 3 or less Power here.",
+      "art": "/cards/0105.png",
+      "effect": {
+        "type": "destroyBelow",
+        "maxPower": 3
+      },
+      "background": "A cruel beast-master of the Horde of the Carrion, leading his pack through a dark, foggy woodland trail. Wearing a scarred, leather-strapped harness and a steel half-mask, he holds heavy chains attached to two vicious, spiked hounds whose maws glow with crackling purple energy."
+    },
+    {
+      "id": "0106",
+      "name": "Burner",
+      "power": 6,
+      "faction": "unknown",
+      "rarity": "mortal",
+      "kind": "onReveal",
+      "text": "On Reveal: Give all enemy cards at this location -1 Power.",
+      "art": "/cards/0106.png",
+      "effect": {
+        "type": "debuffAllEnemies",
+        "amount": 1
+      },
+      "background": "A grim vanguard soldier standing guard inside a stone fortress archway. Clad in chainmail, a leather jerkin, and a steel helmet, he grips a long poleaxe while a massive, roaring wall of fire burns intensely on the stone steps behind him."
+    },
+    {
+      "id": "0107",
+      "name": "Wordkeeper",
+      "power": 2,
+      "faction": "unknown",
+      "rarity": "mortal",
+      "kind": "onReveal",
+      "text": "On Reveal: Draw 1 card from your deck.",
+      "art": "/cards/0107.png",
+      "effect": {
+        "type": "draw",
+        "count": 1
+      },
+      "background": "A humble, elderly monastic scholar residing in a quiet stone chapel. Wearing a dark hooded robe and a long white beard, he holds a single lit candle with gentle reverence as he offers a quiet prayer in the dim sanctuary."
+    },
+    {
+      "id": "0108",
+      "name": "Daar",
+      "power": 3,
+      "faction": "varkazan",
+      "rarity": "arcane",
+      "kind": "onReveal",
+      "text": "On Reveal: Add two 1-Power Beetles to this location.",
+      "art": "/cards/0108.png",
+      "effect": {
+        "type": "summon",
+        "token": "t-beetle",
+        "count": 2
+      },
+      "background": "A powerful mystic of the Varkhazan Caliphate standing amidst crumbling desert ruins. Bearing ritual tattoos, scars, and a glowing mechanical eye, Daar raises his arms wide to command a massive, swarming horde of glowing-eyed armored beetles rising from the dust."
+    },
+    {
+      "id": "0109",
+      "name": "Nightfang",
+      "power": 5,
+      "faction": "unknown",
+      "rarity": "forbidden",
+      "kind": "chaos",
+      "text": "Chaos (3 turns): Burn chance = (5 / Side Total) * 100.",
+      "art": "/cards/0109.png",
+      "effect": {
+        "type": "chaos",
+        "turns": 3
+      },
+      "background": "A formidable dark sorcerer navigating the shattered ruins of a fallen city. Bald, cloaked in ragged dark fabrics, and carrying a crystal-topped wooden staff, he walks forward with an ominous aura as a towering, snarling specter of crackling blue flame looms directly behind him."
+    },
+    {
+      "id": "0110",
+      "name": "Chernyava",
+      "power": 5,
+      "faction": "ravaria",
+      "rarity": "mortal",
+      "kind": "factionBond",
+      "text": "Faction Bond: Power doubles if another Ravaria card is here.",
+      "art": "/cards/0110.png",
+      "effect": {
+        "type": "factionBond"
+      },
+      "background": "A heroic standard-bearer and frontline knight of Ravaria, charging into battle on a caparisoned white steed. Clad in polished plate armor and a crimson cloak, she holds a large banner inscribed with \"Honor & Valor\" high in one hand and a gleaming sword in the other, racing beneath a dramatic sunset sky toward a distant mountaintop castle."
+    },
+    {
+      "id": "0111",
+      "name": "Wordkeeper (Archivist)",
+      "power": 2,
+      "faction": "unknown",
+      "rarity": "mortal",
+      "kind": "ongoing",
+      "text": "Ongoing: Cards you draw gain +1 Power.",
+      "art": "/cards/0111.png",
+      "effect": {
+        "type": "buffDrawn",
+        "amount": 1
+      },
+      "background": "A dedicated master archivist and scholar studying within a vast, multi-tiered library. Wearing a blue scholarly robe and academic cap, he sits at a heavy wooden desk illuminated by an oil lamp, carefully penning historical records into a large tome surrounded by reference texts like Codex Alchymica and Historia."
+    },
+    {
+      "id": "0112",
+      "name": "Werewolf",
+      "power": 3,
+      "faction": "monster",
+      "rarity": "cursed",
+      "kind": "muster",
+      "text": "Muster: Play all \"Werewolf\" cards from your deck here.",
+      "art": "/cards/0112.png",
+      "effect": {
+        "type": "muster"
+      },
+      "background": "A brutal lycanthropic alpha prowling through the smoking, snow-covered ruins of a destroyed settlement. With fur matted in grime and blood, it crouches low over broken weapons and debris, baring its razor-sharp teeth and glowing amber eyes beneath a pale moon."
+    },
+    {
+      "id": "0113",
+      "name": "Greywanderer",
+      "power": 6,
+      "faction": "hotc",
+      "rarity": "cursed",
+      "kind": "none",
+      "text": "No Ability.",
+      "art": "/cards/0113.png",
+      "effect": {
+        "type": "none"
+      },
+      "background": "A famously unyielding and reckless mercenary champion of the Horde of the Carrion. Standing amidst a smoking battlefield littered with casualties, he wears dented chainmail and leather armor, grinning broadly with scars despite having three arrows deeply embedded straight into his chest."
+    },
+    {
+      "id": "0114",
+      "name": "Sir Konstantin",
+      "power": 8,
+      "faction": "ravaria",
+      "rarity": "mortal",
+      "kind": "factionBond",
+      "text": "Faction Bond: Power doubles if another Ravaria card is here.",
+      "art": "/cards/0114.png",
+      "effect": {
+        "type": "factionBond"
+      },
+      "background": "A celebrated tournament champion and knight of Ravaria, riding a majestic black warhorse through a cheering medieval festival grounds. Clad in shining plate armor with a dramatic red-and-yellow plumed helm, he proudly waves the realm's golden-lion banner as spectators celebrate his victory near colorful tents."
+    },
+    {
+      "id": "0115",
+      "name": "Nightwish",
+      "power": 6,
+      "faction": "monster",
+      "rarity": "forbidden",
+      "kind": "chaos",
+      "text": "Chaos (2 turns): Burn chance = (6 / Side Total) * 100.",
+      "art": "/cards/0115.png",
+      "effect": {
+        "type": "chaos",
+        "turns": 2
+      },
+      "background": "A terrifying sea-siren and hybrid monstrosity haunting the wave-lashed rocky coast. Featuring the torso of a sharp-fanged creature with tattered bat wings, webbed claws, and a serpentine, scaly fish tail, she rises from the churning gray ocean waters with a menacing, predatory grin."
+    },
+    {
+      "id": "0116",
+      "name": "Captain Vasily",
+      "power": 7,
+      "faction": "ravaria",
+      "rarity": "mortal",
+      "kind": "factionBond",
+      "text": "Faction Bond: Power doubles if another Ravaria card is here.",
+      "art": "/cards/0116.png",
+      "effect": {
+        "type": "factionBond"
+      },
+      "background": "A steadfast infantry captain of Ravaria standing triumphant atop a rocky vantage point overlooking a burning valley. Clad in a heavy helm, chainmail, and a lion-crested shield, he rests his heavy broadsword on the ground as his troops gather below under a fiery sunset sky."
+    },
+    {
+      "id": "0117",
+      "name": "Captain Arkady",
+      "power": 7,
+      "faction": "ravaria",
+      "rarity": "mortal",
+      "kind": "none",
+      "text": "No Ability.",
+      "art": "/cards/0117.png",
+      "effect": {
+        "type": "none"
+      },
+      "background": "A fierce cavalry captain of Ravaria charging through the chaotic melee of a muddy battlefield. Wearing a winged helmet and a tattered crimson-and-white cloak over steel plate armor, he brandishes a blood-stained short sword while leading his regiment over fallen combatants."
+    },
+    {
+      "id": "0118",
+      "name": "Hunder the Kid",
+      "power": 6,
+      "faction": "unknown",
+      "rarity": "mortal",
+      "kind": "none",
+      "text": "No Ability.",
+      "art": "/cards/0118.png",
+      "effect": {
+        "type": "none"
+      },
+      "background": "A nimble and sharp-eyed forest scout patrolling the deep, moss-draped woodlands. Leaning against the trunk of an ancient, moss-covered tree, he draws his wooden longbow tight, tracking a hidden path through the dense ferns and sunlight filtering through the canopy."
+    },
+    {
+      "id": "0119",
+      "name": "Butcher",
+      "power": 5,
+      "faction": "unknown",
+      "rarity": "mortal",
+      "kind": "onReveal",
+      "text": "On Reveal: Destroy your lowest-power card here to draw 2 cards.",
+      "art": "/cards/0119.png",
+      "effect": {
+        "type": "sacrificeLowestDraw",
+        "count": 2
+      },
+      "background": "A grim and hardened tradesman working inside a dimly lit, blood-spattered meat locker. Wearing a stained leather apron, thick boots, and round spectacles over a bushy grey beard, he sits on a wooden stool meticulously cleaning a heavy, blood-stained executioner's axe while surrounded by hanging cuts of meat and oil lanterns."
+    },
+    {
+      "id": "0120",
+      "name": "Ranger Roman",
+      "power": 5,
+      "faction": "ravaria",
+      "rarity": "mortal",
+      "kind": "factionBond",
+      "text": "Faction Bond: Power doubles if another Ravaria card is here.",
+      "art": "/cards/0120.png",
+      "effect": {
+        "type": "factionBond"
+      },
+      "background": "A seasoned ranger and scout of Ravaria standing guard near a stone watchtower in the misty borderlands. Clad in weathered steel plate, chainmail, a fur-lined collar, and a tattered red hood, he rests a heavy double-bitted battleaxe across his shoulder while keeping a sharp eye on the horizon."
+    },
+    {
+      "id": "0121",
+      "name": "Grigori the Blood Boiler",
+      "power": 4,
+      "faction": "unknown",
+      "rarity": "forbidden",
+      "kind": "onReveal",
+      "text": "On Reveal: Destroy an enemy card here with 4 or less Power.",
+      "art": "/cards/0121.png",
+      "effect": {
+        "type": "destroyBelow",
+        "maxPower": 4
+      },
+      "background": "A dark sorcerer and blood-mage standing atop a craggy mountain precipice before a ruined gothic stronghold. Clad in a long dark coat beneath a stormy red sky, he tests a glowing red, rune-etched blade just above a sacrificial stone bowl filled with boiling crimson fluid."
+    },
+    {
+      "id": "0122",
+      "name": "Captain Vercel",
+      "power": 7,
+      "faction": "unknown",
+      "rarity": "mortal",
+      "kind": "none",
+      "text": "No Ability.",
+      "art": "/cards/0122.png",
+      "effect": {
+        "type": "none"
+      },
+      "background": "A legendary pirate captain and seafaring commander aboard his flagship, the Seahawk. Bare-chested and heavily tattooed with tribal and nautical markings, he stands firmly on the wooden deck at sunset, holding a cutlass while his crew works the rigging behind him."
+    },
+    {
+      "id": "0123",
+      "name": "Red Thug",
+      "power": 3,
+      "faction": "unknown",
+      "rarity": "arcane",
+      "kind": "move",
+      "text": "Move: Can move to an adjacent location once per game.",
+      "art": "/cards/0123.png",
+      "effect": {
+        "type": "moveOnceAdjacent"
+      },
+      "background": "A nimble rogue and arsonist fleeing through the cobblestone streets of a burning village. Clad in dark leather armor and a hooded cloak, he sprints away from the chaos while summoning a dancing flame of magical fire in his bare hand as guards give chase."
+    },
+    {
+      "id": "0124",
+      "name": "Hollow Wraith",
+      "power": 4,
+      "faction": "monster",
+      "rarity": "cursed",
+      "kind": "medic",
+      "text": "Medic: Resurrect a non-Hero card from your discard pile here.",
+      "art": "/cards/0124.png",
+      "effect": {
+        "type": "resurrect"
+      },
+      "background": "A spectral, armor-clad phantom haunting a subterranean treasury vault. Glowing with a brilliant green ethereal light, the wraith wields a spiked mace to shatter ancient stone and attack a group of terrified soldiers who have just broken open a chest of gold."
+    },
+    {
+      "id": "0125",
+      "name": "Xalvorn",
+      "power": 11,
+      "faction": "monster",
+      "rarity": "mythic",
+      "kind": "chaos",
+      "text": "Chaos (1 turn): Burn chance = (11 / Side Total) * 100.",
+      "art": "/cards/0125.png",
+      "effect": {
+        "type": "chaos",
+        "turns": 1
+      },
+      "background": "A colossal, dark-scaled sea dragon rising from the churning, storm-tossed ocean waves. Baring its razor-sharp teeth and glowing amber eyes beneath a lightning-filled sky, the massive beast towers menacingly over a tiny wooden rowboat carrying two brave travelers."
+    },
+    {
+      "id": "0126",
+      "name": "Messager",
+      "power": 2,
+      "faction": "kalthrone",
+      "rarity": "mortal",
+      "kind": "spy",
+      "text": "Spy: Play on enemy side. Draw 2 cards from your deck.",
+      "art": "/cards/0126.png",
+      "effect": {
+        "type": "spyDraw",
+        "count": 2
+      },
+      "background": "An elite herald and rider of the Kalthrone forces, speeding across a chaotic battlefield under a gloomy sky. Clad in polished steel plate armor and a winged helm, the knight holds aloft a stark black banner emblazoned with a radiant silver sun while riding a powerful white warhorse."
+    },
+    {
+      "id": "0127",
+      "name": "Lych Crow",
+      "power": 5,
+      "faction": "monster",
+      "rarity": "cursed",
+      "kind": "chaos",
+      "text": "Chaos (3 turns): Burn chance = (5 / Side Total) * 100.",
+      "art": "/cards/0127.png",
+      "effect": {
+        "type": "chaos",
+        "turns": 3
+      },
+      "background": "A terrifying avian monstrosity haunting the fog-shrouded ruins of an ancient courtyard. Perched menacingly on a crumbling stone archway, this creature features feathered wings, a demonic goat-like skull head, and glowing red eyes that pierce the darkness."
+    },
+    {
+      "id": "0128",
+      "name": "Zoromira",
+      "power": 6,
+      "faction": "ravaria",
+      "rarity": "mortal",
+      "kind": "factionBond",
+      "text": "Faction Bond: Power doubles if another Ravaria card is here.",
+      "art": "/cards/0128.png",
+      "effect": {
+        "type": "factionBond"
+      },
+      "background": "A fierce vanguard champion and standard-bearer of Ravaria. Standing triumphantly on a battlefield ridge amidst clashing forces, she wears crimson-plated armor and spiked greaves, holding a large white-and-red banner bearing a roaring griffin high above the troops."
+    },
+    {
+      "id": "0129",
+      "name": "Sergeant Irolski",
+      "power": 6,
+      "faction": "ravaria",
+      "rarity": "mortal",
+      "kind": "none",
+      "text": "No Ability.",
+      "art": "/cards/0129.png",
+      "effect": {
+        "type": "none"
+      },
+      "background": "A valiant battlefield sergeant of Ravaria charging through the thick of a muddy melee. Clad in dark steel armor, a crested helm, and a red tunic, he brandishes a blood-stained sword and a lion-emblazoned shield while arrows fly past and infantrymen battle around him."
+    },
+    {
+      "id": "0130",
+      "name": "Moon Witch",
+      "power": 5,
+      "faction": "monster",
+      "rarity": "forbidden",
+      "kind": "chaos",
+      "text": "Chaos (2 turns): Burn chance = (5 / Side Total) * 100.",
+      "art": "/cards/0130.png",
+      "effect": {
+        "type": "chaos",
+        "turns": 2
+      },
+      "background": "A terrifying sorceress of the night, howling in despair amidst a desolate, rocky wasteland. Surrounded by a swirling flock of black ravens under a dark, storm-churned sky, she wears tattered garments that flutter in the gale, her glowing white eyes and bared teeth revealing a powerful, unhinged curse."
+    },
+    {
+      "id": "0131",
+      "name": "Elephant Cart",
+      "power": 8,
+      "faction": "varkazan",
+      "rarity": "mortal",
+      "kind": "ongoing",
+      "text": "Ongoing: Your other cards at this location have +1 Power.",
+      "art": "/cards/0131.png",
+      "effect": {
+        "type": "auraFriendlyHere",
+        "amount": 1
+      },
+      "background": "A colossal, armored war elephant advancing through the muddy chaos of a frontline siege. Bearing ornate, red-and-gold decorative trappings and massive, steel-tipped tusks, it carries a fortified wooden tower on its back filled with disciplined archers firing volleys under stormy skies."
+    },
+    {
+      "id": "0132",
+      "name": "Vale",
+      "power": 5,
+      "faction": "hotc",
+      "rarity": "mortal",
+      "kind": "onReveal",
+      "text": "On Reveal: Destroy the highest-power enemy card here if their total > 12.",
+      "art": "/cards/0132.png",
+      "effect": {
+        "type": "destroyHighestIfTotal",
+        "threshold": 12
+      },
+      "background": "A lethal and savage hunter-champion of the Horde of the Carrion. Standing triumphantly in a dense, arrow-scarred woodland clearing with war paint across her face and body, she grips a bloodied sword in one hand while brutally holding up the severed head of an enemy combatant by its hair."
+    },
+    {
+      "id": "0133",
+      "name": "Ravarian Horde",
+      "power": 4,
+      "faction": "ravaria",
+      "rarity": "mortal",
+      "kind": "factionBond",
+      "text": "Faction Bond: Power doubles if another Ravaria card is here.",
+      "art": "/cards/0133.png",
+      "effect": {
+        "type": "factionBond"
+      },
+      "background": "A menacing vanguard battalion of the Ravarian Horde advancing across a war-torn landscape. Clad in heavy steel armor and distinctive, grinning metal faceplates, these ruthless infantrymen march shoulder-to-shoulder behind a crimson banner bearing a golden lion and a snarling visage."
+    },
+    {
+      "id": "0134",
+      "name": "Prince Muhammed",
+      "power": 5,
+      "faction": "varkazan",
+      "rarity": "mortal",
+      "kind": "ongoing",
+      "text": "Ongoing: Varkhazan cards at this location gain +2 Power.",
+      "art": "/cards/0134.png",
+      "effect": {
+        "type": "auraFactionHere",
+        "faction": "varkazan",
+        "amount": 2
+      },
+      "background": "A noble prince of the Varkhazan Caliphate leading a patrol through sun-drenched golden wheat fields. Dressed in ornate crimson and gold robes with a royal turban, he walks alongside a majestic, jewel-adorned tiger on a golden chain, accompanied by an elite desert scout."
+    },
+    {
+      "id": "0135",
+      "name": "Vaziyr",
+      "power": 6,
+      "faction": "varkazan",
+      "rarity": "mortal",
+      "kind": "none",
+      "text": "No Ability.",
+      "art": "/cards/0135.png",
+      "effect": {
+        "type": "none"
+      },
+      "background": "A high-ranking vizier and cavalry commander of the Varkhazan Caliphate riding across the endless dunes at dusk. Clad in lamellar armor, a plumed conical helmet, and a flowing patterned cape, he guides his heavily caparisoned camel under the crescent moon with a curved saber at his side."
+    },
+    {
+      "id": "0136",
+      "name": "Meat Ripper",
+      "power": 4,
+      "faction": "monster",
+      "rarity": "cursed",
+      "kind": "chaos",
+      "text": "Chaos (4 turns): Burn chance = (4 / Side Total) * 100.",
+      "art": "/cards/0136.png",
+      "effect": {
+        "type": "chaos",
+        "turns": 4
+      },
+      "background": "A ghastly, emaciated undead fiend prowling deep within a subterranean crypt. Crouched menacingly over a massive pile of scattered bones and skulls with long, razor-sharp claws and glowing white eyes, its stringy black hair frames a grinning skeletal visage."
+    },
+    {
+      "id": "0137",
+      "name": "Great Owl",
+      "power": 6,
+      "faction": "monster",
+      "rarity": "arcane",
+      "kind": "onReveal",
+      "text": "On Reveal: Move a random enemy card from here to an adjacent location.",
+      "art": "/cards/0137.png",
+      "effect": {
+        "type": "moveRandomEnemyAdjacent"
+      },
+      "background": "A monstrous, arcane predator perched upon a mossy log within a gloomy, fog-choked forest. Featuring brilliant, glowing green eyes that pierce the darkness, the giant owl clutches a grisly trophy in its talons while a skeletal figure kneels below in homage."
+    },
+    {
+      "id": "0138",
+      "name": "Hochreich Soldier",
+      "power": 4,
+      "faction": "hochreich",
+      "rarity": "mortal",
+      "kind": "factionBond",
+      "text": "Faction Bond: Power doubles if another Hochreich card is here.",
+      "art": "/cards/0138.png",
+      "effect": {
+        "type": "factionBond"
+      },
+      "background": "A tragic knight of Hochreich fighting a desperate last stand in a muddy, corpse-littered field. Pinned down and kneeling with multiple arrows piercing his armor, he grips his bloodied sword upright in the earth while an allied warrior in green plate stands guard behind him with a tattered orange cloak."
+    },
+    {
+      "id": "0139",
+      "name": "Lord Eisenwald",
+      "power": 7,
+      "faction": "hochreich",
+      "rarity": "mortal",
+      "kind": "factionBond",
+      "text": "Faction Bond: Power doubles if another Hochreich card is here.",
+      "art": "/cards/0139.png",
+      "effect": {
+        "type": "factionBond"
+      },
+      "background": "A scarred and weary lord commander of Hochreich standing within a grand castle hall. Holding his distinctive orange-and-white plumed helm in his gauntleted hands, he reflects solemnly before the throne while a queen looks on from a distance amidst banners bearing the realm's crest."
+    },
+    {
+      "id": "0140",
+      "name": "Freak the Exelor",
+      "power": 3,
+      "faction": "unknown",
+      "rarity": "forbidden",
+      "kind": "onReveal",
+      "text": "On Reveal: Afflict all enemy cards at this location with -2 Power.",
+      "art": "/cards/0140.png",
+      "effect": {
+        "type": "debuffAllEnemies",
+        "amount": 2
+      },
+      "background": "A cruel and sadistic dark sorceress presiding over a subterranean dungeon. Clad in black leather and straps, she smiles coldly as she uses glowing red magic to torture a captive warrior, driving magical barbs straight into his back while he remains chained to the stone walls."
+    },
+    {
+      "id": "0141",
+      "name": "King Ludwig",
+      "power": 8,
+      "faction": "elderveld",
+      "rarity": "mortal",
+      "kind": "factionBond",
+      "text": "Faction Bond: Power doubles if another Elderveld card is here.",
+      "art": "/cards/0141.png",
+      "effect": {
+        "type": "factionBond"
+      },
+      "background": "The wise and regal monarch of the Elderveld Empire, standing atop a snowy mountain precipice overlooking his domain. Wearing a royal crown, armored attire, and a fur-lined blue cloak bearing the realm's lion crest, he holds an ornate, rune-inscribed sword aloft as a breathtaking aurora and meteor shower light up the night sky."
+    },
+    {
+      "id": "0142",
+      "name": "Ice King",
+      "power": 7,
+      "faction": "unknown",
+      "rarity": "forbidden",
+      "kind": "chaos",
+      "text": "Chaos (2 turns): Burn chance = (7 / Side Total) * 100.",
+      "art": "/cards/0142.png",
+      "effect": {
+        "type": "chaos",
+        "turns": 2
+      },
+      "background": "A fearsome sovereign of the frozen wastes seated upon a grand throne carved from jagged glacier ice. Clad in spiked black armor and a jagged crown, he clutches a staff topped with a glowing, frost-rimed skull while surrounded by the frozen remains of fallen foes."
+    },
+    {
+      "id": "0143",
+      "name": "Ghost Of King Rurik",
+      "power": 6,
+      "faction": "ravaria",
+      "rarity": "forbidden",
+      "kind": "medic",
+      "text": "Medic: Resurrect a destroyed Ravaria card to this location.",
+      "art": "/cards/0143.png",
+      "effect": {
+        "type": "resurrect",
+        "faction": "ravaria"
+      },
+      "background": "The spectral, resurrected warlord of Ravaria charging across a chaotic, burning battlefield. Clad in blackened plate armor over a skeletal warhorse with glowing orange eyes, he brandishes a fiery battleaxe as fiery arrows rain down through the smoke."
+    },
+    {
+      "id": "0144",
+      "name": "Torturer, Kalthrone",
+      "power": 4,
+      "faction": "kalthrone",
+      "rarity": "forbidden",
+      "kind": "ongoing",
+      "text": "Ongoing: Enemy cards played at this location lose 1 Power.",
+      "art": "/cards/0144.png",
+      "effect": {
+        "type": "debuffOnEnemyPlay",
+        "amount": 1
+      },
+      "background": "A terrifying executioner of Kalthrone operating within a gloomy stone fortress courtyard during a thunderstorm. Wearing heavily spiked plate armor inscribed with glowing blue runes and a dark hood, the skeletal-faced torturer drains the life essence from a kneeling captive."
+    },
+    {
+      "id": "0145",
+      "name": "Lord Siegfried",
+      "power": 7,
+      "faction": "hochreich",
+      "rarity": "mortal",
+      "kind": "factionBond",
+      "text": "Faction Bond: Power doubles if another Hochreich card is here.",
+      "art": "/cards/0145.png",
+      "effect": {
+        "type": "factionBond"
+      },
+      "background": "A high-ranking commander of Hochreich standing inside a command tent during a campaign. Clad in white-and-orange enameled plate armor with horned skull motifs, he rests a heavy, skull-topped mace across his shoulder against a backdrop of war banners and tactical maps."
+    },
+    {
+      "id": "0146",
+      "name": "Rot Disease",
+      "power": 3,
+      "faction": "monster",
+      "rarity": "cursed",
+      "kind": "chaos",
+      "text": "Chaos (4 turns): Burn chance = (3 / Side Total) * 100.",
+      "art": "/cards/0146.png",
+      "effect": {
+        "type": "chaos",
+        "turns": 4
+      },
+      "background": "A lingering manifestation of natural decay deep within an ancient, moss-draped forest. A skeleton rests entirely overgrown by roots, fungi, and purple thistle flowers, pierced by old arrows while a brilliant blue butterfly alights peacefully on the wreckage."
+    },
+    {
+      "id": "0147",
+      "name": "Mind Prisoners",
+      "power": 4,
+      "faction": "monster",
+      "rarity": "forbidden",
+      "kind": "chaos",
+      "text": "Chaos (3 turns): Burn chance = (4 / Side Total) * 100.",
+      "art": "/cards/0147.png",
+      "effect": {
+        "type": "chaos",
+        "turns": 3
+      },
+      "background": "A harrowing entity or curse trapping the consciousness of the damned inside a gloomy stone vault. A skeletal figure kneels in pure psychological anguish, clutching its head while hundreds of varying spoons and ladles dangle ominously from ropes overhead."
+    },
+    {
+      "id": "0148",
+      "name": "Scouts of Elderveld",
+      "power": 5,
+      "faction": "elderveld",
+      "rarity": "mortal",
+      "kind": "factionBond",
+      "text": "Faction Bond: Power doubles if another Elderveld card is here.",
+      "art": "/cards/0148.png",
+      "effect": {
+        "type": "factionBond"
+      },
+      "background": "Two rugged frontier scouts of the Elderveld Empire meeting in a snowy mountain pass. Clad in chainmail, fur-lined cloaks, and leather armor with blue bear-crested shields, they firmly shake hands in solidarity by a campfire while their unit rests in the background."
+    },
+    {
+      "id": "0149",
+      "name": "Bruce the Bat",
+      "power": 4,
+      "faction": "unknown",
+      "rarity": "cursed",
+      "kind": "move",
+      "text": "Move: Moves to a random location at the end of each turn.",
+      "art": "/cards/0149.png",
+      "effect": {
+        "type": "moveRandomEachTurn"
+      },
+      "background": "A tragic outcast or failed experiment bound and suspended from a withered tree in a desolate, rocky wasteland. Secured tightly with ropes under a full moon and swirling ravens, he wears makeshift mechanical bat wings strapped to his back, gazing down in despair."
+    },
+    {
+      "id": "0150",
+      "name": "Steam Killer",
+      "power": 8,
+      "faction": "unknown",
+      "rarity": "mortal",
+      "kind": "none",
+      "text": "No Ability.",
+      "art": "/cards/0150.png",
+      "effect": {
+        "type": "none"
+      },
+      "background": "A menacing and brutal executioner haunting the damp, industrial corridors of a subterranean prison. Wearing a burlap sack hood tied tightly with rope, chainmail under tattered leather, and bound thick cords across his chest, he grips a blood-stained, heavy broadsword amidst billowing steam and fog."
+    },
+    {
+      "id": "0151",
+      "name": "Hendra",
+      "power": 6,
+      "faction": "elarion",
+      "rarity": "mortal",
+      "kind": "factionBond",
+      "text": "Faction Bond: Power doubles if another Elarion card is here.",
+      "art": "/cards/0151.png",
+      "effect": {
+        "type": "factionBond"
+      },
+      "background": "A distinguished and valiant elite knight of the Elarion Empire standing within a crystalline cavern. With long braided red hair and polished white-and-gold plate armor adorned with winged pauldrons, she holds a glowing blue-edged broadsword while carrying a horned helm in her gauntleted hand."
+    },
+    {
+      "id": "0152",
+      "name": "Sage the Ripper",
+      "power": 5,
+      "faction": "unknown",
+      "rarity": "cursed",
+      "kind": "onReveal",
+      "text": "On Reveal: Destroy the lowest-power enemy unit here.",
+      "art": "/cards/0152.png",
+      "effect": {
+        "type": "destroyLowest"
+      },
+      "background": "A chilling wanderer walking through the snow-covered ruins of a devastated cathedral under a pale moonlight. Clad in a tattered grey hooded cloak and moving barefoot across blood-stained cobblestones, she drags a vicious, curved reaper's scythe behind her."
+    },
+    {
+      "id": "0153",
+      "name": "Mytica",
+      "power": 7,
+      "faction": "unknown",
+      "rarity": "arcane",
+      "kind": "hero",
+      "text": "Hero: Immune to all special effects, abilities, and destroys.",
+      "art": "/cards/0153.png",
+      "effect": {
+        "type": "hero"
+      },
+      "background": "A legendary valkyrie warrior traversing a serene, shallow pool filled with blooming white lilies amidst ancient, overgrown ruins. Wearing ornate gold armor, a red cape with fur trim, and a winged horned helm, she carries a graceful golden katana at her side."
+    },
+    {
+      "id": "0154",
+      "name": "Synerva",
+      "power": 4,
+      "faction": "unknown",
+      "rarity": "forbidden",
+      "kind": "onReveal",
+      "text": "On Reveal: Remove abilities from all enemy cards at this location.",
+      "art": "/cards/0154.png",
+      "effect": {
+        "type": "silenceAllEnemies"
+      },
+      "background": "A powerful and dark sorceress standing amid the blazing ruins of a fallen fortress. With striking black-and-white hair and glowing violet eyes, she wears an edgy studded leather and purple combat attire while conjuring crackling dark magical flames in her palm."
+    },
+    {
+      "id": "0155",
+      "name": "Captain Ophelia",
+      "power": 7,
+      "faction": "elarion",
+      "rarity": "mortal",
+      "kind": "factionBond",
+      "text": "Faction Bond: Power doubles if another Elarion card is here.",
+      "art": "/cards/0155.png",
+      "effect": {
+        "type": "factionBond"
+      },
+      "background": "A formidable and heroic military captain of the Elarion Empire overlooking a foggy, ruined stronghold at dusk. Clad in radiant gold-and-white plate armor featuring a pleated white skirt and winged helmet, she firmly rests a heavy, dark-bladed greatsword against the stone floor."
+    },
+    {
+      "id": "0156",
+      "name": "Ranger Svetta",
+      "power": 5,
+      "faction": "ravaria",
+      "rarity": "mortal",
+      "kind": "factionBond",
+      "text": "Faction Bond: Power doubles if another Ravaria card is here.",
+      "art": "/cards/0156.png",
+      "effect": {
+        "type": "factionBond"
+      },
+      "background": "A resilient frontline ranger of Ravaria standing tall on a snowy mountain ridge overlooking the borderlands. Dressed in polished steel half-plate armor, a deep red cape, and a griffin-crested shield, she grasps a steady sword while surveying the frost-laden peaks."
+    },
+    {
+      "id": "0157",
+      "name": "Champion, Elarion",
+      "power": 8,
+      "faction": "elarion",
+      "rarity": "mortal",
+      "kind": "none",
+      "text": "No Ability.",
+      "art": "/cards/0157.png",
+      "effect": {
+        "type": "none"
+      },
+      "background": "An esteemed arena champion of the Elarion Empire receiving thunderous applause inside a grand white-marble colosseum. Dressed in immaculate, gold-trimmed white military dress uniform and trousers with polished white boots, she walks forward confidently while holding a delicate rapier."
+    },
+    {
+      "id": "0158",
+      "name": "Horseman, Kalthrone",
+      "power": 6,
+      "faction": "kalthrone",
+      "rarity": "forbidden",
+      "kind": "factionBond",
+      "text": "Faction Bond: Power doubles if another Kalthrone card is here.",
+      "art": "/cards/0158.png",
+      "effect": {
+        "type": "factionBond"
+      },
+      "background": "A nightmarish, centaur-like cavalry construct of Kalthrone patrolling the jagged, desolate crags of a dark frontier. Clad entirely in gleaming steel barding and armor with sweeping horns on a smooth faceplate, this hybrid warrior wields a lethal, ornate halberd."
+    },
+    {
+      "id": "0159",
+      "name": "Champions of Holdrich",
+      "power": 8,
+      "faction": "hochreich",
+      "rarity": "mortal",
+      "kind": "factionBond",
+      "text": "Faction Bond: Power doubles if another Hochreich card is here.",
+      "art": "/cards/0159.png",
+      "effect": {
+        "type": "factionBond"
+      },
+      "background": "Two mighty vanguard champions of the Hochreich forces leading a charge during a violent thunderstorm. A fierce female warrior in orange-and-white armor rides atop a massive, glowing-eyed horned ram while an immense, muscular white-furred beastman brandishes a heavy battleaxe beside her."
+    },
+    {
+      "id": "0160",
+      "name": "Kurzfristig",
+      "power": 5,
+      "faction": "hochreich",
+      "rarity": "mortal",
+      "kind": "factionBond",
+      "text": "Faction Bond: Power doubles if another Hochreich card is here.",
+      "art": "/cards/0160.png",
+      "effect": {
+        "type": "factionBond"
+      },
+      "background": "A skilled and focused elven archer of Hochreich patrolling the deep pine forests. Illustrated in a distinct watercolor style, she stands firmly amidst mossy rocks and ferns, drawing back an ornate wooden recurve bow with multiple arrows nocked ready for a swift release."
+    },
+    {
+      "id": "0161",
+      "name": "World Eater",
+      "power": 12,
+      "faction": "monster",
+      "rarity": "mythic",
+      "kind": "chaos",
+      "text": "Chaos (1 turn): Burn chance = (12 / Side Total) * 100.",
+      "art": "/cards/0161.png",
+      "effect": {
+        "type": "chaos",
+        "turns": 1
+      },
+      "background": "A colossal, frost-crusted sea serpent rising from a stormy, churning ocean. Encased in jagged, glowing ice crystals and dark scales, the monster snarls into a freezing gale with glowing blue eyes as lightning flashes across the mountain skyline."
+    },
+    {
+      "id": "0162",
+      "name": "God of Thunder",
+      "power": 10,
+      "faction": "monster",
+      "rarity": "divine",
+      "kind": "chaos",
+      "text": "Chaos (1 turn): Burn chance = (10 / Side Total) * 100.",
+      "art": "/cards/0162.png",
+      "effect": {
+        "type": "chaos",
+        "turns": 1
+      },
+      "background": "A mythical tempest deity manifested in the storm clouds above a mountain valley. Drawn in a striking comic ink style, the celestial giant opens its mouth to unleash a devastating barrage of crackling blue lightning bolts directly onto a distant fortress."
+    },
+    {
+      "id": "0163",
+      "name": "Astral Tentacles",
+      "power": 6,
+      "faction": "kalthrone",
+      "rarity": "divine",
+      "kind": "chaos",
+      "text": "Chaos (3 turns): Burn chance = (6 / Side Total) * 100.",
+      "art": "/cards/0163.png",
+      "effect": {
+        "type": "chaos",
+        "turns": 3
+      },
+      "background": "A cosmic horror manifestation summoned by the dark forces of Kalthrone during a siege. Massive, shadowy tentacles erupt from the skies and wrap tightly around a towering monumental spire, descending upon a chaotic battlefield illuminated by brilliant beams of ethereal light."
+    },
+    {
+      "id": "0164",
+      "name": "Warmongrel",
+      "power": 7,
+      "faction": "ravaria",
+      "rarity": "forbidden",
+      "kind": "factionBond",
+      "text": "Faction Bond: Power doubles if another Ravaria card is here.",
+      "art": "/cards/0164.png",
+      "effect": {
+        "type": "factionBond"
+      },
+      "background": "A brutal, dragon-blooded warlord and vanguard champion of Ravaria. Clad in heavy, scaled metallic armor with matching dragon-styled pauldrons and a spiked shield, he walks across a volcanic wasteland with a smoking volcano behind him, carrying a massive, claw-adorned battleaxe."
+    },
+    {
+      "id": "0165",
+      "name": "John the Wolf",
+      "power": 8,
+      "faction": "elderveld",
+      "rarity": "mortal",
+      "kind": "factionBond",
+      "text": "Faction Bond: Power doubles if another Elderveld card is here.",
+      "art": "/cards/0165.png",
+      "effect": {
+        "type": "factionBond"
+      },
+      "background": "A legendary knight of the Elderveld Empire depicted in a textured watercolor medium. With long dark hair and a determined expression, he wears intricately engraved steel plate armor featuring a crescent moon motif, standing beneath a brilliant silver crescent moon against a swirling cosmic night sky."
+    },
+    {
+      "id": "0166",
+      "name": "The Weeping Kelp",
+      "power": 4,
+      "faction": "monster",
+      "rarity": "cursed",
+      "kind": "chaos",
+      "text": "Chaos (4 turns): Burn chance = (4 / Side Total) * 100.",
+      "art": "/cards/0166.png",
+      "effect": {
+        "type": "chaos",
+        "turns": 4
+      },
+      "background": "A haunting, ethereal sea-spirit haunting a rocky coastal cliffside. Cloaked in an endless cascade of dark, undulating tentacle-like hair, it features a pale porcelain mask adorned with three glowing yellow eyes, standing silently above the crashing gray waves."
+    },
+    {
+      "id": "0167",
+      "name": "Ruk, the Bone-Breaker",
+      "power": 6,
+      "faction": "monster",
+      "rarity": "forbidden",
+      "kind": "chaos",
+      "text": "Chaos (2 turns): Burn chance = (6 / Side Total) * 100.",
+      "art": "/cards/0167.png",
+      "effect": {
+        "type": "chaos",
+        "turns": 2
+      },
+      "background": "A ferocious gargoyle-demon prowling a dark, misty woodland under the light of a full moon. Featuring leathery green skin, curved horns, and tattered membranous wings, it crouches low over mossy terrain, baring sharp claws and glowing red eyes."
+    },
+    {
+      "id": "0168",
+      "name": "Mantis",
+      "power": 4,
+      "faction": "monster",
+      "rarity": "cursed",
+      "kind": "ongoing",
+      "text": "Ongoing: Opponent's On Reveal abilities do not trigger here.",
+      "art": "/cards/0168.png",
+      "effect": {
+        "type": "blockEnemyOnReveal"
+      },
+      "background": "A bizarre and surreal hybrid insectoid creature standing within a dense, mossy jungle clearing. Featuring a slender blue body, mantis-like forelegs, and large butterfly wings decorated with hypnotic, eye-like red patterns, it gazes forward with an eerie, intelligent stillness."
+    },
+    {
+      "id": "0169",
+      "name": "Marrow-Gnaw",
+      "power": 5,
+      "faction": "monster",
+      "rarity": "cursed",
+      "kind": "chaos",
+      "text": "Chaos (3 turns): Burn chance = (5 / Side Total) * 100.",
+      "art": "/cards/0169.png",
+      "effect": {
+        "type": "chaos",
+        "turns": 3
+      },
+      "background": "A grotesque cave-dwelling scavenger haunting a subterranean bone pit. Wearing a tattered, fur-lined hood, the mutated creature crouches on the rocky floor, wielding a massive, jagged scythe wrapped in chains while drooling over piles of scattered skeletal remains."
+    },
+    {
+      "id": "0170",
+      "name": "Conjurer",
+      "power": 3,
+      "faction": "unknown",
+      "rarity": "arcane",
+      "kind": "medic",
+      "text": "Medic: Resurrect a random non-Hero card to your hand.",
+      "art": "/cards/0170.png",
+      "effect": {
+        "type": "resurrect",
+        "toHand": true
+      },
+      "background": "A mysterious and reclusive magic-user standing in a vibrant field of red poppies under a stormy sky. Clad in a tattered, dark hooded cloak, the conjurer holds an arcane staff topped with a jagged blade and dark crystal, communing with unseen forces at the edge of a pine forest."
+    },
+    {
+      "id": "0171",
+      "name": "Unknown Slayer",
+      "power": 9,
+      "faction": "unknown",
+      "rarity": "cursed",
+      "kind": "none",
+      "text": "No Ability.",
+      "art": "/cards/0171.png",
+      "effect": {
+        "type": "none"
+      },
+      "background": "A heavily armored and terrifying executioner-warrior charging through the crumbling stone ruins of an ancient arena. Clad in dark, glowing plate armor etched with fiery red cracks and horned helm, he wields a glowing blue-and-red energy sword and a matching rune-inscribed shield."
+    },
+    {
+      "id": "0172",
+      "name": "Vulture",
+      "power": 4,
+      "faction": "monster",
+      "rarity": "cursed",
+      "kind": "onReveal",
+      "text": "On Reveal: Copy the text of an enemy Ongoing card here.",
+      "art": "/cards/0172.png",
+      "effect": {
+        "type": "copyOngoing"
+      },
+      "background": "A skeletal avian monstrosity haunting the decaying courtyards of a ruined fortress. With massive feathered wings, a bird skull head with glowing red eyes, and bone-adorned robes, this grim creature grips a skeletal staff tipped with a skull, presiding over a field of wild red blossoms."
+    },
+    {
+      "id": "0173",
+      "name": "Cagehead",
+      "power": 7,
+      "faction": "unknown",
+      "rarity": "mortal",
+      "kind": "none",
+      "text": "No Ability.",
+      "art": "/cards/0173.png",
+      "effect": {
+        "type": "none"
+      },
+      "background": "A brutally strong gladiatorial combatant fighting in a chaotic dirt arena. Bare-chested and heavily scarred, with thick iron chains wrapped around his arms and legs, he wears a heavy iron-grate cage over his head and brandishes two massive spiked war hammers."
+    },
+    {
+      "id": "0174",
+      "name": "Cernunnos' Shadow",
+      "power": 5,
+      "faction": "monster",
+      "rarity": "forbidden",
+      "kind": "chaos",
+      "text": "Chaos (3 turns): Burn chance = (5 / Side Total) * 100.",
+      "art": "/cards/0174.png",
+      "effect": {
+        "type": "chaos",
+        "turns": 3
+      },
+      "background": "A shadowy, long-limbed forest entity creeping near a stone fortress wall at night. Featuring glowing white eyes and an elaborate crown woven from thorny branches and vines, it looms menacingly beside a crackling bonfire amid the smoke and ruins."
+    },
+    {
+      "id": "0175",
+      "name": "Vespera of the Pyre",
+      "power": 11,
+      "faction": "monster",
+      "rarity": "mythic",
+      "kind": "chaos",
+      "text": "Chaos (1 turn): Burn chance = (11 / Side Total) * 100.",
+      "art": "/cards/0175.png",
+      "effect": {
+        "type": "chaos",
+        "turns": 1
+      },
+      "background": "A apocalyptic skeletal dragon and elemental titan rising from a boiling purple ocean. Encased in charred bone armor crackling with red-and-blue lightning, it roars beneath a churning sky filled with countless watchful eyes."
+    },
+    {
+      "id": "0176",
+      "name": "Snakehead",
+      "power": 6,
+      "faction": "unknown",
+      "rarity": "cursed",
+      "kind": "none",
+      "text": "No Ability.",
+      "art": "/cards/0176.png",
+      "effect": {
+        "type": "none"
+      },
+      "background": "A muscular reptilian humanoid warrior standing atop the rubble of a destroyed temple. Featuring deep green scales, a wide cobra hood, yellow underbelly plates, and leather combat harness with bracers, he glares forward with sharp, predatory eyes and a flickering forked tongue."
+    },
+    {
+      "id": "0177",
+      "name": "Gisela",
+      "power": 6,
+      "faction": "hochreich",
+      "rarity": "mortal",
+      "kind": "factionBond",
+      "text": "Faction Bond: Power doubles if another Hochreich card is here.",
+      "art": "/cards/0177.png",
+      "effect": {
+        "type": "factionBond"
+      },
+      "background": "A fierce and battle-scarred female warrior of Hochreich standing inside a torch-lit castle armory. Bearing numerous scars across her face and body, she wears dark armored attire with a distinctive horned-skull pauldron, gripping a broadsword while a banner bearing the realm's crest hangs behind her."
+    },
+    {
+      "id": "0178",
+      "name": "Master of Arcana",
+      "power": 3,
+      "faction": "unknown",
+      "rarity": "forbidden",
+      "kind": "ongoing",
+      "text": "Ongoing: Your On Reveal abilities at this location trigger twice.",
+      "art": "/cards/0178.png",
+      "effect": {
+        "type": "doubleOnReveal"
+      },
+      "background": "A powerful, cephalopod-headed grand magus researching ancient tomes inside a massive, multi-tiered library. Clad in dark, spiked robes and a hooded cloak, he reads from an open book glowing with intense green arcane energy, surrounded by towering stacks of ancient manuscripts."
+    },
+    {
+      "id": "0179",
+      "name": "Arc Warrior",
+      "power": 6,
+      "faction": "unknown",
+      "rarity": "cursed",
+      "kind": "ongoing",
+      "text": "Ongoing: Shields all your cards at this location from destruction.",
+      "art": "/cards/0179.png",
+      "effect": {
+        "type": "protect"
+      },
+      "background": "A spectral, frost-infused wraith haunting the sub-zero corridors of an ancient ice crypt. Encased in glowing blue ethereal armor and a hooded shroud, this chilling apparition glides forward with blinding white eyes amidst drifting frost and ancient runes carved into the pillars."
+    },
+    {
+      "id": "0180",
+      "name": "Dragon Father",
+      "power": 9,
+      "faction": "unknown",
+      "rarity": "forbidden",
+      "kind": "chaos",
+      "text": "Chaos (2 turns): Burn chance = (9 / Side Total) * 100.",
+      "art": "/cards/0180.png",
+      "effect": {
+        "type": "chaos",
+        "turns": 2
+      },
+      "background": "An ancient and terrifying undead sovereign hovering above a snow-covered mountain pass. Clad in ornate golden spiked plate armor, a ragged red royal cloak, and a jagged crown atop a skeletal skull face, he grips a massive rune-etched greatsword and a spiked shield."
+    },
+    {
+      "id": "0181",
+      "name": "Bjorn Iron-Hide",
+      "power": 8,
+      "faction": "unknown",
+      "rarity": "mortal",
+      "kind": "none",
+      "text": "No Ability.",
+      "art": "/cards/0181.png",
+      "effect": {
+        "type": "none"
+      },
+      "background": "A resilient and weathered northern warrior standing steadfast amidst a blinding snowstorm in the mountain peaks. Dressed in heavily battered, scarred plate armor, a fur-trimmed hood, and carrying a wooden round shield bearing a skull emblem alongside a bloodied battleaxe."
+    },
+    {
+      "id": "0182",
+      "name": "Lord Malakor",
+      "power": 7,
+      "faction": "unknown",
+      "rarity": "forbidden",
+      "kind": "chaos",
+      "text": "Chaos (2 turns): Burn chance = (7 / Side Total) * 100.",
+      "art": "/cards/0182.png",
+      "effect": {
+        "type": "chaos",
+        "turns": 2
+      },
+      "background": "A legendary headless horseman charging along a treacherous, misty mountain ridge at sunset. Clad in black-and-red demonic spiked armor with smoke rising from his neck collar, he wields a glowing fiery blade while riding a hellish warhorse with blazing orange-and-blue hooves."
+    },
+    {
+      "id": "0183",
+      "name": "Lord Zealot",
+      "power": 6,
+      "faction": "unknown",
+      "rarity": "forbidden",
+      "kind": "onReveal",
+      "text": "On Reveal: Destroy all enemy units here with 2 or less Power.",
+      "art": "/cards/0183.png",
+      "effect": {
+        "type": "destroyBelow",
+        "maxPower": 2,
+        "all": true
+      },
+      "background": "A monstrous gargoyle-like inquisitor crouching on a high stone ledge inside a gothic cathedral. With leathery wings, sharp horns, and jagged claws, he keeps watch over the twisting stairwells and stained-glass windows from the shadows."
+    },
+    {
+      "id": "0184",
+      "name": "Paladin the Kingslayer",
+      "power": 8,
+      "faction": "unknown",
+      "rarity": "mortal",
+      "kind": "hero",
+      "text": "Hero: Immune to all special effects, abilities, and destroys.",
+      "art": "/cards/0184.png",
+      "effect": {
+        "type": "hero"
+      },
+      "background": "A grim and ominous knight standing atop a rocky precipice beneath a stormy sky. Clad in dark, intricately engraved full plate armor with a bird-styled winged helm, he rests his hands atop the hilt of a heavy rune-inscribed sword planted firmly in the ground."
+    },
+    {
+      "id": "0185",
+      "name": "Gorgaroth",
+      "power": 7,
+      "faction": "monster",
+      "rarity": "cursed",
+      "kind": "chaos",
+      "text": "Chaos (2 turns): Burn chance = (7 / Side Total) * 100.",
+      "art": "/cards/0185.png",
+      "effect": {
+        "type": "chaos",
+        "turns": 2
+      },
+      "background": "A savage, heavily armored reptilian beast stalking through the darkness. Featuring thick, jagged scales, massive curling horns, glowing red eyes, and razor-sharp claws, this monstrous predator prowls low to the ground in search of prey."
+    },
+    {
+      "id": "0186",
+      "name": "Split-Jaw",
+      "power": 5,
+      "faction": "monster",
+      "rarity": "cursed",
+      "kind": "chaos",
+      "text": "Chaos (3 turns): Burn chance = (5 / Side Total) * 100.",
+      "art": "/cards/0186.png",
+      "effect": {
+        "type": "chaos",
+        "turns": 3
+      },
+      "background": "A horrific, mutated humanoid entity lurking within a dense, misty forest. Possessing a pale, smooth body and a terrifying vertical maw that splits straight down its chest lined with rows of sharp teeth, it stands eerily still among the ferns and trees."
+    },
+    {
+      "id": "0187",
+      "name": "Amalgam of Torment",
+      "power": 6,
+      "faction": "monster",
+      "rarity": "forbidden",
+      "kind": "chaos",
+      "text": "Chaos (3 turns): Burn chance = (6 / Side Total) * 100.",
+      "art": "/cards/0187.png",
+      "effect": {
+        "type": "chaos",
+        "turns": 3
+      },
+      "background": "A grotesque multi-limbed abomination crafted from fused flesh and tormented souls within a dungeon. Crawling on all fours with multiple clawed arms, agonized faces protruding from its body, and a writhing flesh-tentacle, it embodies pure psychological horror."
+    },
+    {
+      "id": "0188",
+      "name": "Starbound",
+      "power": 4,
+      "faction": "unknown",
+      "rarity": "arcane",
+      "kind": "ongoing",
+      "text": "Ongoing: Adjacent locations gain +2 Power.",
+      "art": "/cards/0188.png",
+      "effect": {
+        "type": "auraAdjacent",
+        "amount": 2
+      },
+      "background": "A mystical wanderer standing in a freezing mountain pass, wielding weapons crackling with raw lightning. Clad in weathered, dented armor with a cloth hood and face wrap, he stands guard while an eerie cosmic entity sits upon a tentacled stone throne in the misty background."
+    },
+    {
+      "id": "0189",
+      "name": "Demon God",
+      "power": 12,
+      "faction": "unknown",
+      "rarity": "divine",
+      "kind": "chaos",
+      "text": "Chaos (1 turn): Burn chance = (12 / Side Total) * 100.",
+      "art": "/cards/0189.png",
+      "effect": {
+        "type": "chaos",
+        "turns": 1
+      },
+      "background": "A supreme lord of the abyss soaring through a twin-mooned night sky atop a colossal, fire-breathing dragon. Clad in glowing, lava-veined black armor and tattered winged capes, he wields a massive double-bitted axe wreathed in roaring orange and blue flames above a distant fortress."
+    },
+    {
+      "id": "0190",
+      "name": "Paladin Cassian",
+      "power": 8,
+      "faction": "unknown",
+      "rarity": "arcane",
+      "kind": "hero",
+      "text": "Hero: Immune to all special effects, abilities, and destroys.",
+      "art": "/cards/0190.png",
+      "effect": {
+        "type": "hero"
+      },
+      "background": "A noble and ethereal paladin standing upon a high cloud formation beneath a starry, cosmic night sky. Clad in intricately engraved dark-steel plate armor featuring bird motifs and a flowing dark cape with golden trim, he rests his hands over the hilt of a rune-inscribed broadsword planted firmly before him."
+    },
+    {
+      "id": "0191",
+      "name": "Sunk Crypt",
+      "power": 4,
+      "faction": "unknown",
+      "rarity": "cursed",
+      "kind": "medic",
+      "text": "Medic: Resurrect a destroyed card to this location with +2 Power.",
+      "art": "/cards/0191.png",
+      "effect": {
+        "type": "resurrect",
+        "amount": 2,
+        "includeHeroes": true
+      },
+      "background": "A haunting undead guardian emerging from the flooded, rubble-strewn ruins of an underground crypt. Encased in weathered plate armor and a tattered crimson hood, the skeletal warrior radiates an intense green necrotic glow from its eye sockets and grips a glowing green-veined blade amidst swirling spirits."
+    },
+    {
+      "id": "0192",
+      "name": "Ghost of Pharaoh",
+      "power": 6,
+      "faction": "hochreich",
+      "rarity": "forbidden",
+      "kind": "factionBond",
+      "text": "Faction Bond: Power doubles if another Hochreich card is here.",
+      "art": "/cards/0192.png",
+      "effect": {
+        "type": "factionBond"
+      },
+      "background": "A resurrected royal spectre hovering above an ancient ritual stone ring in the desert sands. Clad in ornate, gold-engraved pharaonic armor and a regal crown adorned with a glowing purple crystal, he clutches a matching staff of office against a backdrop of towering pyramids and the Sphinx at sunset."
+    },
+    {
+      "id": "0193",
+      "name": "Void-Knight",
+      "power": 7,
+      "faction": "unknown",
+      "rarity": "forbidden",
+      "kind": "onReveal",
+      "text": "On Reveal: Destroy the highest enemy card here if their total > 10.",
+      "art": "/cards/0193.png",
+      "effect": {
+        "type": "destroyHighestIfTotal",
+        "threshold": 10
+      },
+      "background": "A fearsome champion touched by the void, patrolling a gothic stone balcony overlooking a vaulted hall. Clad in dark metallic armor fused with pulsating purple flesh and horned helmet, he wields a massive, jagged greatsword crackling with violet lightning."
+    },
+    {
+      "id": "0194",
+      "name": "Obsidian",
+      "power": 10,
+      "faction": "monster",
+      "rarity": "mythic",
+      "kind": "chaos",
+      "text": "Chaos (1 turn): Burn chance = (10 / Side Total) * 100.",
+      "art": "/cards/0194.png",
+      "effect": {
+        "type": "chaos",
+        "turns": 1
+      },
+      "background": "A colossal elemental golem hewn from jagged volcanic rock and dark crystal. Covered in creeping vines and dripping with dark sludge, its monolithic body features a single, blazing purple eye in the center of its chest that projects an intense, blinding beam of violet light."
+    },
+    {
+      "id": "0195",
+      "name": "Cerberus",
+      "power": 9,
+      "faction": "monster",
+      "rarity": "mythic",
+      "kind": "chaos",
+      "text": "Chaos (2 turns): Burn chance = (9 / Side Total) * 100.",
+      "art": "/cards/0195.png",
+      "effect": {
+        "type": "chaos",
+        "turns": 2
+      },
+      "background": "A terrifying three-headed hound of the underworld standing amidst a landscape of active volcanoes and flowing lava. Each head commands a primal element—spewing crackling purple lightning, freezing blue frost, and roaring orange fire—while bound in heavy iron chains."
+    },
+    {
+      "id": "0196",
+      "name": "Agony of Death",
+      "power": 5,
+      "faction": "monster",
+      "rarity": "cursed",
+      "kind": "chaos",
+      "text": "Chaos (4 turns): Burn chance = (5 / Side Total) * 100.",
+      "art": "/cards/0196.png",
+      "effect": {
+        "type": "chaos",
+        "turns": 4
+      },
+      "background": "A wretched, multi-headed undead abomination kneeling in despair upon desolate ground. With matted dark hair, emaciated skeletal frames, and tattered rags, it clutches a massive rune-etched sword that pulses with a sickly green ethereal light driven into the earth."
+    },
+    {
+      "id": "0197",
+      "name": "Lilith the Devil",
+      "power": 6,
+      "faction": "unknown",
+      "rarity": "forbidden",
+      "kind": "onReveal",
+      "text": "On Reveal: Steal 2 Power from every enemy card at this location.",
+      "art": "/cards/0197.png",
+      "effect": {
+        "type": "stealPowerAll",
+        "amount": 2
+      },
+      "background": "A seductive and lethal arch-demon striding through a desolate, rocky wasteland surrounded by ancient fortress ruins. With leathery dark wings, small curling horns, and dark spiked leather armor glowing with purple energy, she holds a crackling violet-lightning sword in her hand."
+    },
+    {
+      "id": "0198",
+      "name": "Nebula",
+      "power": 11,
+      "faction": "monster",
+      "rarity": "divine",
+      "kind": "chaos",
+      "text": "Chaos (1 turn): Burn chance = (11 / Side Total) * 100.",
+      "art": "/cards/0198.png",
+      "effect": {
+        "type": "chaos",
+        "turns": 1
+      },
+      "background": "A cosmic sovereign seated upon an imposing throne carved from dark stone and tentacles, floating amidst a swirling galaxy. With pale skin, glowing red eyes, intricate body runes, and massive curved ram horns, she holds a brilliant, pulsing pink-red star crystal in her palm."
+    },
+    {
+      "id": "0199",
+      "name": "Sylverra the Eternal",
+      "power": 4,
+      "faction": "unknown",
+      "rarity": "divine",
+      "kind": "ongoing",
+      "text": "Ongoing: Gives all cards in your hand +1 Power.",
+      "art": "/cards/0199.png",
+      "effect": {
+        "type": "buffHand",
+        "amount": 1
+      },
+      "background": "A supreme cosmic sorceress hovering gracefully above a congregation of kneeling ethereal spirits. Clad in dark leather combat attire and a flowing cape against a backdrop of distant galaxies, she commands a green swirling magical portal in one hand and a sphere of captive souls in the other."
+    },
+    {
+      "id": "0200",
+      "name": "Varnok",
+      "power": 5,
+      "faction": "unknown",
+      "rarity": "forbidden",
+      "kind": "onReveal",
+      "text": "On Reveal: Summon two 2-Power Flame Demons to this location.",
+      "art": "/cards/0200.png",
+      "effect": {
+        "type": "summon",
+        "token": "t-flame-demon",
+        "count": 2
+      },
+      "background": "A powerful dark sorcerer standing within a subterranean cavern before a swirling portal of fire and lightning. Clad in ornate dark robes with gold embroidery and a mask, he wields a staff topped with a blazing orb while two horned, ash-crusted demons kneel in submission at his feet."
+    },
+    {
+      "id": "0201",
+      "name": "Fire Serpent",
+      "power": 10,
+      "faction": "monster",
+      "rarity": "mythic",
+      "kind": "chaos",
+      "text": "Chaos (1 turn): Burn chance = (10 / Side Total) * 100.",
+      "art": "/cards/0201.png",
+      "effect": {
+        "type": "chaos",
+        "turns": 1
+      },
+      "background": "A colossal, magma-veined dragon perched atop a jagged volcanic peak overlooking a sea of flowing lava. Its dark scales crack with molten fire and ancient glowing runes, sending plumes of thick smoke into the turbulent sky above."
+    },
+    {
+      "id": "0202",
+      "name": "Goldenfur",
+      "power": 7,
+      "faction": "unknown",
+      "rarity": "mortal",
+      "kind": "none",
+      "text": "No Ability.",
+      "art": "/cards/0202.png",
+      "effect": {
+        "type": "none"
+      },
+      "background": "A proud, athletic feline humanoid warrior standing against a backdrop of glowing sunset mountain peaks. Adorned in polished gold-and-silver armor with blue gem accents, a golden tiara, and flowing reddish-brown hair, she embodies both grace and untamed strength."
+    },
+    {
+      "id": "0203",
+      "name": "Lady Cassia",
+      "power": 4,
+      "faction": "elarion",
+      "rarity": "mortal",
+      "kind": "factionBond",
+      "text": "Faction Bond: Power doubles if another Elarion card is here.",
+      "art": "/cards/0203.png",
+      "effect": {
+        "type": "factionBond"
+      },
+      "background": "A graceful and noble high-ranking aristocrat of the Elarion Empire standing on a marble balcony overlooking a sprawling fantasy city at sunset. Dressed in an elegant white-and-gold gown with intricate jeweled trimming and an elaborate crown, she holds a delicate staff topped with a glowing blue crystal."
+    },
+    {
+      "id": "0204",
+      "name": "Behemoth",
+      "power": 11,
+      "faction": "monster",
+      "rarity": "mythic",
+      "kind": "chaos",
+      "text": "Chaos (1 turn): Burn chance = (11 / Side Total) * 100.",
+      "art": "/cards/0204.png",
+      "effect": {
+        "type": "chaos",
+        "turns": 1
+      },
+      "background": "A towering, decaying titan stumbling across a war-torn settlement amid a chaotic army. Its skeletal frame is entirely riddled with hundreds of arrows and tattered banners, featuring a terrifying horned skull face with multiple eyes glaring through the gloom."
+    },
+    {
+      "id": "0205",
+      "name": "Devil",
+      "power": 4,
+      "faction": "monster",
+      "rarity": "cursed",
+      "kind": "move",
+      "text": "Move: Can move to an adjacent location once per game.",
+      "art": "/cards/0205.png",
+      "effect": {
+        "type": "moveOnceAdjacent"
+      },
+      "background": "A bizarre and surreal subterranean creature perched on a mossy rock inside an illuminated crystal cave. Covered in pale, soft fur, it features a bulbous pink snout, oversized ears, and a single prominent cyclopean eye that gazes curiously into the damp cavern depths."
+    },
+    {
+      "id": "0206",
+      "name": "Winged Herald",
+      "power": 6,
+      "faction": "unknown",
+      "rarity": "arcane",
+      "kind": "ongoing",
+      "text": "Ongoing: Cards played here gain +1 Power upon reveal.",
+      "art": "/cards/0206.png",
+      "effect": {
+        "type": "buffOnFriendlyPlay",
+        "amount": 1
+      },
+      "background": "A fierce celestial warrior with massive black feathered wings soaring above a burning medieval battlefield. Bare-chested and covered in tribal tattoos with ornate armor bracers, he plunges downward while gripping a massive broadsword wreathed in roaring, magical flames."
+    },
+    {
+      "id": "0207",
+      "name": "Stalker",
+      "power": 4,
+      "faction": "unknown",
+      "rarity": "cursed",
+      "kind": "onReveal",
+      "text": "On Reveal: Destroy the enemy's weakest card at this location.",
+      "art": "/cards/0207.png",
+      "effect": {
+        "type": "destroyLowest"
+      },
+      "background": "A sinister operative standing amidst the burning ruins of a besieged fortress under a full moon. Clad in dark leather armor, a hooded cloak, and spiked bracers, his arms have mutated into massive, crimson-veined organic claws dripping with lethal intent."
+    },
+    {
+      "id": "0208",
+      "name": "Vanguard of Hochreich",
+      "power": 7,
+      "faction": "hochreich",
+      "rarity": "arcane",
+      "kind": "factionBond",
+      "text": "Faction Bond: Power doubles if another Hochreich card is here.",
+      "art": "/cards/0208.png",
+      "effect": {
+        "type": "factionBond"
+      },
+      "background": "A valiant vanguard knight of Hochreich charging across a battlefield atop a powerful black warhorse. Clad in intricate steel-and-gold plate armor and a winged helm, she bears a lion-crested shield and wields a deadly spear wreathed in brilliant, roaring flames."
+    },
+    {
+      "id": "0209",
+      "name": "Kaiden",
+      "power": 6,
+      "faction": "unknown",
+      "rarity": "cursed",
+      "kind": "none",
+      "text": "No Ability.",
+      "art": "/cards/0209.png",
+      "effect": {
+        "type": "none"
+      },
+      "background": "A shadowy, hooded sentinel standing motionless amidst the desolate and foggy ruins of a forgotten gothic town. Cloaked in tattered black rags that blend into the mist, he grips a heavy broadsword crackling with faint, erratic arcs of white lightning."
+    },
+    {
+      "id": "0210",
+      "name": "Clockwork",
+      "power": 3,
+      "faction": "monster",
+      "rarity": "relic",
+      "kind": "ongoing",
+      "text": "Relic: Ongoing - Gives all your mechanical and construct cards +2 Power.",
+      "art": "/cards/0210.png",
+      "effect": {
+        "type": "auraNameMatch",
+        "namePattern": "clockwork|golem|automaton|construct|clock",
+        "amount": 2
+      },
+      "background": "A massive, steam-powered automaton constructed from ancient brass and bronze plates, standing triumphantly atop a network of massive rotating gears. Steam billows from its helmet and chest vents while its mechanical right hand spins a lethal circular saw and its left fist charges a glowing energy core within a subterranean dungeon."
+    },
+    {
+      "id": "0211",
+      "name": "Warten the Vampire Lord",
+      "power": 7,
+      "faction": "unknown",
+      "rarity": "forbidden",
+      "kind": "onReveal",
+      "text": "On Reveal: Destroy a friendly card here to gain its Power.",
+      "art": "/cards/0211.png",
+      "effect": {
+        "type": "devour"
+      },
+      "background": "A powerful, long-lived vampire lord standing upon a treacherous, stormy mountain cliffside overlooking his gothic castle. Clad in intricately engraved dark plate armor with a crimson sash and a tattered black cloak, he wields a sinister sword glowing with vibrant purple runes under a lightning-lit sky."
+    },
+    {
+      "id": "0212",
+      "name": "Leviathan",
+      "power": 12,
+      "faction": "monster",
+      "rarity": "mythic",
+      "kind": "chaos",
+      "text": "Chaos (1 turn): Burn chance = (12 / Side Total) * 100.",
+      "art": "/cards/0212.png",
+      "effect": {
+        "type": "chaos",
+        "turns": 1
+      },
+      "background": "An apocalyptic nightmare realm where skeletal, glowing red sharks swim through a bloody, crimson-tinted sky above a ruined landscape. Below, countless hands rise from the earth while a macabre crucifix structure towers over a ruined bridge under a blood moon."
+    },
+    {
+      "id": "0213",
+      "name": "Terror of Worlds",
+      "power": 13,
+      "faction": "monster",
+      "rarity": "mythic",
+      "kind": "chaos",
+      "text": "Chaos (1 turn): Burn chance = (13 / Side Total) * 100.",
+      "art": "/cards/0213.png",
+      "effect": {
+        "type": "chaos",
+        "turns": 1
+      },
+      "background": "A colossal, heavily armored dragon-like behemoth crouched defensively amidst a shattered, crystal-spiked volcanic wasteland. Covered in massive white horns, jagged obsidian spikes across its back and wings, and glowing yellow eyes, it radiates an unstoppable, world-ending fury."
+    },
+    {
+      "id": "0214",
+      "name": "Blobeye",
+      "power": 2,
+      "faction": "monster",
+      "rarity": "mortal",
+      "kind": "none",
+      "text": "No Ability.",
+      "art": "/cards/0214.png",
+      "effect": {
+        "type": "none"
+      },
+      "background": "Eye monster with bat wings that lives in labyrint dimension."
+    }
+  ],
+  "tokens": [
+    {
+      "id": "t-blobeye",
+      "name": "Blobeye",
+      "power": 2,
+      "faction": "monster",
+      "rarity": "cursed",
+      "kind": "none",
+      "text": "No Ability.",
+      "art": "/cards/0214.png",
+      "effect": {
+        "type": "none"
+      },
+      "token": true
+    },
+    {
+      "id": "t-beetle",
+      "name": "Beetle",
+      "power": 1,
+      "faction": "monster",
+      "rarity": "mortal",
+      "kind": "none",
+      "text": "No Ability.",
+      "art": "/cards/0005.png",
+      "effect": {
+        "type": "none"
+      },
+      "token": true
+    },
+    {
+      "id": "t-elemental",
+      "name": "Elemental",
+      "power": 5,
+      "faction": "monster",
+      "rarity": "arcane",
+      "kind": "none",
+      "text": "No Ability.",
+      "art": "/cards/0161.png",
+      "effect": {
+        "type": "none"
+      },
+      "token": true
+    },
+    {
+      "id": "t-flame-demon",
+      "name": "Flame Demon",
+      "power": 2,
+      "faction": "monster",
+      "rarity": "cursed",
+      "kind": "none",
+      "text": "No Ability.",
+      "art": "/cards/0189.png",
+      "effect": {
+        "type": "none"
+      },
+      "token": true
+    },
+    {
+      "id": "t-werewolf",
+      "name": "Werewolf",
+      "power": 3,
+      "faction": "monster",
+      "rarity": "cursed",
+      "kind": "none",
+      "text": "No Ability.",
+      "art": "/cards/0046.png",
+      "effect": {
+        "type": "none"
+      },
+      "token": true
+    },
+    {
+      "id": "t-divine-dragon",
+      "name": "Divine Dragon",
+      "power": 10,
+      "faction": "monster",
+      "rarity": "divine",
+      "kind": "none",
+      "text": "No Ability.",
+      "art": "/cards/0201.png",
+      "effect": {
+        "type": "none"
+      },
+      "token": true
+    },
+    {
+      "id": "t-monster",
+      "name": "Monster",
+      "power": 6,
+      "faction": "monster",
+      "rarity": "cursed",
+      "kind": "none",
+      "text": "No Ability.",
+      "art": "/cards/0167.png",
+      "effect": {
+        "type": "none"
+      },
+      "token": true
+    }
+  ]
+}

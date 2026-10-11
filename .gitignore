@@ -1,0 +1,72 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+dist-ssr/
+*.local
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# OS files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# Cache
+.cache/
+.vite/
+*.tsbuildinfo
+
+# Coverage
+coverage/
+
+# Large media assets (kept locally, not pushed to GitHub)
+cards/
+public/cards/
+public/locations/
+public/card_back/
+public/ost/
+public/sfx/
+
+# Python (mobile/scripts/card_editor.py)
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Mobile generated media assets (kept locally)
+mobile/assets/cards/
+mobile/assets/card_back/
+mobile/assets/locations/
+mobile/assets/fx/
+mobile/assets/ost/
+mobile/assets/sfx/
+# Signing material - never commit
+*.keystore
+*.jks
+local.properties
