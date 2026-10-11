@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="assets/logo.png" alt="Grails of War" width="200" />
+  <img src="assets/logo.png" alt="Grails of War" width="420" />
 
   # Grails of War
 
