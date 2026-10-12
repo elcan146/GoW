@@ -35,8 +35,8 @@ The project is a **monorepo** containing:
       <td align="center"><b>📱 Mobile</b></td>
     </tr>
     <tr>
-      <td><video src="https://github.com/user-attachments/assets/c2f23a0f-6efa-4a39-ad79-d4b137d10aa5" poster="https://raw.githubusercontent.com/elcan146/GoW/main/assets/grailsofwar_pc.jpg" controls muted width="520"></video></td>
-      <td><video src="https://github.com/user-attachments/assets/ef204c23-6e3f-41a1-b71d-664e27bd860e" poster="https://raw.githubusercontent.com/elcan146/GoW/main/assets/grailsofwar_mobile.jpg" controls muted width="220"></video></td>
+      <td><video src="https://github.com/user-attachments/assets/c2f23a0f-6efa-4a39-ad79-d4b137d10aa5" controls muted width="520"></video></td>
+      <td><video src="https://github.com/user-attachments/assets/ef204c23-6e3f-41a1-b71d-664e27bd860e" controls muted width="220"></video></td>
     </tr>
     <tr>
       <td align="center"><sub>Phaser-rendered board on desktop</sub></td>
