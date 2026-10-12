@@ -26,6 +26,27 @@ The project is a **monorepo** containing:
 
 ---
 
+## Demo
+
+<div align="center">
+  <table>
+    <tr>
+      <td align="center"><b>🖥️ Web</b></td>
+      <td align="center"><b>📱 Mobile</b></td>
+    </tr>
+    <tr>
+      <td><video src="https://raw.githubusercontent.com/elcan146/GoW/main/assets/grailsofwar_pc.mp4" poster="https://raw.githubusercontent.com/elcan146/GoW/main/assets/grailsofwar_pc.jpg" controls muted width="520"></video></td>
+      <td><video src="https://raw.githubusercontent.com/elcan146/GoW/main/assets/grailsofwar_mobile.mp4" poster="https://raw.githubusercontent.com/elcan146/GoW/main/assets/grailsofwar_mobile.jpg" controls muted width="220"></video></td>
+    </tr>
+    <tr>
+      <td align="center"><sub>Phaser-rendered board on desktop</sub></td>
+      <td align="center"><sub>Touch-optimized Expo client</sub></td>
+    </tr>
+  </table>
+</div>
+
+---
+
 ## Gameplay
 
 | Rule | Details |
