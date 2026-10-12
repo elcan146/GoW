@@ -28,6 +28,10 @@ The project is a **monorepo** containing:
 
 ## Demo
 
+<!-- TO ADD VIDEOS: click the Edit button on this file on GitHub, place your cursor inside
+     each src="" below (deleting the placeholder text), then drag & drop the matching .mp4
+     file into the editor - GitHub inserts the video URL right where your cursor is. -->
+
 <div align="center">
   <table>
     <tr>
@@ -35,8 +39,8 @@ The project is a **monorepo** containing:
       <td align="center"><b>📱 Mobile</b></td>
     </tr>
     <tr>
-      <td><video src="https://raw.githubusercontent.com/elcan146/GoW/main/assets/grailsofwar_pc.mp4" poster="https://raw.githubusercontent.com/elcan146/GoW/main/assets/grailsofwar_pc.jpg" controls muted width="520"></video></td>
-      <td><video src="https://raw.githubusercontent.com/elcan146/GoW/main/assets/grailsofwar_mobile.mp4" poster="https://raw.githubusercontent.com/elcan146/GoW/main/assets/grailsofwar_mobile.jpg" controls muted width="220"></video></td>
+      <td><video src="DROP_grailsofwar_pc.mp4_HERE" poster="https://raw.githubusercontent.com/elcan146/GoW/main/assets/grailsofwar_pc.jpg" controls muted width="520"></video></td>
+      <td><video src="DROP_grailsofwar_mobile.mp4_HERE" poster="https://raw.githubusercontent.com/elcan146/GoW/main/assets/grailsofwar_mobile.jpg" controls muted width="220"></video></td>
     </tr>
     <tr>
       <td align="center"><sub>Phaser-rendered board on desktop</sub></td>
